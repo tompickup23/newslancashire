@@ -25,6 +25,28 @@ EXPORT    = f'{BASE}/export'
 
 RATE_LIMIT = 1.5  # seconds between requests
 
+
+def normalise_date_iso(date_str):
+    """Normalise any date string to ISO 8601 format (YYYY-MM-DDTHH:MM:SS+00:00).
+    Handles RFC 2822 (from RSS), ISO 8601 variants, and fallback."""
+    if not date_str:
+        return datetime.now().isoformat()
+    try:
+        # Try RFC 2822 first (RSS format: "Sun, 08 Feb 2026 13:14:25 GMT")
+        dt = parsedate_to_datetime(date_str)
+        return dt.isoformat()
+    except Exception:
+        pass
+    try:
+        # Try ISO 8601 variants
+        cleaned = date_str.replace('Z', '+00:00')
+        dt = datetime.fromisoformat(cleaned)
+        return dt.isoformat()
+    except Exception:
+        pass
+    # Return as-is if we can't parse (better than losing it)
+    return date_str
+
 # ─── Logging ─────────────────────────────────────────────────────────────────
 os.makedirs(LOG_DIR, exist_ok=True)
 logging.basicConfig(
@@ -548,9 +570,8 @@ def export_articles_json(conn):
                is_preston, is_west_lancashire, is_lancaster, is_wyre,
                is_fylde, is_blackpool, fetched_at
         FROM articles
-        WHERE fetched_at > datetime('now', '-7 days')
         ORDER BY trending_score DESC, fetched_at DESC
-        LIMIT 500
+        LIMIT 2000
     """)
     columns = [desc[0] for desc in c.description]
     articles = []
@@ -568,6 +589,8 @@ def export_articles_json(conn):
             b.replace('is_', '') for b in columns
             if b.startswith('is_') and article.get(b) == 1
         ]
+        # Normalise date to ISO 8601
+        article['published'] = normalise_date_iso(article.get('published', ''))
         # Generate slug from title (handle unicode, ensure uniqueness)
         import unicodedata
         norm_title = unicodedata.normalize('NFKD', article['title'])
