@@ -1,6 +1,6 @@
 ---
 title: "The OBR is always wrong. Making economic policy by forecast is driving Britain in circles."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Andy MacNae MP (Bluesky)"
 source_url: "https://bsky.app/profile/andymacnaemp.bsky.social/post/3ltvwvgi2os2n"
 location: "rossendale"

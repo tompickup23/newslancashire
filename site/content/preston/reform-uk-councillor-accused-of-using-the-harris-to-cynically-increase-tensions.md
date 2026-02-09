@@ -1,0 +1,17 @@
+---
+title: "Reform UK councillor accused of using The Harris to ‘cynically increase tensions’ in Preston"
+date: 2026-02-03T08:00:00+00:00
+source: "Blog Preston"
+source_url: "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQy1IMlMwR0NGZTg0TklBMmd4S19vN2pKYnRCYWFrWGpBRFQ1MHh4UjNSU1NCLVJ4eFNKUnllRnV1ZTVYbVR1MTdIeUxJbTlYUk9adXBfYXp1TGV2QkJ5cjNuM0dCLV9DaC1RWE1oR0YzcV85RDc5WFlxcnFkc29FXy1hSlF1Tnh2aVh3N0dFY2FIMHF6MzJhNlFERldwU3hnY00tQUd4YzlfVHlGQjVnck5KQ0I0NWYwc19DMlI5ZEdpYUhza0FhddIBzgFBVV95cUxPUFhINUNxaXVJVjVzV3dMQzBId2twNmpKVTJCNEx4WDlqYWVFS3hYbzJmazVDQW1pLVNkRXlPWlVva3U4OWZqUGxVUm01RnZEZUEyMFJXbTVwMURFN01wYjhMOVZ4ZUxkb0xJRWQ2N09MMW4tbjRSX1p2bm5xNFFrQjQ1cF92WDhnVXJSQXY3NDN2MUZYbkpYLUVrVktHMnUzWDhHYUhUdkVUSjBLMVVydlR5b2p2am9EMXN6dXozenBTcW9xbU5uNXlDVVpWUQ?oc=5"
+location: "preston"
+type: "news"
+tags:
+  - "Preston"
+  - "Blog Preston"
+  - "Lancashire"
+draft: false
+---
+
+Reform UK councillor accused of using The Harris to ‘cynically increase tensions’ in Preston Blog Preston
+
+**Source:** [Blog Preston](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQy1IMlMwR0NGZTg0TklBMmd4S19vN2pKYnRCYWFrWGpBRFQ1MHh4UjNSU1NCLVJ4eFNKUnllRnV1ZTVYbVR1MTdIeUxJbTlYUk9adXBfYXp1TGV2QkJ5cjNuM0dCLV9DaC1RWE1oR0YzcV85RDc5WFlxcnFkc29FXy1hSlF1Tnh2aVh3N0dFY2FIMHF6MzJhNlFERldwU3hnY00tQUd4YzlfVHlGQjVnck5KQ0I0NWYwc19DMlI5ZEdpYUhza0FhddIBzgFBVV95cUxPUFhINUNxaXVJVjVzV3dMQzBId2twNmpKVTJCNEx4WDlqYWVFS3hYbzJmazVDQW1pLVNkRXlPWlVva3U4OWZqUGxVUm01RnZEZUEyMFJXbTVwMURFN01wYjhMOVZ4ZUxkb0xJRWQ2N09MMW4tbjRSX1p2bm5xNFFrQjQ1cF92WDhnVXJSQXY3NDN2MUZYbkpYLUVrVktHMnUzWDhHYUhUdkVUSjBLMVVydlR5b2p2am9EMXN6dXozenBTcW9xbU5uNXlDVVpWUQ?oc=5)

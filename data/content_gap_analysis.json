@@ -1,25 +1,25 @@
 {
-  "generated": "2026-02-09T01:32:35.425525",
-  "total_articles": 431,
+  "generated": "2026-02-09T23:02:31.837625",
+  "total_articles": 802,
   "borough_coverage": {
-    "unknown": 431
+    "unknown": 802
   },
   "category_distribution": {
-    "politics": 152,
-    "crime": 69,
-    "community": 35,
-    "general": 33,
-    "business": 30,
-    "sport": 23,
-    "transport": 20,
-    "health": 13,
-    "education": 13,
-    "weather": 10,
-    "hyndburn": 3,
-    "pendle": 3,
-    "blackpool": 3,
+    "politics": 262,
+    "crime": 135,
+    "community": 95,
+    "general": 82,
+    "business": 58,
+    "sport": 42,
+    "transport": 31,
+    "health": 26,
+    "education": 22,
+    "weather": 16,
+    "south_ribble": 3,
     "preston": 3,
-    "south_ribble": 3
+    "blackpool": 3,
+    "pendle": 3,
+    "hyndburn": 3
   },
   "top_keywords": [],
   "date_statistics": {},

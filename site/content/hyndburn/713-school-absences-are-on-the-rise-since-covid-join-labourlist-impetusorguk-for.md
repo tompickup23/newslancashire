@@ -1,6 +1,6 @@
 ---
 title: "7/13 📚School absences are on the rise since Covid. Join LabourList & @impetus.org.uk for a panel on the scale, stories,..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Sarah Smith MP (Bluesky)"
 source_url: "https://bsky.app/profile/sarahsmithlab.bsky.social/post/3lzgvbdtxan2s"
 location: "hyndburn"

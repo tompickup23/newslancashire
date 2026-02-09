@@ -1,6 +1,6 @@
 ---
 title: "Not only are waiting lists falling, but ambulances are arriving faster, and patient satisfaction with GP access has incr..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Chris Webb MP (Bluesky)"
 source_url: "https://bsky.app/profile/chriswebbmp.bsky.social/post/3mchrjhmcis2g"
 location: "blackpool"

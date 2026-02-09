@@ -1,6 +1,6 @@
 ---
 title: "From child poverty to the first 'Reform pub' – our editors dive into the things they have loved reading, commissioning a..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Luke Beardsworth (Bluesky)"
 source_url: "https://bsky.app/profile/lukebeardsworth.bsky.social/post/3maigawrzm224"
 location: "preston"

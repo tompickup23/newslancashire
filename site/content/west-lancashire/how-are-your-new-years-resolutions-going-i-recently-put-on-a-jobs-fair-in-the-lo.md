@@ -1,6 +1,6 @@
 ---
 title: "How are your new years resolutions going?   I recently put on a jobs fair in the local community so my constituents coul..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Ashley Dalton MP (Bluesky)"
 source_url: "https://bsky.app/profile/ashleydaltonmp.bsky.social/post/3mdxxi3a6ax27"
 location: "west-lancashire"

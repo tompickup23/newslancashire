@@ -1,0 +1,17 @@
+---
+title: "Reform UK candidate and Preston City Council in row over egg rolling attendance"
+date: 2025-04-22T07:00:00+00:00
+source: "Blog Preston"
+source_url: "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMFZwM3BTMnppM0ZLSGZFajkyN0lxM0IzcldYYVdzWUxSSGhfR0lGMnNCN3VlUEt0eTV1d0VsV2ZEX3lvcHdBOVJTOFExckVfWTNOMy12cVlwb09NdWVnUHZMV0QtYi1scmF1d2ZrbnRIMUpfT1o1Ny10VENMZkI2OGhkR2x3ckVrMlJBd184blVQanp2VjVINnBtSC1zak8xbnpjeU84YTF2bDV4RGlhM3Z3cVRiQkxSb1HSAb8BQVVfeXFMTW1jNjdkTDd0ZVlEdzN2YXNIUDZpYThKWmtJZkdjT0JId1E2WjM2TS1FMHpvQXBKS09IMEZjRDVyRFZrZy1FajkwVWJZVnhiZzFqRnE3dkF4Mm5WcFJ6eDc4bTlNOFpiMUtPbTYteko1dUdJQmU0NVdpemFOYkQ1ZVEybk1QR0YyUUlrUzM3VHNMZnBfa1Y4ZUU0NTF6SWNzdmFXS3ZUU1R1cDlvRF9SY2xqOTJCYy04U0ZrVUdvT3M?oc=5"
+location: "preston"
+type: "news"
+tags:
+  - "Preston"
+  - "Blog Preston"
+  - "Lancashire"
+draft: false
+---
+
+Reform UK candidate and Preston City Council in row over egg rolling attendance Blog Preston
+
+**Source:** [Blog Preston](https://news.google.com/rss/articles/CBMiugFBVV95cUxQMFZwM3BTMnppM0ZLSGZFajkyN0lxM0IzcldYYVdzWUxSSGhfR0lGMnNCN3VlUEt0eTV1d0VsV2ZEX3lvcHdBOVJTOFExckVfWTNOMy12cVlwb09NdWVnUHZMV0QtYi1scmF1d2ZrbnRIMUpfT1o1Ny10VENMZkI2OGhkR2x3ckVrMlJBd184blVQanp2VjVINnBtSC1zak8xbnpjeU84YTF2bDV4RGlhM3Z3cVRiQkxSb1HSAb8BQVVfeXFMTW1jNjdkTDd0ZVlEdzN2YXNIUDZpYThKWmtJZkdjT0JId1E2WjM2TS1FMHpvQXBKS09IMEZjRDVyRFZrZy1FajkwVWJZVnhiZzFqRnE3dkF4Mm5WcFJ6eDc4bTlNOFpiMUtPbTYteko1dUdJQmU0NVdpemFOYkQ1ZVEybk1QR0YyUUlrUzM3VHNMZnBfa1Y4ZUU0NTF6SWNzdmFXS3ZUU1R1cDlvRF9SY2xqOTJCYy04U0ZrVUdvT3M?oc=5)

@@ -1,0 +1,17 @@
+---
+title: "Finney House to reopen as a care home, not house asylum seekers"
+date: 2025-07-23T07:00:00+00:00
+source: "Blog Preston"
+source_url: "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR2RYOU9scmxLc0pDMEFFb2pONWljdzBfdmhWV1kwS0Q0RXl0RjgzWnRnVHZqRWJwc3lxeFdDc0JBUEg5Nnl4blNDVkZocG03NGswWVo2Q2h1M1k2cHFTdXA4MmhmRV9ieWFDMzBJT05CNGhlRjJYUTdvRTVWVHU0eU5QSDJBd3Vsek43X2VnUV9rT3ZLSFRNcTRWTWRUUVowNHI0d3NR0gGrAUFVX3lxTE9GUlV5QzVjWExtZ2VoLUM5SVZUQmdqanVwaXVZVV84ODR6bGFnZFRSYnRJMkhoeEJGdXlBMFdYZFVacHFId0czdzBhUloySXl0eElnZUtUaXVuMlFHbzFBd1g3eXp6Y0hxRFBGSlJFRXhXQnhkUl9SUDBKcFRFLUs4cVpCeERCNk9xa0tFSHVublh4cFkyY0luTWxidGhZV0YxVHRuUVdLTzNSUQ?oc=5"
+location: "preston"
+type: "news"
+tags:
+  - "Preston"
+  - "Blog Preston"
+  - "Lancashire"
+draft: false
+---
+
+Finney House to reopen as a care home, not house asylum seekers Blog Preston
+
+**Source:** [Blog Preston](https://news.google.com/rss/articles/CBMipgFBVV95cUxQR2RYOU9scmxLc0pDMEFFb2pONWljdzBfdmhWV1kwS0Q0RXl0RjgzWnRnVHZqRWJwc3lxeFdDc0JBUEg5Nnl4blNDVkZocG03NGswWVo2Q2h1M1k2cHFTdXA4MmhmRV9ieWFDMzBJT05CNGhlRjJYUTdvRTVWVHU0eU5QSDJBd3Vsek43X2VnUV9rT3ZLSFRNcTRWTWRUUVowNHI0d3NR0gGrAUFVX3lxTE9GUlV5QzVjWExtZ2VoLUM5SVZUQmdqanVwaXVZVV84ODR6bGFnZFRSYnRJMkhoeEJGdXlBMFdYZFVacHFId0czdzBhUloySXl0eElnZUtUaXVuMlFHbzFBd1g3eXp6Y0hxRFBGSlJFRXhXQnhkUl9SUDBKcFRFLUs4cVpCeERCNk9xa0tFSHVublh4cFkyY0luTWxidGhZV0YxVHRuUVdLTzNSUQ?oc=5)

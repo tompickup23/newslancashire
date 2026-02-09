@@ -1,6 +1,6 @@
 ---
 title: "Lucy Connolly, a woman who admitted inciting racial hatred after using social media to post about setting fire to hotels..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Sarah Smith MP (Bluesky)"
 source_url: "https://bsky.app/profile/sarahsmithlab.bsky.social/post/3ly5ztxilo323"
 location: "hyndburn"

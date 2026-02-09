@@ -1,6 +1,6 @@
 ---
 title: "Find your next role by attending my jobs fair this Friday.  •	Friday 23 January, 9am-12pm. •	Skelmersdale Ecumenical Cen..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Ashley Dalton MP (Bluesky)"
 source_url: "https://bsky.app/profile/ashleydaltonmp.bsky.social/post/3mcyt5kk3tp2l"
 location: "west-lancashire"

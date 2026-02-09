@@ -5,6 +5,8 @@
 # added per-phase error counting, health summary at end
 
 cd /home/ubuntu/newslancashire
+# Ensure logs dir exists
+mkdir -p logs
 LOG=logs/pipeline.log
 ERRORS=0
 

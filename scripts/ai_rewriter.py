@@ -9,6 +9,9 @@ import time
 import logging
 import urllib.request
 import urllib.error
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from llm_rate_limiter import can_use, record_usage, get_daily_summary
 
 BASE = '/home/ubuntu/newslancashire'
 DB_PATH = f'{BASE}/db/news.db'
@@ -19,6 +22,12 @@ KIMI_API_URL = 'https://api.moonshot.ai/v1/chat/completions'
 KIMI_API_KEY = os.environ.get('MOONSHOT_API_KEY', '')
 DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
 DEEPSEEK_API_KEY = os.environ.get('DEEPSEEK_API_KEY', '')
+
+# Free tier providers (primary)
+GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
+GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+GROQ_API_KEY = os.environ.get('GROQ_API_KEY', '')
 
 BATCH_SIZE = 5   # Articles per API call (smaller = more reliable)
 MAX_BATCHES = 10  # Max batches per run (50 articles)
@@ -71,7 +80,12 @@ def api_call(url, api_key, model, prompt, timeout=API_TIMEOUT):
 
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         data = json.loads(resp.read().decode())
-        return data['choices'][0]['message']['content'].strip()
+        content = data['choices'][0]['message']['content'].strip()
+        # Estimate tokens used (prompt + completion)
+        tokens = data.get('usage', {}).get('total_tokens', 0)
+        if not tokens:
+            tokens = len(prompt) // 4 + len(content) // 4  # rough estimate
+        return content, tokens
 
 
 def rewrite_batch(articles):
@@ -81,47 +95,72 @@ def rewrite_batch(articles):
     for i, (aid, title, summary) in enumerate(articles, 1):
         prompt += f"\n{i}. Title: {title}\n   Summary: {summary or '(no summary)'}\n"
 
-    # Try Kimi first
-    if KIMI_API_KEY:
+    # Fallback chain: Gemini → Groq → Kimi → DeepSeek (with rate limiting)
+    providers = []
+    if GEMINI_API_KEY and can_use('gemini'):
+        providers.append(('gemini', 'Gemini 2.5 Flash', GEMINI_API_URL, GEMINI_API_KEY, 'gemini-2.5-flash'))
+    if GROQ_API_KEY and can_use('groq'):
+        providers.append(('groq', 'Groq Llama 3.3 70B', GROQ_API_URL, GROQ_API_KEY, 'llama-3.3-70b-versatile'))
+    if KIMI_API_KEY and can_use('kimi'):
+        providers.append(('kimi', 'Kimi K2.5', KIMI_API_URL, KIMI_API_KEY, 'kimi-k2.5'))
+    if DEEPSEEK_API_KEY and can_use('deepseek'):
+        providers.append(('deepseek', 'DeepSeek V3', DEEPSEEK_API_URL, DEEPSEEK_API_KEY, 'deepseek-chat'))
+
+    for prov_id, name, url, key, model in providers:
         try:
-            log.info('Calling Kimi K2.5 for %d articles', len(articles))
-            result = api_call(KIMI_API_URL, KIMI_API_KEY, 'kimi-k2.5', prompt)
+            log.info('Calling %s for %d articles', name, len(articles))
+            result, tokens = api_call(url, key, model, prompt)
+            record_usage(prov_id, tokens)
             rewrites = [r.strip() for r in result.split('---') if r.strip()]
             if len(rewrites) >= len(articles):
                 return rewrites[:len(articles)]
             elif rewrites:
-                log.warning('Kimi returned %d rewrites for %d articles', len(rewrites), len(articles))
-                # Pad with empty strings
+                log.warning('%s returned %d rewrites for %d articles', name, len(rewrites), len(articles))
                 while len(rewrites) < len(articles):
                     rewrites.append('')
                 return rewrites
+        except urllib.error.HTTPError as ex:
+            if ex.code == 400:
+                try:
+                    body = ex.read().decode()
+                except Exception:
+                    body = ''
+                if 'content_filter' in body or 'high risk' in body:
+                    log.warning('%s content filter — trying articles individually', name)
+                    individual_rewrites = []
+                    for (aid, title, summary) in articles:
+                        single_prompt = REWRITE_PROMPT
+                        single_prompt += '\n1. Title: ' + title
+                        single_prompt += '\n   Summary: ' + (summary or '(no summary)') + '\n'
+                        try:
+                            r, t = api_call(url, key, model, single_prompt)
+                            record_usage(prov_id, t)
+                            individual_rewrites.append(r.strip().replace('---', '').strip())
+                        except Exception:
+                            log.warning('Content filter: skipping %s (%s)', aid[:12], title[:40])
+                            individual_rewrites.append('')
+                    if any(r for r in individual_rewrites):
+                        return individual_rewrites
+                else:
+                    log.error('%s API 400 error: %s', name, body[:200])
+            elif ex.code == 402:
+                log.warning('%s credits exhausted (402) — trying next provider', name)
+            elif ex.code == 429:
+                log.warning('%s rate limited (429) — trying next provider', name)
+            else:
+                log.error('%s API error: HTTP %d %s', name, ex.code, ex.reason)
         except Exception as ex:
-            log.error('Kimi API error: %s', ex)
+            log.error('%s API error: %s', name, ex)
 
-    # Fallback to DeepSeek
-    if DEEPSEEK_API_KEY:
-        try:
-            log.info('Falling back to DeepSeek V3 for %d articles', len(articles))
-            result = api_call(DEEPSEEK_API_URL, DEEPSEEK_API_KEY, 'deepseek-chat', prompt)
-            rewrites = [r.strip() for r in result.split('---') if r.strip()]
-            if len(rewrites) >= len(articles):
-                return rewrites[:len(articles)]
-            elif rewrites:
-                while len(rewrites) < len(articles):
-                    rewrites.append('')
-                return rewrites
-        except Exception as ex:
-            log.error('DeepSeek API error: %s', ex)
-
-    log.error('No API keys available or all APIs failed')
+    log.error('All LLM providers failed or rate-limited')
     return []
 
 
 def run():
     log.info('=== AI Rewriter started ===')
 
-    if not KIMI_API_KEY and not DEEPSEEK_API_KEY:
-        log.error('No API keys set. Set MOONSHOT_API_KEY or DEEPSEEK_API_KEY.')
+    if not any([GEMINI_API_KEY, GROQ_API_KEY, KIMI_API_KEY, DEEPSEEK_API_KEY]):
+        log.error('No API keys set. Set GEMINI_API_KEY, GROQ_API_KEY, MOONSHOT_API_KEY, or DEEPSEEK_API_KEY.')
         return
 
     conn = sqlite3.connect(DB_PATH)
@@ -170,6 +209,7 @@ def run():
 
     log.info('=== AI Rewriter done: %d articles rewritten ===', total_rewritten)
     conn.close()
+    log.info(get_daily_summary())
 
 
 if __name__ == '__main__':

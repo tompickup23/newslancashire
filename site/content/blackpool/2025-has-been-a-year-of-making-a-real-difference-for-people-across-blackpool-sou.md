@@ -1,6 +1,6 @@
 ---
 title: "2025 has been a year of making a real difference for people across Blackpool South. As we welcome the New Year, here are..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Chris Webb MP (Bluesky)"
 source_url: "https://bsky.app/profile/chriswebbmp.bsky.social/post/3mbbu4zfffi2g"
 location: "blackpool"

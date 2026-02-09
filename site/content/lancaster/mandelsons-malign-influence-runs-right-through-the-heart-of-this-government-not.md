@@ -1,6 +1,6 @@
 ---
 title: "Mandelson’s malign influence runs right through the heart of this Government.  Not least in the govt’s NHS data deal wit..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "North Lancs Greens (Bluesky)"
 source_url: "https://bsky.app/profile/northlancsgreens.bsky.social/post/3me4gg7alxc2v"
 location: "lancaster"

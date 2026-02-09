@@ -1,6 +1,6 @@
 ---
 title: "Labour is putting money back into #Preston with a £10.1m boost for local services and an extra £310 million for Lancashi..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Mark Hendrick MP (Bluesky)"
 source_url: "https://bsky.app/profile/markhendrickmp.bsky.social/post/3mbvqiljhkf2n"
 location: "preston"

@@ -1,0 +1,18 @@
+---
+title: "Reform UK’s leader in Lancashire on council tax, savings and DOGE in interview to mark six months at County Hall"
+date: 2025-11-30T08:00:00+00:00
+source: "Blog Preston"
+source_url: "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOcnFMZEl3VzVSOGVzMl96UXpNSnFQSm9KSlVkUzBFbkVfUzZia3V1S1BlVm54TXdkSzFUOXpaaEZRQnpsUm5qUGVBX053OXJZUzh3NUtXeTZIVDRhUTJ1Y1NqRXduV0NrVlJscFNFbkl4Nm83bjRibldzSzZQbm1TbXhFZkRyZFI2VUJnSW9yMnRyTFE1ZWhNR296bThwOEVkRWh4Q3NTUlFZcDBqekpaWmRtbDNyQjRDNEQyN3BwZXhmZ2dmYnljNUhfYW9OWXBMbTBJTWxYdWg4WktSVWVxaFJKSdIB6AFBVV95cUxNSjc2WW5obUxGRmgxUmU4dG5rMEExaEJGdVZyTlNRTGx5QXJnV2c2RHNwYkt6WlM0SU96WjFzOE1JQkJtUlZHSndHOG9mb2RmcmhWQXF0a19VMXdadXNSZHpScjBJVGxtZlRBX181ZUM0OXgwSGRYV1dGaTJSMnlkOHA4QVVpYjkyZFpxLUFsVldoLVNPSVBzY25oTnQ2RGpBV3FvNjhZaHcxWUhmMDNoUXlLLWZnQUgtdGdsRm5hZHE1NkI1MmVxOS1tZDJxZXp2U1JEUXJ4cjN2RWhpX0lUX1ZwejdDUWJT?oc=5"
+location: "preston"
+type: "news"
+tags:
+  - "Preston"
+  - "Ribble Valley"
+  - "Blog Preston"
+  - "Lancashire"
+draft: false
+---
+
+Reform UK’s leader in Lancashire on council tax, savings and DOGE in interview to mark six months at County Hall Blog Preston
+
+**Source:** [Blog Preston](https://news.google.com/rss/articles/CBMi4wFBVV95cUxOcnFMZEl3VzVSOGVzMl96UXpNSnFQSm9KSlVkUzBFbkVfUzZia3V1S1BlVm54TXdkSzFUOXpaaEZRQnpsUm5qUGVBX053OXJZUzh3NUtXeTZIVDRhUTJ1Y1NqRXduV0NrVlJscFNFbkl4Nm83bjRibldzSzZQbm1TbXhFZkRyZFI2VUJnSW9yMnRyTFE1ZWhNR296bThwOEVkRWh4Q3NTUlFZcDBqekpaWmRtbDNyQjRDNEQyN3BwZXhmZ2dmYnljNUhfYW9OWXBMbTBJTWxYdWg4WktSVWVxaFJKSdIB6AFBVV95cUxNSjc2WW5obUxGRmgxUmU4dG5rMEExaEJGdVZyTlNRTGx5QXJnV2c2RHNwYkt6WlM0SU96WjFzOE1JQkJtUlZHSndHOG9mb2RmcmhWQXF0a19VMXdadXNSZHpScjBJVGxtZlRBX181ZUM0OXgwSGRYV1dGaTJSMnlkOHA4QVVpYjkyZFpxLUFsVldoLVNPSVBzY25oTnQ2RGpBV3FvNjhZaHcxWUhmMDNoUXlLLWZnQUgtdGdsRm5hZHE1NkI1MmVxOS1tZDJxZXp2U1JEUXJ4cjN2RWhpX0lUX1ZwejdDUWJT?oc=5)

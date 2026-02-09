@@ -1,6 +1,6 @@
 ---
 title: "Big turnout at Preston Flag Market to protest against Reform UK plans that could see ten care facilities close, hearing..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Luke Beardsworth (Bluesky)"
 source_url: "https://bsky.app/profile/lukebeardsworth.bsky.social/post/3mcmogr33v22j"
 location: "blackpool"

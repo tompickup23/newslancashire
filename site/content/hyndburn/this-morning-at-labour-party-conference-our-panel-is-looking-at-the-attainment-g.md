@@ -1,6 +1,6 @@
 ---
 title: "This morning at Labour Party Conference, our panel is looking at the attainment gap and asking why disadvantaged pupils..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Sarah Smith MP (Bluesky)"
 source_url: "https://bsky.app/profile/sarahsmithlab.bsky.social/post/3m223lhsymk2a"
 location: "hyndburn"

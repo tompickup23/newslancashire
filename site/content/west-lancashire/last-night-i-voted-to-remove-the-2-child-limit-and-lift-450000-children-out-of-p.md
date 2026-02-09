@@ -1,6 +1,6 @@
 ---
 title: "Last night, I voted to remove the 2 child limit and lift 450,000 children out of poverty.  Here in West Lancashire, 2140..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Ashley Dalton MP (Bluesky)"
 source_url: "https://bsky.app/profile/ashleydaltonmp.bsky.social/post/3mdztb2t5co2h"
 location: "west-lancashire"

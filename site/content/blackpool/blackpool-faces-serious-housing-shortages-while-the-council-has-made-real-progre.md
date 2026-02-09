@@ -1,6 +1,6 @@
 ---
 title: "Blackpool faces serious housing shortages. While the Council has made real progress in building new homes, there is stil..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Chris Webb MP (Bluesky)"
 source_url: "https://bsky.app/profile/chriswebbmp.bsky.social/post/3mdgan7pmgs2k"
 location: "blackpool"

@@ -1,0 +1,17 @@
+---
+title: "Preston Bus defends bus fare rises and takes aim at Lancashire County Council"
+date: 2026-02-07T08:00:00+00:00
+source: "Blog Preston"
+source_url: "https://news.google.com/rss/articles/CBMitwFBVV95cUxORVFXeTRsNVF0RnNPU2o5VTBTcVI3czdmRVR6ekVPTkMydjFncENGR0Y4UWk4bFJhVUJoREJaSVJYRE1fUmlaaXZpelBoRjZFSGwzYnp0U1ZpQzk0MFBFSEl6TGMtLUNpY1BEcmc0a3JQNE5IQU5pRlkwdTNueUNaYjBESnkzbzhTaGZNb3FBajY2SmtYOGlISXlVOWF4RkwwTENNbW9EU0JUYm1SM2Q5Vk90OXAxMFXSAbwBQVVfeXFMT3lIVjhHSjBHeDN4d2N0VjhwTmFVOEM4dE9QTWpFd2VTNXM2blR0cFNYYnZrMHFBa21oSW1TVzhjbUtLdnF0VXlPYWdaRi1ORjlJNmRDRVk0cDA3alhPejNCMHRDeEZSYUtMeW53bXJnRHp6T09hVUItdUhVZW8zLUw5Ym1TYlNNVl9ZWFVQUnFlcHJJbkRGckpqZHVCMEFZX095bUZscWMtcl9HLTQyeWJ5azdDMVhjT1RCUWY?oc=5"
+location: "preston"
+type: "news"
+tags:
+  - "Preston"
+  - "Blog Preston"
+  - "Lancashire"
+draft: false
+---
+
+Preston Bus defends bus fare rises and takes aim at Lancashire County Council Blog Preston
+
+**Source:** [Blog Preston](https://news.google.com/rss/articles/CBMitwFBVV95cUxORVFXeTRsNVF0RnNPU2o5VTBTcVI3czdmRVR6ekVPTkMydjFncENGR0Y4UWk4bFJhVUJoREJaSVJYRE1fUmlaaXZpelBoRjZFSGwzYnp0U1ZpQzk0MFBFSEl6TGMtLUNpY1BEcmc0a3JQNE5IQU5pRlkwdTNueUNaYjBESnkzbzhTaGZNb3FBajY2SmtYOGlISXlVOWF4RkwwTENNbW9EU0JUYm1SM2Q5Vk90OXAxMFXSAbwBQVVfeXFMT3lIVjhHSjBHeDN4d2N0VjhwTmFVOEM4dE9QTWpFd2VTNXM2blR0cFNYYnZrMHFBa21oSW1TVzhjbUtLdnF0VXlPYWdaRi1ORjlJNmRDRVk0cDA3alhPejNCMHRDeEZSYUtMeW53bXJnRHp6T09hVUItdUhVZW8zLUw5Ym1TYlNNVl9ZWFVQUnFlcHJJbkRGckpqZHVCMEFZX095bUZscWMtcl9HLTQyeWJ5azdDMVhjT1RCUWY?oc=5)

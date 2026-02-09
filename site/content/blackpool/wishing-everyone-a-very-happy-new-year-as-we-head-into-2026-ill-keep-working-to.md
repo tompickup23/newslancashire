@@ -1,6 +1,6 @@
 ---
 title: "Wishing everyone a very Happy New Year!  🎉  As we head into 2026, I’ll keep working to make sure Blackpool’s voice is he..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Chris Webb MP (Bluesky)"
 source_url: "https://bsky.app/profile/chriswebbmp.bsky.social/post/3mbdsn7cyyq2x"
 location: "blackpool"

@@ -1,6 +1,6 @@
 ---
 title: "I’m running the Great Scottish Run for Medical Aid for Palestinians who do life saving work in unthinkable circumstances..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Cat Smith MP (Bluesky)"
 source_url: "https://bsky.app/profile/catsmithmp.bsky.social/post/3m2gqgb434k2c"
 location: "lancaster"

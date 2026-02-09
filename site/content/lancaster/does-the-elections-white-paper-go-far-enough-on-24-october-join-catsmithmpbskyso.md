@@ -1,6 +1,6 @@
 ---
 title: "Does the elections white paper go far enough?  On 24 October, join @catsmithmp.bsky.social, @rosewhiff.bsky.social, Tom..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Cat Smith MP (Bluesky)"
 source_url: "https://bsky.app/profile/catsmithmp.bsky.social/post/3m2sym7u2rw2b"
 location: "lancaster"

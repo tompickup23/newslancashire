@@ -254,6 +254,9 @@ def article_exists(conn, link):
 
 def insert_article(conn, article):
     """Insert a new article with all v3 fields."""
+    # Normalise date to ISO 8601 on insert (prevents mixed date formats in DB)
+    if 'published' in article:
+        article['published'] = normalise_date_iso(article['published'])
     boroughs = article['boroughs']
     conn.execute("""
         INSERT OR IGNORE INTO articles (

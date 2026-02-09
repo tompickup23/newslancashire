@@ -9,6 +9,9 @@ import time
 import logging
 import urllib.request
 import urllib.error
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from llm_rate_limiter import can_use, record_usage, get_daily_summary
 
 BASE = '/home/ubuntu/newslancashire'
 DB_PATH = f'{BASE}/db/news.db'
@@ -18,6 +21,12 @@ KIMI_API_URL = 'https://api.moonshot.ai/v1/chat/completions'
 KIMI_API_KEY = os.environ.get('MOONSHOT_API_KEY', '')
 DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions'
 DEEPSEEK_API_KEY = os.environ.get('DEEPSEEK_API_KEY', '')
+
+# Free tier providers (primary)
+GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
+GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+GROQ_API_KEY = os.environ.get('GROQ_API_KEY', '')
 
 INTEREST_THRESHOLD = 60  # Only analyze articles scoring 60+
 MAX_PER_RUN = 30  # Max analyses per pipeline run (credit efficiency)
@@ -75,7 +84,11 @@ def api_call(url, api_key, model, prompt, timeout=120):
 
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         data = json.loads(resp.read().decode())
-        return data['choices'][0]['message']['content'].strip()
+        content = data['choices'][0]['message']['content'].strip()
+        tokens = data.get('usage', {}).get('total_tokens', 0)
+        if not tokens:
+            tokens = len(prompt) // 4 + len(content) // 4
+        return content, tokens
 
 
 def analyze_article(title, summary, source, category):
@@ -87,32 +100,44 @@ def analyze_article(title, summary, source, category):
         category=category
     )
 
-    # Try Kimi first
-    if KIMI_API_KEY:
-        try:
-            result = api_call(KIMI_API_URL, KIMI_API_KEY, 'kimi-latest', prompt)
-            if result and len(result) > 50:
-                return result
-        except Exception as ex:
-            log.error('Kimi API error: %s', ex)
+    # Fallback chain: Gemini → Groq → Kimi → DeepSeek (with rate limiting)
+    providers = []
+    if GEMINI_API_KEY and can_use('gemini'):
+        providers.append(('gemini', 'Gemini 2.5 Flash', GEMINI_API_URL, GEMINI_API_KEY, 'gemini-2.5-flash'))
+    if GROQ_API_KEY and can_use('groq'):
+        providers.append(('groq', 'Groq Llama 3.3 70B', GROQ_API_URL, GROQ_API_KEY, 'llama-3.3-70b-versatile'))
+    if KIMI_API_KEY and can_use('kimi'):
+        providers.append(('kimi', 'Kimi K2.5', KIMI_API_URL, KIMI_API_KEY, 'kimi-k2.5'))
+    if DEEPSEEK_API_KEY and can_use('deepseek'):
+        providers.append(('deepseek', 'DeepSeek V3', DEEPSEEK_API_URL, DEEPSEEK_API_KEY, 'deepseek-chat'))
 
-    # Fallback to DeepSeek
-    if DEEPSEEK_API_KEY:
+    for prov_id, name, url, key, model in providers:
         try:
-            result = api_call(DEEPSEEK_API_URL, DEEPSEEK_API_KEY, 'deepseek-chat', prompt)
-            if result and len(result) > 50:
-                return result
+            log.info('Calling %s for analysis of: %s', name, title[:40])
+            result, tokens = api_call(url, key, model, prompt)
+            record_usage(prov_id, tokens)
+            return result
+        except urllib.error.HTTPError as ex:
+            if ex.code == 402:
+                log.warning('%s credits exhausted (402) — trying next', name)
+            elif ex.code == 429:
+                log.warning('%s rate limited (429) — trying next', name)
+            elif ex.code == 400:
+                log.warning('%s bad request (400) — trying next', name)
+            else:
+                log.error('%s API error: HTTP %d %s', name, ex.code, ex.reason)
         except Exception as ex:
-            log.error('DeepSeek API error: %s', ex)
+            log.error('%s API error: %s', name, ex)
 
+    log.error('All LLM providers failed for: %s', title[:40])
     return None
 
 
 def run():
     log.info('=== AI Analyzer started ===')
 
-    if not KIMI_API_KEY and not DEEPSEEK_API_KEY:
-        log.error('No API keys set. Set MOONSHOT_API_KEY or DEEPSEEK_API_KEY.')
+    if not any([GEMINI_API_KEY, GROQ_API_KEY, KIMI_API_KEY, DEEPSEEK_API_KEY]):
+        log.error('No API keys set. Set GEMINI_API_KEY, GROQ_API_KEY, MOONSHOT_API_KEY, or DEEPSEEK_API_KEY.')
         return
 
     conn = sqlite3.connect(DB_PATH)

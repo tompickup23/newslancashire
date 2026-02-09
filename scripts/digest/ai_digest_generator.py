@@ -10,6 +10,9 @@ import json
 import os
 import sys
 import urllib.request
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+from llm_rate_limiter import can_use, record_usage
 from datetime import datetime, timedelta
 
 sys.path.insert(0, '/home/ubuntu/newslancashire/scripts')
@@ -18,6 +21,12 @@ from crawler_v3 import get_db
 # API configuration
 KIMI_API_URL = 'https://api.moonshot.ai/v1/chat/completions'
 KIMI_API_KEY = os.environ.get('MOONSHOT_API_KEY', '')
+
+# Free tier providers (primary)
+GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
+GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'
+GROQ_API_KEY = os.environ.get('GROQ_API_KEY', '')
 
 def fetch_articles_for_digest(conn, hours=24, min_interest=40):
     """Fetch articles from last N hours for digest."""
@@ -69,47 +78,86 @@ def group_by_category(articles):
         categories[cat].append(article)
     return categories
 
-def generate_digest_with_kimi(articles, digest_type, context):
-    """Generate AI digest using Kimi K2.5."""
-    if not KIMI_API_KEY:
-        print('No Kimi API key - using template digest')
+def llm_call(url, api_key, model, prompt, timeout=120):
+    """Make an API call to any OpenAI-compatible LLM endpoint."""
+    temp = 1.0 if 'kimi' in model else 0.3
+    payload = json.dumps({
+        'model': model,
+        'messages': [{'role': 'user', 'content': prompt}],
+        'temperature': temp,
+        'max_tokens': 3000,
+    }).encode()
+    req = urllib.request.Request(url, data=payload, headers={
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {api_key}',
+    })
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        data = json.loads(resp.read().decode())
+        content = data['choices'][0]['message']['content'].strip()
+        tokens = data.get('usage', {}).get('total_tokens', 0)
+        if not tokens:
+            tokens = len(prompt) // 4 + len(content) // 4
+        return content, tokens
+
+
+def generate_digest_with_llm(articles, digest_type, context):
+    """Generate a digest using the LLM fallback chain: Gemini → Groq → Kimi (rate-limited)."""
+    providers = []
+    if GEMINI_API_KEY and can_use('gemini'):
+        providers.append(('gemini', 'Gemini', GEMINI_API_URL, GEMINI_API_KEY, 'gemini-2.5-flash'))
+    if GROQ_API_KEY and can_use('groq'):
+        providers.append(('groq', 'Groq', GROQ_API_URL, GROQ_API_KEY, 'llama-3.3-70b-versatile'))
+    if KIMI_API_KEY and can_use('kimi'):
+        providers.append(('kimi', 'Kimi', KIMI_API_URL, KIMI_API_KEY, 'kimi-k2.5'))
+
+    if not providers:
+        print('No LLM API keys available or all rate-limited — using template digest')
         return generate_template_digest(articles, digest_type, context)
-    
-    # Build prompt
-    article_texts = []
-    for article in articles[:10]:
-        article_texts.append(f"- {article[1]}: {article[2][:100]}...")
-    
-    prompt = f"""Write a news digest summary for {context}. Based on these articles:
 
-{chr(10).join(article_texts)}
+    # Build prompt — articles are SQLite tuples: (id, title, summary, ...)
+    # context is a string (borough/category name)
+    article_block = ''
+    for i, a in enumerate(articles[:15], 1):
+        title = a[1] if isinstance(a, (tuple, list)) else a.get('title', 'Untitled')
+        summary = a[2] if isinstance(a, (tuple, list)) and len(a) > 2 else ''
+        if isinstance(a, dict):
+            summary = a.get('ai_rewrite') or a.get('summary', '')
+        article_block += f"\n{i}. {title}"
+        if summary:
+            article_block += f"\n   {summary[:200]}"
 
-Write a concise 3-paragraph digest that:
-1. Summarizes the main stories
-2. Highlights any significant developments
-3. Provides context for Lancashire residents
+    region = context if isinstance(context, str) else context.get('region', 'Lancashire')
+    from datetime import datetime as _dt
+    date_str = _dt.now().strftime('%d %b %Y')
+    prompt = f"""Write a {digest_type} news digest for {region}.
+Date: {date_str}
 
-Keep it factual, objective, and engaging."""
-    
-    try:
-        payload = json.dumps({
-            'model': 'kimi-k2.5',
-            'messages': [{'role': 'user', 'content': prompt}],
-            'temperature': 0.7,
-            'max_tokens': 500
-        }).encode()
-        
-        req = urllib.request.Request(KIMI_API_URL, data=payload, headers={
-            'Content-Type': 'application/json',
-            'Authorization': f'Bearer {KIMI_API_KEY}'
-        })
-        
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = json.loads(resp.read().decode())
-            return data['choices'][0]['message']['content'].strip()
-    except Exception as e:
-        print(f'Kimi API error: {e}')
-        return generate_template_digest(articles, digest_type, context)
+Top stories:
+{article_block}
+
+Write an engaging 200-300 word digest summarising these stories. Use a professional local news tone. Start with the most important story."""
+
+    for prov_id, name, url, key, model in providers:
+        try:
+            result, tokens = llm_call(url, key, model, prompt)
+            record_usage(prov_id, tokens)
+            if result and len(result) > 50:
+                print(f'{name}: Generated {digest_type} digest ({len(result)} chars, {tokens} tokens)')
+                return result
+        except Exception as e:
+            err_str = str(e)
+            if '400' in err_str:
+                print(f'{name} content filter for {digest_type} — trying next provider')
+            elif '402' in err_str:
+                print(f'{name} credits exhausted — trying next provider')
+            elif '429' in err_str:
+                print(f'{name} rate limited — trying next provider')
+            else:
+                print(f'{name} error: {e}')
+
+    print(f'All LLM providers failed for {digest_type} — using template')
+    return generate_template_digest(articles, digest_type, context)
+
 
 def generate_template_digest(articles, digest_type, context):
     """Generate template-based digest when AI unavailable."""
@@ -132,7 +180,7 @@ def create_borough_digest(conn, borough_name, articles):
     
     borough_display = borough_name.replace('_', ' ').title()
     
-    content = generate_digest_with_kimi(
+    content = generate_digest_with_llm(
         articles, 
         'borough', 
         borough_display
@@ -159,7 +207,7 @@ def create_category_digest(conn, category, articles):
     
     category_display = category.title()
     
-    content = generate_digest_with_kimi(
+    content = generate_digest_with_llm(
         articles,
         'category',
         f'{category_display} News'

@@ -1,6 +1,6 @@
 ---
 title: "Terrorism is not simply an attack on individuals; it is an assault on our way of life, on our shared values and on the v..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Andy MacNae MP (Bluesky)"
 source_url: "https://bsky.app/profile/andymacnaemp.bsky.social/post/3luact5ktuc2k"
 location: "rossendale"

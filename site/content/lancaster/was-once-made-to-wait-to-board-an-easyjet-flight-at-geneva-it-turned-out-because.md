@@ -1,6 +1,6 @@
 ---
 title: "Was once made to wait to board an EasyJet flight at Geneva, it turned out because Geri Halliwell and Robbie Williams wan..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Lizzi Collinge MP (Bluesky)"
 source_url: "https://bsky.app/profile/lizzicollinge.bsky.social/post/3me4dqvkzgk2s"
 location: "lancaster"

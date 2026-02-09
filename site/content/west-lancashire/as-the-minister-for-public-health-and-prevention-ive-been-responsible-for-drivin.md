@@ -1,6 +1,6 @@
 ---
 title: "As the Minister for Public Health and Prevention, I've been responsible for driving through the National Cancer Plan...."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Ashley Dalton MP (Bluesky)"
 source_url: "https://bsky.app/profile/ashleydaltonmp.bsky.social/post/3me4i7vnlyr2f"
 location: "west-lancashire"

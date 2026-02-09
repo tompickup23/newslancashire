@@ -1,6 +1,6 @@
 ---
 title: "Alcohol deaths are at record highs. As @catsmithmp.bsky.social MP writes, we need action now.  Minimum Unit Pricing in E..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Cat Smith MP (Bluesky)"
 source_url: "https://bsky.app/profile/catsmithmp.bsky.social/post/3lm7i6dkdis2z"
 location: "lancaster"

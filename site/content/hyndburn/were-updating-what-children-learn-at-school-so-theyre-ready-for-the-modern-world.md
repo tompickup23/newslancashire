@@ -1,6 +1,6 @@
 ---
 title: "We’re updating what children learn at school so they’re ready for the modern world.  That means strong foundations, plus..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Sarah Smith MP (Bluesky)"
 source_url: "https://bsky.app/profile/sarahsmithlab.bsky.social/post/3m4uqnegtfk2n"
 location: "hyndburn"

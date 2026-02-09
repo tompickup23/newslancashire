@@ -1,6 +1,6 @@
 ---
 title: "Fly-tipping isn't unique to Nelson, a town in the south Wales valleys, but as with widespread issues, the impact on loca..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Luke Beardsworth (Bluesky)"
 source_url: "https://bsky.app/profile/lukebeardsworth.bsky.social/post/3mdsvirszv226"
 location: "preston"

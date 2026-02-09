@@ -167,7 +167,7 @@ def main():
     with open(INDEX_DEST, 'w') as f:
         f.write(html)
     
-    deploy_cloudflare()
+    # deploy_cloudflare()  # DISABLED — wrangler OOMs on 1GB vps-news. Deploy via vps-main instead.
     
     print(f"[News Burnley Sync] Complete — {len(burnley_articles)} articles")
 

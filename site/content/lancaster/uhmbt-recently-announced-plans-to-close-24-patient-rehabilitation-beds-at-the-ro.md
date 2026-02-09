@@ -1,6 +1,6 @@
 ---
 title: "UHMBT recently announced plans to close 24 patient rehabilitation beds at the Royal Lancaster Infirmary to save money...."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "North Lancs Greens (Bluesky)"
 source_url: "https://bsky.app/profile/northlancsgreens.bsky.social/post/3me5mn2rijk2e"
 location: "lancaster"

@@ -1,6 +1,6 @@
 ---
 title: "📢1430 children able to access free breakfast clubs from April in West Lancashire! 🥳  This includes the children at early..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Ashley Dalton MP (Bluesky)"
 source_url: "https://bsky.app/profile/ashleydaltonmp.bsky.social/post/3me2bidq4nb2f"
 location: "west-lancashire"

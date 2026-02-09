@@ -1,6 +1,6 @@
 ---
 title: "NEW: We recommend that call lists are not adopted by the House of Commons, as they are not an appropriate tool to improv..."
-date: 2026-02-06T13:42:43+00:00
+date: 2026-02-09T22:28:45+00:00
 source: "Cat Smith MP (Bluesky)"
 source_url: "https://bsky.app/profile/catsmithmp.bsky.social/post/3mdxhk2u45c2f"
 location: "lancaster"
