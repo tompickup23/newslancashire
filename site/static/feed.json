@@ -1,0 +1,559 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "News Lancashire",
+  "home_page_url": "https://newslancashire.co.uk",
+  "feed_url": "https://newslancashire.co.uk/feed.json",
+  "description": "Latest news from across Lancashire",
+  "items": [
+    {
+      "id": "",
+      "url": "",
+      "title": "spicy hot take but anyone with enough money to be paying inheritance tax should absolutely be paying inheritance tax. it...",
+      "content_text": "spicy hot take but anyone with enough money to be paying inheritance tax should absolutely be paying inheritance tax. it does not apply to a majority of Brits",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Breaking news: man who could end world hunger and make serious roads into contesting climate change but instead chooses...",
+      "content_text": "Breaking news: man who could end world hunger and make serious roads into contesting climate change but instead chooses to make porn-AI accessible and cheerlead for fascists can\u2019t work out why he\u2019s not happy. \ud83e\uddd0",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Man arrested for murder after student's death",
+      "content_text": "The body of 19-year-old Carla Georgescu was found in student accommodation on Thursday, police say.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Weekly Crime Digest: 1119 offences across Lancashire councils",
+      "content_text": "Latest police data shows 1119 crimes reported across monitored Lancashire boroughs. Burnley: 1119 crimes (364 violent crime). Full ward-by-ward breakdowns available via AI DOGE.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Burnley Daily Digest: 6 stories you need to know",
+      "content_text": "A roundup of the latest news from Burnley, including Two drug dealers found with heroin and crack cocaine in Burnley jailed and other key stories.",
+      "date_published": "",
+      "tags": [
+        "burnley",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Hyndburn Daily Digest: 3 stories you need to know",
+      "content_text": "A roundup of the latest news from Hyndburn, including Politics Roundup: 13 key stories and other key stories.",
+      "date_published": "",
+      "tags": [
+        "hyndburn",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Pendle Daily Digest: 6 stories you need to know",
+      "content_text": "A roundup of the latest news from Pendle, including Man arrested on suspicion of murder after 'unexplained' death of Nelson woman found in flat and other key stories.",
+      "date_published": "",
+      "tags": [
+        "pendle",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Blackpool Daily Digest: 5 stories you need to know",
+      "content_text": "A roundup of the latest news from Blackpool, including Road closures as resurfacing work begins across Blackpool - here\u2019s everything you need to know and other key stories.",
+      "date_published": "",
+      "tags": [
+        "blackpool",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Preston Daily Digest: 8 stories you need to know",
+      "content_text": "A roundup of the latest news from Preston, including Lancashire swimming pool could get extra \u00a31m for revamp taking total investment above \u00a34m and other key stories.",
+      "date_published": "",
+      "tags": [
+        "preston",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Lancaster Daily Digest: 7 stories you need to know",
+      "content_text": "A roundup of the latest news from Lancaster, including In response to my post about the launch of the 'National Cancer Plan' on substack, someone responsed with:  \"Great. But... and other key stories.",
+      "date_published": "",
+      "tags": [
+        "lancaster",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Rossendale Daily Digest: 3 stories you need to know",
+      "content_text": "A roundup of the latest news from Rossendale, including Politics Roundup: 13 key stories and other key stories.",
+      "date_published": "",
+      "tags": [
+        "rossendale",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Ribble Valley Daily Digest: 6 stories you need to know",
+      "content_text": "A roundup of the latest news from Ribble Valley, including Man arrested and cash and drugs seized following police search and other key stories.",
+      "date_published": "",
+      "tags": [
+        "ribble_valley",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Blackburn Daily Digest: 5 stories you need to know",
+      "content_text": "A roundup of the latest news from Blackburn, including Dangerous motorcyclist from Darwen to be sentenced after guilty pleas given in court and other key stories.",
+      "date_published": "",
+      "tags": [
+        "blackburn",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Chorley Daily Digest: 3 stories you need to know",
+      "content_text": "A roundup of the latest news from Chorley, including Politics Roundup: 13 key stories and other key stories.",
+      "date_published": "",
+      "tags": [
+        "chorley",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "South Ribble Daily Digest: 3 stories you need to know",
+      "content_text": "A roundup of the latest news from South Ribble, including Politics Roundup: 13 key stories and other key stories.",
+      "date_published": "",
+      "tags": [
+        "south_ribble",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "West Lancashire Daily Digest: 3 stories you need to know",
+      "content_text": "A roundup of the latest news from West Lancashire, including Politics Roundup: 13 key stories and other key stories.",
+      "date_published": "",
+      "tags": [
+        "west_lancashire",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Wyre Daily Digest: 5 stories you need to know",
+      "content_text": "A roundup of the latest news from Wyre, including Poulton-le-Fylde man jailed after police find cocaine and heroin in drugs raid and other key stories.",
+      "date_published": "",
+      "tags": [
+        "wyre",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Fylde Daily Digest: 5 stories you need to know",
+      "content_text": "A roundup of the latest news from Fylde, including Poulton-le-Fylde man jailed after police find cocaine and heroin in drugs raid and other key stories.",
+      "date_published": "",
+      "tags": [
+        "fylde",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Crime Roundup: 15 key stories",
+      "content_text": "Latest crime news from across Lancashire.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Politics Roundup: 16 key stories",
+      "content_text": "Latest politics news from across Lancashire.",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Blackburn Labour canvassers urge voters to support \u2018unity\u2019 not \u2018division\u2019",
+      "content_text": "Labour supporters were in Gorton\u00a0and Denton constituency over the weekend ahead of the by-election at the end of the month.",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Drink driver arrested after breakdown help call",
+      "content_text": "The 39-year-old man was found \"ranting and raving\" after breaking down and raising the alarm himself.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "So as I struggled with miscarriage after miscarriage before having my \ud83c\udf08 baby, Reform would seriously think I should pay...",
+      "content_text": "So as I struggled with miscarriage after miscarriage before having my \ud83c\udf08 baby, Reform would seriously think I should pay more tax during that agony.\n\nThis policy isn\u2019t just a slippery slope to a handmaids tale dystopian future - it\u2019s a deliberate step towards it\nwww.independent.co.uk/news/uk/poli...",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Trial date set for man accused of drug possession with intent to supply in Burnley",
+      "content_text": "A Burnley man accused of possessing drugs with intent to supply will stand trial later this year after pleading not guilty.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Woman was supplying drugs to neighbours to fund her own habit",
+      "content_text": "A Nelson woman who admitted supplying cannabis to neighbours to fund her own drug habit has been given a community order.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "\u2018A moment we feared would never come\u2019 - families celebrate lifeline for care homes",
+      "content_text": "The niece of a woman who lives in one of the Lancashire County Council-run care homes whose futures had been in doubt says confirmation that none of them will be closed marks a \u201cvictory\u201d in the community campaigns to protect the facilities.",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Residents baffled by bus station shake-up \u2014 but councillors say fears are unfounded",
+      "content_text": "Colne residents and businesses are confused about a bus station revamp and traffic flow changes \u2013 but local councillors insist it will improve things for everyone.",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "New Clitheroe pump track planned as \u00a3100,000 funding set aside",
+      "content_text": "Clitheroe could get a new pump track after Ribble Valley Borough Council earmarked up to \u00a3100,000 from the UK Shared Prosperity Fund for the project",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Burnley residents urged to reject Blackburn merger in devolution consultation",
+      "content_text": "The leader of Burnley Council has urged borough residents to reject a merger with Blackburn in a local government reorganisation consultation.",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Burnley man jailed after threatening to kill child after sexually assaulting her",
+      "content_text": "A Burnley man who threatened to kill a teenager if she did not let him sexually assault her has been jailed",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "In response to my post about the launch of the 'National Cancer Plan' on substack, someone responsed with:  \"Great. But...",
+      "content_text": "In response to my post about the launch of the 'National Cancer Plan' on substack, someone responsed with:\n\n\"Great. But how about ending homelessness, taxing the rich  nationalising water and ending the cost of living crisis?\"\n\nSo I responsed with this...\n\n1/9",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "2 week long temporary traffic lights and other major roadworks starting across Wyre this week",
+      "content_text": "This week, numerous roadworks are beginning across Wyre, including two week long road closures.",
+      "date_published": "",
+      "tags": [
+        "transport",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Four lane closures and other major roadworks starting across Preston next week",
+      "content_text": "Next week, numerous roadworks are beginning across Preston, including four lane closures on major roads.",
+      "date_published": "",
+      "tags": [
+        "transport",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Drone photos reveal scale of huge fire",
+      "content_text": "Photos released by the fire service show the gutted shell of an indoor play area destroyed in the blaze.",
+      "date_published": "",
+      "tags": [
+        "weather",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Have your say on Lancashire\u2019s new-look local councils - here are the five options as consultation launches",
+      "content_text": "Have your say on Lancashire\u2019s new-look local councils - here are the five options as consultation launches \u00a0\u00a0 Lancashire Evening Post",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Plans for private gym and golf simulator extension to rural house approved by council",
+      "content_text": "Plans to extend a rural home near Alston to create a private gym and golf simulator room have been approved by the council",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Great Harwood's Mercer Hall wins \u00a360k grant from Arts Council",
+      "content_text": "Great Harwood\u2019s historic Mercer Hall has been given a \u00a360,000 grant to develop a new arts and culture programme",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Student, 19, found dead in University of Lancashire campus halls of residence as police make arrest",
+      "content_text": "Police are investigating the suspicious death of a 19-year-old, found in Ribble Hall on the University of Lancashire campus.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "St Annes woman, 30, arrested after what police found inside car",
+      "content_text": "A 30-year-old woman from St Annes has been arrested.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Call 999 if you see this wanted man with links to Lancaster, Morecambe and Heysham",
+      "content_text": "Leigh McGinley, 35, is wanted for assaulting police. He is linked to Lancaster, Morecambe and Heysham.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Future Olympics could be held in the North of England as leaders say 'we are ready'",
+      "content_text": "The North of England could host the Olympics for the first time, as mayors and leaders propose a UK bid anchored in the region, aiming to accelerate regeneration and unity.",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Man sentenced to prison for downloading indecent images of children",
+      "content_text": "A Haslingden man has been sentenced to more than three years in prison for downloading indecent images of children.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Eco-campaigners clash over moorland wind farm that could power 100,000 homes",
+      "content_text": "Campaigners have hit out at green activists for backing the wind farm scheme planned for Scout Moor",
+      "date_published": "",
+      "tags": [
+        "politics",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Missing schoolgirl remembered as crowds turn out to Ramadan Souk in Blackburn",
+      "content_text": "Organisers wanted to replicate the souk events of North Africa, where people come together ahead of the Muslim holy month of Ramadan.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Here's how many HMOs there are in Preston as tougher rules planned",
+      "content_text": "Preston residents and landlords are being invited to have their say on plans to tighten up local rules surrounding the conversion of properties into houses of multiple occupation (HMOs).",
+      "date_published": "",
+      "tags": [
+        "sport",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "'My body and mind were screaming at me to stop' - Former CEO shares difficult story with Blackpool",
+      "content_text": "John Ainsworth, former divisional CEO, reveals the impact of executive pressure on his mental health and his journey to recovery.",
+      "date_published": "",
+      "tags": [
+        "health",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Accrington Stanley fans given the chance to speak to management directy - fans forum announced",
+      "content_text": "Accrington Stanley will host a Fans\u2019 Forum at the Wham Stadium next week - giving supporters the chance to engage directly with the club\u2019s leadership.",
+      "date_published": "",
+      "tags": [
+        "sport",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "Teenage urban explorers in quarry mud rescue",
+      "content_text": "The five teenagers became stuck in mud while \"urban exploring\" at the site, police said.",
+      "date_published": "",
+      "tags": [
+        "crime",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "King Charles to visit Clitheroe in Ribble Valley",
+      "content_text": "The King is expected to meet local manufacturers and members of the public when he visits Clitheroe.",
+      "date_published": "",
+      "tags": [
+        "general",
+        ""
+      ]
+    },
+    {
+      "id": "",
+      "url": "",
+      "title": "'We brought Chinese New Year party to Lancaster'",
+      "content_text": "Meet the young graduates who put Lancaster on the map for spectacular Chinese New Year celebrations.",
+      "date_published": "",
+      "tags": [
+        "community",
+        ""
+      ]
+    }
+  ]
+}

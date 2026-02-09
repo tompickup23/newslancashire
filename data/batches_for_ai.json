@@ -1,0 +1,1495 @@
+{
+  "generated_at": "2026-02-05T23:29:30.177668",
+  "total_batches": 35,
+  "total_articles": 159,
+  "skipped": {
+    "too_short": 63,
+    "promotional": 17,
+    "duplicate": 0
+  },
+  "estimated_cost": 0.525,
+  "batches": [
+    {
+      "topic": "crime",
+      "articles": [
+        {
+          "id": "64c44ed0d2960a16dceb13f238e3e852",
+          "title": "Increased patrols in Thornton as police respond to burglary reports",
+          "summary": "<p>Residents in Thornton are being reassured after a number of burglaries were reported in the area last month.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/increased-patrols-in-thornton-as-police-respond-to-burglary-reports-5503815",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 19:26:38 GMT"
+        },
+        {
+          "id": "7f26f165a971ee3ff02536728f08e28f",
+          "title": "'Bigger doesn't mean better' for police reforms",
+          "summary": "Lancashire's former police and crime commissioner has doubts about the impact of merging police forces.",
+          "link": "https://www.bbc.com/news/articles/cgez4lyle5do?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Lancashire",
+          "published": "Tue, 03 Feb 2026 06:26:14 GMT"
+        },
+        {
+          "id": "1303a753c8f95ad4a3f626d1982504dc",
+          "title": "Man arrested after suspected counterfeit cigarettes and \u00a310,000 found in van near Broughton",
+          "summary": "<p>A man has been arrested after police stopped a van near Broughton and discovered suspected counterfeit cigarettes and around \u00a310,000 in cash.  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/man-arrested-after-suspected-counterfeit-cigarettes-and-ps10000-found-in-van-near-broughton-5505409",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 18:32:51 GMT"
+        },
+        {
+          "id": "e6fd3165a86da676a346febd52276cc3",
+          "title": "Man arrested after suspected counterfeit cigarettes and \u00a310,000 found in van near Broughton",
+          "summary": "<p>A man has been arrested after police stopped a van near Broughton and discovered suspected counterfeit cigarettes and around \u00a310,000 in cash.  </p>",
+          "link": "https://www.lep.co.uk/news/man-arrested-after-suspected-counterfeit-cigarettes-and-ps10000-found-in-van-near-broughton-5505409",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 18:32:51 GMT"
+        },
+        {
+          "id": "86fa1c9f70345b2b75742b99582fd532",
+          "title": "Former Lancashire Police officer jailed for coercive control after using police database to track woman",
+          "summary": "<p>A former Lancashire Police officer has been jailed after admitting coercive and controlling behaviour towards a woman.  </p>",
+          "link": "https://www.lep.co.uk/news/former-lancashire-police-officer-jailed-for-coercive-control-after-using-police-database-to-track-woman-5505399",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 18:21:43 GMT"
+        }
+      ],
+      "batch_id": "crime_0"
+    },
+    {
+      "topic": "crime",
+      "articles": [
+        {
+          "id": "9f938a461b0ad19ab5a39df6440d910d",
+          "title": "Poulton-le-Fylde man jailed after police find cocaine and heroin in drugs raid",
+          "summary": "<p>A Poulton-le-Fylde man has been jailed for five years after police found cocaine and heroin during a drugs warrant at his home.  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/poulton-le-fylde-man-jailed-after-police-find-cocaine-and-heroin-in-drugs-raid-5505342",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 17:25:18 GMT"
+        },
+        {
+          "id": "cbc50848098bb8a4066adaad3b59238e",
+          "title": "Poulton-le-Fylde man jailed after police find cocaine and heroin in drugs raid",
+          "summary": "<p>A Poulton-le-Fylde man has been jailed for five years after police found cocaine and heroin during a drugs warrant at his home.  </p>",
+          "link": "https://www.lep.co.uk/news/poulton-le-fylde-man-jailed-after-police-find-cocaine-and-heroin-in-drugs-raid-5505342",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 17:25:18 GMT"
+        },
+        {
+          "id": "65c5002caf86ba01b855f09b113c94b7",
+          "title": "Lancashire Police take action against driver who hit boy, 14, at Preston car meet",
+          "summary": "<p>A 14-year-old boy who suffered a fractured skull when he was hit by a vehicle at a car meet in Preston has been discharged from hospital.</p>",
+          "link": "https://www.lep.co.uk/news/traffic-and-travel/police-take-action-against-driver-who-hit-boy-14-at-preston-car-meet-5504988",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 15:15:04 GMT"
+        },
+        {
+          "id": "97f5d483a2f808f3062c830851a8063d",
+          "title": "Nelson man arrested on suspicion of exposure to teenage girl",
+          "summary": "A 29-year-old man has been arrested on suspicion of exposing himself to a teenage girl close to the Nelson-Burnley border.",
+          "link": "https://www.burnleyexpress.net/news/crime/nelson-man-arrested-on-suspicion-of-exposure-to-teenage-girl-5503949",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 11:53:05 GMT"
+        },
+        {
+          "id": "fa023bcc437e28fdbf4b8ab5cf5e9748",
+          "title": "Man arrested on suspicion of murder after 'unexplained' death of Nelson woman found in flat",
+          "summary": "<p>A man has been arrested on suspicion of murder after the \u2018unexplained\u2019 death of a woman in a flat in East Lancashire.</p>",
+          "link": "https://www.lep.co.uk/news/crime/man-arrested-on-suspicion-of-murder-after-womans-unexplained-death-5504331",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 11:23:10 GMT"
+        }
+      ],
+      "batch_id": "crime_1"
+    },
+    {
+      "topic": "crime",
+      "articles": [
+        {
+          "id": "f13f73ae716a9daebf50f89472ca39a3",
+          "title": "Steel mesh \u2018lids\u2019 to be installed on Lancashire magistrates\u2019 court docks to stop defendants escaping",
+          "summary": "<p>Steel mesh \u2018lids\u2019 on two docks at Blackburn Magistrates\u2019 Court to stop defendants escaping and potentially attacking guards or officials have been given the go ahead.</p>",
+          "link": "https://www.lep.co.uk/news/courts/steel-mesh-lids-to-be-installed-on-lancashire-magistrates-court-docks-to-stop-defendants-escaping-5503042",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 06:00:36 GMT"
+        }
+      ],
+      "batch_id": "crime_2"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "5b5b4905bfda094ffef813bb5572c6e9",
+          "title": "'We're not making any money': Preston Bus defends 50p fare hike in the city",
+          "summary": "<p>Preston Bus has defended a recent rise in its fares, claiming that it has been left more than \u00a3100,000 a year out of pocket by central and local government funding for two price-reduction schemes for passengers.</p>",
+          "link": "https://www.lep.co.uk/news/traffic-and-travel/were-not-making-any-money-preston-bus-defends-50p-fare-hike-in-the-city-5503788",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 19:10:02 GMT"
+        },
+        {
+          "id": "10eb485ecae40412d4b727dc3672ee72",
+          "title": "Man wanted in connection with burglary and on prison recall has links to Blackburn and Rossendale",
+          "summary": "<p>A man wanted in connection with a burglary investigation and on recall to prison is believed to have links to Blackburn and Rossendale.  </p>",
+          "link": "https://www.lep.co.uk/news/man-wanted-in-connection-with-burglary-and-on-prison-recall-has-links-to-blackburn-and-rossendale-5503809",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 19:08:56 GMT"
+        },
+        {
+          "id": "d97cdc21a2bd3aa96a1bcc1188e26247",
+          "title": "Dog poo bags dumped in tree tubes at newly planted Lancashire woodland",
+          "summary": "<p>A newly planted woodland site in Lancashire has been blighted by dog waste bags being stuffed inside tree tubes.</p>",
+          "link": "https://www.lep.co.uk/news/dog-poo-bags-dumped-in-tree-tubes-at-newly-planted-lancashire-woodland-5503777",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 18:18:07 GMT"
+        },
+        {
+          "id": "5f155c66f1513ac7986e392b02db430c",
+          "title": "Campaigners\u00a0urge housing developer Wrenman Homes 'to find another field' for 200 homes plan in Lancaster",
+          "summary": "<p>Campaigners are anxiously awaiting a decision this month on plans for a development on green belt land in Bolton-le-Sands.</p>",
+          "link": "https://www.lep.co.uk/news/people/campaigners-urge-developers-to-find-another-field-for-200-homes-plan-5503751",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 17:52:10 GMT"
+        },
+        {
+          "id": "8e4c890f7f199e496955ca430d5980e1",
+          "title": "\"I think they would have been better sticking with Ismael'",
+          "summary": "The BBC's 72+ EFL podcast team analyse Blackburn's decision to sack experienced manager Valerien Ismael in the middle of a relegation fight.",
+          "link": "https://www.bbc.com/sport/football/articles/cg4e6q990wlo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Lancashire",
+          "published": "Wed, 04 Feb 2026 17:43:46 GMT"
+        }
+      ],
+      "batch_id": "general_0"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "2577eb997353fc5589bf38ea37b216fc",
+          "title": "21 wonderful photos from\u00a0King Charles\u2019 last visit to the Ribble Valley\u00a0ahead of return",
+          "summary": "With news that King Charles III is returning to Clitheroe next week, it\u2019s the perfect time to look back at some of the highlights from his last visit to the Ribble Valley.",
+          "link": "https://www.burnleyexpress.net/news/people/21-wonderful-photos-from-king-charles-last-visit-to-the-ribble-valley-ahead-of-return-5503669",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 16:49:01 GMT"
+        },
+        {
+          "id": "43d9254827249aa996a098dfb6e5815c",
+          "title": "Affordable homes plan for site on edge of Lancaster in line for go-ahead",
+          "summary": "Plans for 31 new affordable homes to be built on the edge of Lancaster are to be discussed by councillors later this month.",
+          "link": "https://www.lancasterguardian.co.uk/news/environment/affordable-homes-plan-for-site-on-edge-of-lancaster-in-line-for-go-ahead-5503610",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 16:26:18 GMT"
+        },
+        {
+          "id": "4de315e634c63b19f8fef57da6c02935",
+          "title": "With the Winter Olympics coming, I went curling at the North's only dedicated rink - and it was a surprise",
+          "summary": "<p>The Winter Olympics start this week - and if that doesn\u2019t inspire you to get your settee, not much will.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/with-the-winter-olympics-coming-i-went-curling-at-the-norths-only-dedicated-rink-and-it-was-a-surprise-5503305",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 16:12:52 GMT"
+        },
+        {
+          "id": "c8a1ba998256526eeec1373846bad394",
+          "title": "With the Winter Olympics coming, I went curling at the North's only dedicated rink - and it was a surprise",
+          "summary": "<p>The Winter Olympics start this week - and if that doesn\u2019t inspire you to get your settee, not much will.</p>",
+          "link": "https://www.lep.co.uk/news/with-the-winter-olympics-coming-i-went-curling-at-the-norths-only-dedicated-rink-and-it-was-a-surprise-5503305",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 16:12:52 GMT"
+        },
+        {
+          "id": "e05a22a48a66529a2a51da0d8c93fbbb",
+          "title": "January gallery: 13 images that show off a winter wonderland in Lancaster and Morecambe",
+          "summary": "January was a bitterly cold month at times, but that didn\u2019t stop intrepid photographers getting out and about.",
+          "link": "https://www.lancasterguardian.co.uk/lifestyle/outdoors/january-gallery-13-images-that-show-off-a-winter-wonderland-in-lancaster-and-morecambe-5503569",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 16:07:12 GMT"
+        }
+      ],
+      "batch_id": "general_1"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "d924a73c35e8fad531c673ceb0bd9356",
+          "title": "New programme to teach Lancashire school kids about inspiring holocaust survivors who settled in North West",
+          "summary": "<p>A new partnership has launched in Lancashire to inspire young people through the remarkable stories of Holocaust Survivors who rebuilt their lives here in the North West.  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/education/lancashire-school-kids-to-learn-about-local-holocaust-survivors-5503451",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 16:00:51 GMT"
+        },
+        {
+          "id": "b57b3d2e93606c232a36b5c52ad07154",
+          "title": "New programme to teach Lancashire school kids about inspiring holocaust survivors who settled in North West",
+          "summary": "<p>A new partnership has launched in Lancashire to inspire young people through the remarkable stories of Holocaust Survivors who rebuilt their lives here in the North West.  </p>",
+          "link": "https://www.lep.co.uk/news/education/lancashire-school-kids-to-learn-about-local-holocaust-survivors-5503451",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 16:00:51 GMT"
+        },
+        {
+          "id": "a9918f3219d6092a0c4aa3127545d297",
+          "title": "Work finally begins at former Penwortham pub site - this is what is planned",
+          "summary": "<p>Almost four years since the site was bulldozed, work has finally started on redeveloping a Penwortham pub and restaurant site.</p>",
+          "link": "https://www.lep.co.uk/news/work-finally-begins-at-former-penwortham-pub-site-this-is-what-is-planned-5503125",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 16:00:37 GMT"
+        },
+        {
+          "id": "a52d13acbdd79d1b7dec4bdfd7a52909",
+          "title": "'My dog needed vital blood transfusion to beat deadly virus - here's how your pet can be a lifesaver'",
+          "summary": "<p>Could your dog be a lifesaver? Pet Blood Bank UK is appealing for dogs in Lancashire to come forward as blood donors to help save the lives of other dogs.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/my-dog-needed-vital-blood-transfusion-to-beat-deadly-virus-heres-how-your-pet-can-be-a-lifesaver-5502760",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 16:00:34 GMT"
+        },
+        {
+          "id": "0fa5218528bca3bc754d2f8f76bbf72a",
+          "title": "'My dog needed vital blood transfusion to beat deadly virus - here's how your pet can be a lifesaver'",
+          "summary": "<p>Could your dog be a lifesaver? Pet Blood Bank UK is appealing for dogs in Lancashire to come forward as blood donors to help save the lives of other dogs.</p>",
+          "link": "https://www.lep.co.uk/news/my-dog-needed-vital-blood-transfusion-to-beat-deadly-virus-heres-how-your-pet-can-be-a-lifesaver-5502760",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 16:00:34 GMT"
+        }
+      ],
+      "batch_id": "general_2"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "49438dccfdb1d40108e0e7bf8498326e",
+          "title": "Ian Evatt paints more positive Blackpool injury picture with update on ex-Charlton Athletic man",
+          "summary": "<p>Blackpool currently have a large number of players missing due to injury ahead of their meeting with Huddersfield Town this weekend. </p>",
+          "link": "https://www.blackpoolgazette.co.uk/sport/football/blackpool-fc/ian-evatt-blackpool-charlton-athletic-5503447",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 16:00:24 GMT"
+        },
+        {
+          "id": "00f5619b62b646c600ba9f95dc8fe21d",
+          "title": "Review: Why Freddie\u2019s Flowers is the romantic flower delivery worth bookmarking",
+          "summary": "<p>From surprise seasonal stems to flexible subscriptions, Freddie\u2019s Flowers turns flower gifting into something far more thoughtful  </p>",
+          "link": "https://www.burnleyexpress.net/recommended/freddies-flowers-flower-delivery-valentines-day-flowers-bouquet-subscription-5503469",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 15:54:02 GMT"
+        },
+        {
+          "id": "8fe73871b981bcb8bfefea36d9fd2473",
+          "title": "Review: Why Freddie\u2019s Flowers is the romantic flower delivery worth bookmarking",
+          "summary": "<p>From surprise seasonal stems to flexible subscriptions, Freddie\u2019s Flowers turns flower gifting into something far more thoughtful  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/recommended/freddies-flowers-flower-delivery-valentines-day-flowers-bouquet-subscription-5503469",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 15:54:02 GMT"
+        },
+        {
+          "id": "442592a1568ba646cd67138bbee9fcf2",
+          "title": "Review: Why Freddie\u2019s Flowers is the romantic flower delivery worth bookmarking",
+          "summary": "<p>From surprise seasonal stems to flexible subscriptions, Freddie\u2019s Flowers turns flower gifting into something far more thoughtful  </p>",
+          "link": "https://www.lancasterguardian.co.uk/recommended/freddies-flowers-flower-delivery-valentines-day-flowers-bouquet-subscription-5503469",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 15:54:02 GMT"
+        },
+        {
+          "id": "8e26aa4293e102e464c58c41165cb400",
+          "title": "Ibiza season is heading to Blackpool Tower - here's what you need to know",
+          "summary": "<p>Here\u2019s your chance to experience the iconic Caf\u00e9 Mambo Ibiza Classics at The Blackpool Tower Ballroom on this March.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/ibiza-season-is-heading-to-blackpool-tower-heres-what-you-need-to-know-5503440",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 15:50:20 GMT"
+        }
+      ],
+      "batch_id": "general_3"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "147c3b26e852f1fe7caaecd77817fec7",
+          "title": "Ninja Foodi StaySharp knife block price drops again on Amazon",
+          "summary": "<p>Amazon has cut the price of Ninja\u2019s hugely popular Foodi StaySharp knife block for the second time this month, with big savings on the charcoal set  </p>",
+          "link": "https://www.burnleyexpress.net/recommended/ninja-foodi-staysharp-knife-block-amazon-deal-kitchen-knives-ninja-5503425",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 15:40:36 GMT"
+        },
+        {
+          "id": "39b07f10a3db676af6487bafb00b91f6",
+          "title": "Ninja Foodi StaySharp knife block price drops again on Amazon",
+          "summary": "<p>Amazon has cut the price of Ninja\u2019s hugely popular Foodi StaySharp knife block for the second time this month, with big savings on the charcoal set  </p>",
+          "link": "https://www.lancasterguardian.co.uk/recommended/ninja-foodi-staysharp-knife-block-amazon-deal-kitchen-knives-ninja-5503425",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 15:40:36 GMT"
+        },
+        {
+          "id": "b4be7e88ae3da5c8e41b7a789aafadbf",
+          "title": "Marshall targets play-offs after 'sloppy' spell for Lancaster",
+          "summary": "\u200bLancaster City's long-awaited return to Northern Premier League action at the Giant Axe has yielded four points from two games and boss Jimmy Marshall hopes his side can now climb back into the play-off zone.",
+          "link": "https://www.lancasterguardian.co.uk/sport/football/marshall-targets-play-offs-after-sloppy-spell-for-lancaster-5503344",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 14:38:15 GMT"
+        },
+        {
+          "id": "840a693c6a8bc068c82de02a27277e18",
+          "title": "DJI Neo mini drone price crashes to \u00a3125 in rare Amazon deal",
+          "summary": "<p>DJI\u2019s clever Neo mini drone has seen a surprise price drop on Amazon, with big savings on both the standard kit and Fly More bundle  </p>",
+          "link": "https://www.burnleyexpress.net/recommended/dji-neo-mini-drone-amazon-drone-deal-beginner-drone-dji-neo-5502676",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 13:45:39 GMT"
+        },
+        {
+          "id": "8ca2735736a3af1aac879323a27f839a",
+          "title": "DJI Neo mini drone price crashes to \u00a3125 in rare Amazon deal",
+          "summary": "<p>DJI\u2019s clever Neo mini drone has seen a surprise price drop on Amazon, with big savings on both the standard kit and Fly More bundle  </p>",
+          "link": "https://www.lancasterguardian.co.uk/recommended/dji-neo-mini-drone-amazon-drone-deal-beginner-drone-dji-neo-5502676",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 13:45:39 GMT"
+        }
+      ],
+      "batch_id": "general_4"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "508df5614ab459c491f082b759f9d312",
+          "title": "Campaigners\u00a0plea to developers as decision set to be made on Lancaster village housing",
+          "summary": "Campaigners are anxiously awaiting a decision this month on plans for a development on green belt land in Bolton-le-Sands.",
+          "link": "https://www.lancasterguardian.co.uk/lifestyle/outdoors/campaigners-plea-to-developers-as-decision-set-to-be-made-on-lancaster-village-housing-5502665",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 13:17:51 GMT"
+        },
+        {
+          "id": "cf1790e8edf442b1dcdd2e128fc31066",
+          "title": "Rogue roofer jailed for a year after scamming elderly Morecambe residents out of thousands of pounds",
+          "summary": "A rogue roofer who scammed three elderly residents out of thousands of pounds has been jailed for 12 months after a Trading Standards investigation.",
+          "link": "https://www.lancasterguardian.co.uk/news/people/rogue-roofer-jailed-for-a-year-after-scamming-elderly-morecambe-residents-out-of-thousands-of-pounds-5503118",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 13:03:11 GMT"
+        },
+        {
+          "id": "bc25ffc0a5a8d0884b13c0c956c64bba",
+          "title": "Organist to kick off new season of concerts",
+          "summary": "Talented David Thornton has been a musical maestro since childhood. And his experience will wow the audience at the Saturday morning concert in St Peter\u2019s Church.",
+          "link": "https://www.burnleyexpress.net/arts-and-culture/organist-to-kick-off-new-season-of-concerts-5502955",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 12:49:45 GMT"
+        },
+        {
+          "id": "97f487bfcb4912ed2191d00a2a5c6054",
+          "title": "Family running out of time as six-year-old Bonnie's lung tumour doubles in size",
+          "summary": "A suspected sprained arm turned out to be terminal cancer, and scans have shown that the tumours on six-year-old Bonnie's lungs have doubled in size.",
+          "link": "https://www.burnleyexpress.net/health/family-running-out-of-time-as-six-year-old-bonnies-lung-tumour-doubles-in-size-5503044",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 12:37:24 GMT"
+        },
+        {
+          "id": "f2b68b11caccb6f0670eceb083f4b739",
+          "title": "Lancaster lecture will provide glimpse into future of region",
+          "summary": "As part of an exploration of the different ways of connecting with the north-west region \u2013 responding to the debate around English Devolution \u2013 Lancaster University has organised a lecture to be given by the Leader of Preston City Council.",
+          "link": "https://www.lancasterguardian.co.uk/education/lancaster-lecture-will-provide-glimpse-into-future-of-region-5502981",
+          "source": "Lancaster Guardian",
+          "published": "Wed, 04 Feb 2026 12:22:35 GMT"
+        }
+      ],
+      "batch_id": "general_5"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "d113ba18d5098c36e42e9ddec11dc8dc",
+          "title": "Theatre school teacher sent explicit texts to child",
+          "summary": "Chris Higgins offending came to light when the 14-year-old victim's father found messages he had sent.",
+          "link": "https://www.bbc.com/news/articles/c4g010z0071o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Lancashire",
+          "published": "Wed, 04 Feb 2026 12:13:50 GMT"
+        },
+        {
+          "id": "6d3ca0738d1179e2222e8b054aacbb85",
+          "title": "Personalised BrewDog beer cans launch just in time for Valentine\u2019s Day",
+          "summary": "<p>BrewDog is letting couples put their own stamp on Valentine\u2019s Day with personalised beer cans, glasses and gift packs  </p>",
+          "link": "https://www.burnleyexpress.net/recommended/brewdog-personalised-beer-valentines-day-beer-gifts-punk-ipa-hazy-jane-5502575",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 10:25:57 GMT"
+        },
+        {
+          "id": "12c15746c152490366437df2c10af07c",
+          "title": "Blackburn must get next appointment 'spot on'",
+          "summary": "BBC Radio Lancashire's Andy Bayes says Blackburn Rovers could face dire consequences if they fail to get their managerial appointment right.",
+          "link": "https://www.bbc.com/sport/football/articles/c79rppj5lwno?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Lancashire",
+          "published": "Wed, 04 Feb 2026 10:23:03 GMT"
+        },
+        {
+          "id": "a1bb31bcaa3fc725b3b8f061b2930843",
+          "title": "Four held in \u00a33m illegal TV streaming raids",
+          "summary": "The raids, across Greater Manchester and Lancashire, uncovered 10 servers and equipment worth \u00a3750,000.",
+          "link": "https://www.bbc.com/news/articles/c4g01r5264ro?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Lancashire",
+          "published": "Tue, 03 Feb 2026 11:37:40 GMT"
+        },
+        {
+          "id": "d683f909e2e68873dc69a5e97ea62d7c",
+          "title": "Blackpool's Comedy Carpet artist says removal  of controversial names like Rolf Harris not an option",
+          "summary": "<p>The artist who created Blackpool\u2019s award-winning Comedy Carpet says there must be no attempt to remove any controversial names from the famous artwork.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/blackpools-comedy-carpet-artist-gives-verdict-on-call-to-remove-controversial-names-5505414",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 21:46:51 GMT"
+        }
+      ],
+      "batch_id": "general_6"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "54946a4a9ae5ede041edf315e82a94c1",
+          "title": "Lancashire woman wanted over allegations of making off from restaurants without paying and theft",
+          "summary": "<p>Police are appealing for help to find a woman wanted in connection with theft offences and a prison recall.</p>",
+          "link": "https://www.lep.co.uk/news/lancashire-woman-wanted-over-allegations-of-making-off-from-restaurants-without-paying-and-theft-5505420",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 18:56:14 GMT"
+        },
+        {
+          "id": "e80e3561314f88112756199d7bb48404",
+          "title": "Come fly with me: 31 nostalgic photos taking you back in time at North West's busiest airports",
+          "summary": "<p>They are two of the UK\u2019s busiest airports, between them handling nearly 38 million passengers a year.</p>",
+          "link": "https://www.burnleyexpress.net/lifestyle/retro/31-nostalgic-photos-taking-you-back-in-time-at-manchester-and-liverpool-airports-5505348",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 18:34:46 GMT"
+        },
+        {
+          "id": "408d8aecc33ebc348962e1b4a17ee267",
+          "title": "Come fly with me: 31 nostalgic photos taking you back in time at North West's busiest airports",
+          "summary": "<p>They are two of the UK\u2019s busiest airports, between them handling nearly 38 million passengers a year.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/lifestyle/retro/31-nostalgic-photos-taking-you-back-in-time-at-manchester-and-liverpool-airports-5505348",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 18:34:46 GMT"
+        },
+        {
+          "id": "ac798fee005af556051512fb1b1b3d4c",
+          "title": "Come fly with me: 31 nostalgic photos taking you back in time at North West's busiest airports",
+          "summary": "<p>They are two of the UK\u2019s busiest airports, between them handling nearly 38 million passengers a year.</p>",
+          "link": "https://www.lancasterguardian.co.uk/lifestyle/retro/31-nostalgic-photos-taking-you-back-in-time-at-manchester-and-liverpool-airports-5505348",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 18:34:46 GMT"
+        },
+        {
+          "id": "99eb2479dcd252037baf83805a38da67",
+          "title": "Come fly with me: 31 nostalgic photos taking you back in time at North West's busiest airports",
+          "summary": "<p>They are two of the UK\u2019s busiest airports, between them handling nearly 38 million passengers a year.</p>",
+          "link": "https://www.lep.co.uk/lifestyle/retro/31-nostalgic-photos-taking-you-back-in-time-at-manchester-and-liverpool-airports-5505348",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 18:34:46 GMT"
+        }
+      ],
+      "batch_id": "general_7"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "aee0703175d422bf8a2fa7fdd2540dad",
+          "title": "Preston North End and Hull City fined for fracas",
+          "summary": "Preston North End and Hull City are fined by the FA for improper conduct after a melee in the aftermath of Milutin Osmajic's sending off last month.",
+          "link": "https://www.bbc.com/sport/football/articles/cr57g181l9ro?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Lancashire",
+          "published": "Thu, 05 Feb 2026 18:02:52 GMT"
+        },
+        {
+          "id": "2125757034528253b9ddcc807160f82e",
+          "title": "Seven men charged in Blackburn and Accrington cocaine supply investigation",
+          "summary": "<p>Seven men have been charged as part of a police investigation into the supply of cocaine across East Lancashire.</p>",
+          "link": "https://www.lep.co.uk/news/seven-men-charged-in-blackburn-and-accrington-cocaine-supply-investigation-5505362",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 17:36:58 GMT"
+        },
+        {
+          "id": "acb8302f47dbd38836a5e3a8db6b7074",
+          "title": "Blackpool's most luxurious restaurant Beach House announces arrival of new executive chef",
+          "summary": "<p>Blackpool\u2019s luxury seafront restaurant Beach House has announced the arrival of a new executive chef \u2014 and it\u2019s a homecoming a decade in the making.  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/blackpools-most-luxurious-restaurant-beach-house-announces-arrival-of-new-executive-chef-5505308",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 17:09:58 GMT"
+        },
+        {
+          "id": "7b22182a16ef335d053dca12c85d1fba",
+          "title": "Blackpool's most luxurious restaurant Beach House announces arrival of new executive chef",
+          "summary": "<p>Blackpool\u2019s luxury seafront restaurant Beach House has announced the arrival of a new executive chef \u2014 and it\u2019s a homecoming a decade in the making.  </p>",
+          "link": "https://www.lep.co.uk/news/blackpools-most-luxurious-restaurant-beach-house-announces-arrival-of-new-executive-chef-5505308",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 17:09:58 GMT"
+        },
+        {
+          "id": "9d94a752df570befec1e048cbe1583fe",
+          "title": "Food lovers name the owners of Holmes Mill as the operator they'd like to see reopen Guys Thatched Hamlet",
+          "summary": "<p>Food lovers shocked by the sudden closure of Guys Thatched Hamlet this week have named another Lancashire operator they would like to see takeover the venue.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/business/food-lovers-name-operator-theyd-love-to-see-reopen-guys-thatched-hamlet-5505169",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 17:02:18 GMT"
+        }
+      ],
+      "batch_id": "general_8"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "2997228fc5b32755ad5603f87c722888",
+          "title": "Food lovers name the owners of Holmes Mill as the operator they'd like to see reopen Guys Thatched Hamlet",
+          "summary": "<p>Food lovers shocked by the sudden closure of Guys Thatched Hamlet this week have named another Lancashire operator they would like to see takeover the venue.</p>",
+          "link": "https://www.lep.co.uk/business/food-lovers-name-operator-theyd-love-to-see-reopen-guys-thatched-hamlet-5505169",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 17:02:18 GMT"
+        },
+        {
+          "id": "6fa61c9f1aabea62dcd100aaa74236be",
+          "title": "It\u2019s a Beach House Blackpool homecoming for new Executive Chef Adam Green",
+          "summary": "A homegrown talent is set to take the lead in the Beach House Blackpool kitchen and he\u2019s armed with global gastronomic experience and a bold new vision for Blackpool\u2019s favourite beachside bar and restaurant.",
+          "link": "https://www.blackpoolgazette.co.uk/community/its-a-beach-house-blackpool-homecoming-for-new-executive-chef-adam-green-5505166",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 16:58:24 GMT"
+        },
+        {
+          "id": "90b5d1a6b9e367cea12532a3bd00de67",
+          "title": "It\u2019s a Beach House Blackpool homecoming for new Executive Chef Adam Green",
+          "summary": "A homegrown talent is set to take the lead in the Beach House Blackpool kitchen and he\u2019s armed with global gastronomic experience and a bold new vision for Blackpool\u2019s favourite beachside bar and restaurant.",
+          "link": "https://www.lep.co.uk/community/its-a-beach-house-blackpool-homecoming-for-new-executive-chef-adam-green-5505147",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 16:56:28 GMT"
+        },
+        {
+          "id": "9f0c63416c63b09543a35be9725dcdc1",
+          "title": "Oldest taxi business is still driving change after 145 years",
+          "summary": "One of the country\u2019s oldest taxi businesses is plugged into the future as it adapts to the demands of the modern fleet.",
+          "link": "https://www.blackpoolgazette.co.uk/your-world/oldest-taxi-business-is-still-driving-change-after-145-years-5505198",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 16:20:01 GMT"
+        },
+        {
+          "id": "c7adc043c14ff30d0470a075ec10f10e",
+          "title": "Preston restaurant Aven climbs the UK Top 100",
+          "summary": "Preston\u2019s food scene is celebrating another big moment, as Aven Restaurant has once again been named among the UK\u2019s Top 100 restaurants by SquareMeal.",
+          "link": "https://www.lep.co.uk/arts-and-culture/preston-restaurant-aven-climbs-the-uk-top-100-5505197",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 16:20:01 GMT"
+        }
+      ],
+      "batch_id": "general_9"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "d5be5c7f530944c320d50cf5a29acf0a",
+          "title": "MSB Mobility awarded 2026 Global Recognition Award for innovation in mobility scooter production",
+          "summary": "MSB Mobility, a Blackpool-based mobility scooter manufacturer, has been awarded a 2026 Global Recognition Award for exceptional achievement and innovation within the mobility scooter production sector.",
+          "link": "https://www.blackpoolgazette.co.uk/business/msb-mobility-awarded-2026-global-recognition-award-for-innovation-in-mobility-scooter-production-5505165",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 16:08:06 GMT"
+        },
+        {
+          "id": "867d71cf4f6a294414f07d932e3d605c",
+          "title": "It\u2019s a Beach House Blackpool homecoming for new Executive Chef Adam Green",
+          "summary": "A homegrown talent is set to take the lead in the Beach House Blackpool kitchen and he\u2019s armed with global gastronomic experience and a bold new vision for Blackpool\u2019s favourite beachside bar and restaurant.",
+          "link": "https://www.blackpoolgazette.co.uk/your-world/its-a-beach-house-blackpool-homecoming-for-new-executive-chef-adam-green-5505166",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 16:08:04 GMT"
+        },
+        {
+          "id": "2308ed8e95a99f83d032ebbccb7171af",
+          "title": "It\u2019s a Beach House Blackpool homecoming for new Executive Chef Adam Green",
+          "summary": "A homegrown talent is set to take the lead in the Beach House Blackpool kitchen and he\u2019s armed with global gastronomic experience and a bold new vision for Blackpool\u2019s favourite beachside bar and restaurant.",
+          "link": "https://www.lep.co.uk/your-world/its-a-beach-house-blackpool-homecoming-for-new-executive-chef-adam-green-5505147",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 16:04:11 GMT"
+        },
+        {
+          "id": "3242317257284dd35294baab41224a24",
+          "title": "This is why hospitals in Lancashire will get a share of millions in new Government scheme to cut energy bills",
+          "summary": "<p>Hospitals in Lancashire will soon get help to slash their energy bills - thanks to a multi-million pound Government scheme.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/this-is-why-hospitals-in-lancashire-will-get-a-share-of-millions-in-new-government-scheme-to-cut-energy-bills-5504631",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 16:01:00 GMT"
+        },
+        {
+          "id": "1727572eddc757d87633922b4133e0d4",
+          "title": "This is why hospitals in Lancashire will get a share of millions in new Government scheme to cut energy bills",
+          "summary": "<p>Hospitals in Lancashire will soon get help to slash their energy bills - thanks to a multi-million pound Government scheme.</p>",
+          "link": "https://www.lep.co.uk/news/this-is-why-hospitals-in-lancashire-will-get-a-share-of-millions-in-new-government-scheme-to-cut-energy-bills-5504631",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 16:01:00 GMT"
+        }
+      ],
+      "batch_id": "general_10"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "234bc4646ce10f2b4989a176f1bbdf95",
+          "title": "Racial Justice Sunday events in County include special Cathedral service; services in parish and a new song with Christian Aid",
+          "summary": "This weekend Racial Justice Sunday will be marked across the Diocese in many Church of England parishes, alongside a special service taking place at the County\u2019s Anglican Cathedral in Blackburn.",
+          "link": "https://www.lep.co.uk/your-world/racial-justice-sunday-events-in-county-include-special-cathedral-service-services-in-parish-and-a-new-song-with-christian-aid-5505117",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 15:56:08 GMT"
+        },
+        {
+          "id": "53f228a9439f504f315d8b76016646a5",
+          "title": "Racial Justice Sunday events in County include special Cathedral service; services in parish and a new song with Christian Aid",
+          "summary": "This weekend Racial Justice Sunday will be marked across the Diocese in many Church of England parishes, alongside a special service taking place at the County\u2019s Anglican Cathedral in Blackburn.",
+          "link": "https://www.blackpoolgazette.co.uk/your-world/racial-justice-sunday-events-in-county-include-special-cathedral-service-services-in-parish-and-a-new-song-with-christian-aid-5505120",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 15:56:03 GMT"
+        },
+        {
+          "id": "dcf54426de0d2c1a15ef9686182d385b",
+          "title": "\u200bBamber Bridge looking to leapfrog above Stockton into a play-off place",
+          "summary": "Bamber Bridge will move into the NPL Premier Division play-offs this weekend if they defeat the team directly above them in the table \u2013 Stockton Town \u2013 at the Sir Tom Finney Stadium.",
+          "link": "https://www.lep.co.uk/sport/football/bamber-bridge-looking-to-leapfrog-above-stockton-into-a-play-off-place-5505096",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 15:49:05 GMT"
+        },
+        {
+          "id": "a144e069bbbc69e18295ea222022a4f0",
+          "title": "11 of the most interesting plans submitted across Fylde recently inc changes to leisure parks",
+          "summary": "<p>  Take a look below at the most interesting planning applications submitted to Fylde Borough Council last week.  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/public-notices/11-of-the-most-interesting-plans-submitted-across-fylde-recently-5504710",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 15:39:46 GMT"
+        },
+        {
+          "id": "675d3127ccbdcb3ff01b4757d69f7a19",
+          "title": "11 of the most interesting plans submitted across Fylde recently inc changes to leisure parks",
+          "summary": "<p>  Take a look below at the most interesting planning applications submitted to Fylde Borough Council last week.  </p>",
+          "link": "https://www.lep.co.uk/public-notices/11-of-the-most-interesting-plans-submitted-across-fylde-recently-5504710",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 15:39:46 GMT"
+        }
+      ],
+      "batch_id": "general_11"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "fca328972d398d523441eb50fdc72cd3",
+          "title": "Fresh calls to fix botched south Lancaster housing estate after four years of misery",
+          "summary": "Residents facing problems and costly repairs at a half-built housing estate near Lancaster are again calling on a developer to fix things and for more action by authorities.",
+          "link": "https://www.lancasterguardian.co.uk/news/people/fresh-calls-to-fix-botched-south-lancaster-housing-estate-after-four-years-of-misery-5504987",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 15:29:38 GMT"
+        },
+        {
+          "id": "2e11b660b3047cba667bbcb9985541cc",
+          "title": "Why a new 'challenger bank' is rewarding established customers for everyday banking",
+          "summary": "<p>Allica Bank is targeting established small businesses with a banking account that combines everyday spending with cashback and savings benefits  </p>",
+          "link": "https://www.burnleyexpress.net/recommended/allica-bank-business-banking-sme-account-cashback-savings-5502964",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 15:20:30 GMT"
+        },
+        {
+          "id": "b0e23279d784d5826948bf9fec4534c0",
+          "title": "Why a new 'challenger bank' is rewarding established customers for everyday banking",
+          "summary": "<p>Allica Bank is targeting established small businesses with a banking account that combines everyday spending with cashback and savings benefits  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/recommended/allica-bank-business-banking-sme-account-cashback-savings-5502964",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 15:20:30 GMT"
+        },
+        {
+          "id": "8aacbd378d1c6e16faca62920711cc04",
+          "title": "Why a new 'challenger bank' is rewarding established customers for everyday banking",
+          "summary": "<p>Allica Bank is targeting established small businesses with a banking account that combines everyday spending with cashback and savings benefits  </p>",
+          "link": "https://www.lancasterguardian.co.uk/recommended/allica-bank-business-banking-sme-account-cashback-savings-5502964",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 15:20:30 GMT"
+        },
+        {
+          "id": "58bc952dec7e08baa65b645d785cbeae",
+          "title": "Why a new 'challenger bank' is rewarding established customers for everyday banking",
+          "summary": "<p>Allica Bank is targeting established small businesses with a banking account that combines everyday spending with cashback and savings benefits  </p>",
+          "link": "https://www.lep.co.uk/recommended/allica-bank-business-banking-sme-account-cashback-savings-5502964",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 15:20:30 GMT"
+        }
+      ],
+      "batch_id": "general_12"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "affd82a115ca904c1a3310c4b134b037",
+          "title": "Public consultation available on new Clitheroe pump track funded by UKSPF",
+          "summary": "Members of the public are being encouraged to have their say on plans to create a pump track in Clitheroe.",
+          "link": "https://www.burnleyexpress.net/lifestyle/family-and-parenting/public-consultation-available-on-new-clitheroe-pump-track-funded-by-ukspf-5504851",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 14:47:23 GMT"
+        },
+        {
+          "id": "cc27bbb542469599adb32d9f903d9a41",
+          "title": "Former prison officer hid drugs worth \u00a395k in dishwasher at HMP Garth before being caught",
+          "summary": "<p>A former prison officer who smuggled drugs into HMP Garth by hiding them inside a commercial dishwasher has been jailed.</p>",
+          "link": "https://www.lep.co.uk/news/former-prison-officer-hid-drugs-worth-ps95k-in-dishwasher-at-hmp-garth-before-being-caught-5504802",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 14:17:02 GMT"
+        },
+        {
+          "id": "98a847d7cfcff5d317721eab7ade2e01",
+          "title": "Blackpool's beloved pizza restaurant reopens after exciting new expansion",
+          "summary": "<p>Blackpool\u2019s beloved Stephani\u2019s Pizzeria is back, bigger and better than ever - opening yesterday at 5\u202fpm, the popular eatery has expanded into the former chicken shop next door.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/lifestyle/food-and-drink/blackpools-beloved-pizza-restaurant-reopens-after-exciting-new-expansion-5504726",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 14:14:54 GMT"
+        },
+        {
+          "id": "a6c914d056329a66e840a0080cb4bc60",
+          "title": "Plans to change charity shop into new cafe The Orchard in the centre of Blackpool",
+          "summary": "<p>Plans have been submitted to transform a former charity shop in the centre of Blackpool into a new c</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/plans-to-change-shop-into-new-cafe-the-orchard-in-the-centre-of-blackpool-5504581",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 14:12:04 GMT"
+        },
+        {
+          "id": "ed9cb58ef1d41fa9c85082d5db8f4a87",
+          "title": "Chorley pub tackles loneliness brick-by-brick with unique Lego session",
+          "summary": "<p>It`s the legendary game that has kept generations of children amused for hours - and now a Chorley pub is bringing Lego lovers of all ages together to tackle loneliness.</p>",
+          "link": "https://www.lep.co.uk/news/chorley-pub-tackles-loneliness-brick-by-brick-with-unique-lego-session-5504529",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 14:00:20 GMT"
+        }
+      ],
+      "batch_id": "general_13"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "fbd797d4a64382109004ce4b74981381",
+          "title": "'Fear of drugs': Anger at plans for 77 affordable homes in popular Ribble Valley village",
+          "summary": "<p>Plans for more than 70 affordable homes in a popular Ribble Valley village have sparked dozens of objections, including fears of \u2018drugs and anti-social behaviour\u2019 and a fall in local property values.</p>",
+          "link": "https://www.lep.co.uk/lifestyle/homes-and-gardens/fear-of-drugs-and-property-price-dip-anger-over-plans-77-affordable-homes-in-popular-ribble-valley-village-5504702",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 14:00:14 GMT"
+        },
+        {
+          "id": "c0b0d332bd984fad1dda3db9f9fd9b45",
+          "title": "Lancashire paedophile Kenneth Booth, 66, jailed for abusing girls in Chorley and Longridge",
+          "summary": "<p>A 66-year-old paedophile has been jailed for sexually abusing girls in Longridge and Chorley.</p>",
+          "link": "https://www.lep.co.uk/news/crime/paedophile-jailed-for-abusing-girls-in-chorley-and-longridge-5504695",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 13:57:23 GMT"
+        },
+        {
+          "id": "43590768d38ab9462111629a33e61afb",
+          "title": "Ex-England bowler Kabir Ali new Lancs bowling coach",
+          "summary": "Kabir Ali, who played one Test and 14 ODIs for England, is named as Lancashire's new lead bowling coach.",
+          "link": "https://www.bbc.com/sport/cricket/articles/cqxy5qxx70yo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Lancashire",
+          "published": "Thu, 05 Feb 2026 13:43:01 GMT"
+        },
+        {
+          "id": "628fd4b08127a9efefa6d40323907b6e",
+          "title": "13 of the best places to get winter warming soup in and around Blackpool according to TripAdvisor",
+          "summary": "<p>As the winter chill bites nothing hits the spot quite like a steaming bowl of soup from hearty classics to inventive creation, Blackpool and the Fylde coast has it all.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/lifestyle/food-and-drink/13-of-the-best-places-to-get-winter-warming-soup-in-and-around-blackpool-according-to-tripadvisor-5504614",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 13:25:54 GMT"
+        },
+        {
+          "id": "d28a09d1940d485ce06555f4b0b198a4",
+          "title": "Major update on plans to turn award-winning pub into day care centre for adults with disabilities",
+          "summary": "<p>The conversion of an award-winning pub could into a day care centre for adults with learning and physical disabilities is set to take a step forward next week.</p>",
+          "link": "https://www.lep.co.uk/lifestyle/food-and-drink/major-update-on-plans-to-turn-award-winning-pub-into-day-care-centre-for-adults-with-disabilities-5504665",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 13:24:47 GMT"
+        }
+      ],
+      "batch_id": "general_14"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "57576e1263d6b09a3c77cfd4850b7c10",
+          "title": "Blackpool's most famous park celebrates 100 years with major events - here's everything you need to know",
+          "summary": "<p>Blackpool\u2019s iconic Stanley Park will mark its 100th anniversary with a year-long programme of events, culminating in a major two-day centenary celebration this October.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/blackpools-most-famous-park-celebrates-100-years-with-major-events-heres-everything-you-need-to-know-5504542",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 13:00:12 GMT"
+        },
+        {
+          "id": "f9de1773d6027725e88b12e04dc8a251",
+          "title": "\"It has a lot of memories for me\": chat with Kym Marsh as she brings Single White Female to Blackpool",
+          "summary": "<p>Take a look at our exclusive chat with TV star Kym Marsh ahead of her arrival in Blackpool this month.</p>",
+          "link": "https://www.lep.co.uk/news/people/exclusive-chat-with-kym-marsh-as-she-brings-thriller-to-blackpool-stage-5504482",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 12:55:20 GMT"
+        },
+        {
+          "id": "404810e6b955921f184a84b1f369b3cc",
+          "title": "This best-selling bread maker is 39 percent off on Amazon right now",
+          "summary": "<p>Amazon has slashed the price of its top selling bread maker with nearly 40 percent knocked off for a limited time  </p>",
+          "link": "https://www.lep.co.uk/recommended/bread-maker-amazon-deal-morphy-richards-fastbake-kitchen-5504410",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 12:53:47 GMT"
+        },
+        {
+          "id": "2224092e34ac7b81a6f8dd0db38d68cf",
+          "title": "This best-selling bread maker is 39 percent off on Amazon right now",
+          "summary": "<p>Amazon has slashed the price of its top selling bread maker with nearly 40 percent knocked off for a limited time  </p>",
+          "link": "https://www.burnleyexpress.net/recommended/bread-maker-amazon-deal-morphy-richards-fastbake-kitchen-5504410",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 12:53:47 GMT"
+        },
+        {
+          "id": "3c67fbde727f8d51b9d82f7392d0cb1a",
+          "title": "This best-selling bread maker is 39 percent off on Amazon right now",
+          "summary": "<p>Amazon has slashed the price of its top selling bread maker with nearly 40 percent knocked off for a limited time  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/recommended/bread-maker-amazon-deal-morphy-richards-fastbake-kitchen-5504410",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 12:53:47 GMT"
+        }
+      ],
+      "batch_id": "general_15"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "f30e38ae75d8f61a5eb735640087516c",
+          "title": "This best-selling bread maker is 39 percent off on Amazon right now",
+          "summary": "<p>Amazon has slashed the price of its top selling bread maker with nearly 40 percent knocked off for a limited time  </p>",
+          "link": "https://www.lancasterguardian.co.uk/recommended/bread-maker-amazon-deal-morphy-richards-fastbake-kitchen-5504410",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 12:53:47 GMT"
+        },
+        {
+          "id": "cc1818472e0fda494a763dd2be33fdcd",
+          "title": "\"It has a lot of memories for me\": chat with Kym Marsh as she brings Single White Female to Blackpool",
+          "summary": "<p>Take a look at our exclusive chat with TV star Kym Marsh ahead of her arrival in Blackpool this month.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/people/exclusive-chat-with-kym-marsh-as-she-brings-thriller-to-blackpool-stage-5504482",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 12:53:44 GMT"
+        },
+        {
+          "id": "d34b994757a13d4d53b04ee07007dd0b",
+          "title": "Royal Preston Hospital blue badge car park to close for 16 days for resurfacing and repairs",
+          "summary": "<p>Visitors to Royal Preston Hospital are being warned the blue badge car park will be closed for more than two weeks from tomorrow (Friday, February 6).</p>",
+          "link": "https://www.lep.co.uk/news/traffic-and-travel/royal-preston-hospital-car-park-to-close-for-16-days-5504552",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 12:49:45 GMT"
+        },
+        {
+          "id": "3bed69f9871c8809a2d14fac3f1eda78",
+          "title": "Award for Pendle man two years after launching his own business CRB Coatings North West",
+          "summary": "Taking a chance on launching his own company has paid off for a young Pendle dad who has won an award for his hard work.",
+          "link": "https://www.burnleyexpress.net/business/award-for-pendle-man-two-years-after-launching-his-own-business-crb-coatings-north-west-5504544",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 12:33:20 GMT"
+        },
+        {
+          "id": "5d07418db86677c7dc7fcb0213ed218d",
+          "title": "The shocking number of obesity-related firefighter rescues in Lancashire revealed",
+          "summary": "<p>New data has shown that Lancashire\u2019s Fire and Rescue Service (LFRS) attended some of the highest numbers of rescues involving obese people nationwide since 2020.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/the-shocking-number-of-obesity-related-firefighter-rescues-in-lancashire-revealed-5504509",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 12:27:52 GMT"
+        }
+      ],
+      "batch_id": "general_16"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "86f94fc4836f51cba6f1dcc24e9b0dfa",
+          "title": "The shocking number of obesity-related firefighter rescues in Lancashire revealed",
+          "summary": "<p>New data has shown that Lancashire\u2019s Fire and Rescue Service (LFRS) attended some of the highest numbers of rescues involving obese people nationwide since 2020.</p>",
+          "link": "https://www.lep.co.uk/news/the-shocking-number-of-obesity-related-firefighter-rescues-in-lancashire-revealed-5504509",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 12:27:52 GMT"
+        },
+        {
+          "id": "ad626f46a1a56e0f93e516b9bf75c9fc",
+          "title": "Morecambe Bay hospitals trust award of \u00a3887k will help reduce energy bills",
+          "summary": "University Hospitals of Morecambe Bay NHS Foundation Trust (UHMBT) has been successful in its bid for national funding to install clean energy upgrades which will help to reduce energy bills.",
+          "link": "https://www.lancasterguardian.co.uk/news/national/morecambe-bay-hospitals-trust-award-of-ps887k-will-help-reduce-energy-bills-5504525",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 12:26:53 GMT"
+        },
+        {
+          "id": "19da1b8e847dc8aeb7362e5ce5dea419",
+          "title": "Northern Community Bank launches Bereavement Fund after Family Protection Plan withdrawal leaves families without cover",
+          "summary": "Northern Community Bank has launched a Bereavement Fund to support local families left without cover after external insurers withdrew a funeral insurance scheme.",
+          "link": "https://www.burnleyexpress.net/community/northern-community-bank-launches-bereavement-fund-after-family-protection-plan-withdrawal-leaves-families-without-cover-5504505",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 12:18:30 GMT"
+        },
+        {
+          "id": "6d3b6e0166bc88a4bc2f27183316f657",
+          "title": "Lancaster cancer charity\u00a0puts supporters in control of how donations are\u00a0spent",
+          "summary": "A charity that supports people affected by cancer and bereavement has launched a new fundraising initiative that gives supporters greater control over how their donations are spent.",
+          "link": "https://www.lancasterguardian.co.uk/health/lancaster-cancer-charity-puts-supporters-in-control-of-how-donations-are-spent-5504506",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 12:18:22 GMT"
+        },
+        {
+          "id": "fc9a9b26c225b651c0e8679b2dcf0617",
+          "title": "Eyesore Morecambe hotel goes under the hammer again",
+          "summary": "A prominent and iconic former pub and hotel in Morecambe is again up for auction after failing to be snapped up at an auction in January.",
+          "link": "https://www.lancasterguardian.co.uk/news/national/eyesore-morecambe-hotel-goes-under-the-hammer-again-5504477",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 12:08:07 GMT"
+        }
+      ],
+      "batch_id": "general_17"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "c9d2eaddd53306d61d1f6e5ea404e6db",
+          "title": "\"It's pretty special\"- Preston's fine dining restaurant Aven named in SquareMeal\u2019s Top 100",
+          "summary": "<p>Preston\u2019s food scene is celebrating another big moment, as Aven Restaurant has once again been named among the UK\u2019s Top 100 restaurants by SquareMeal.</p>",
+          "link": "https://www.lep.co.uk/news/its-pretty-special-prestons-fine-dining-restaurant-aven-named-in-squaremeals-top-100-5504445",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 11:59:29 GMT"
+        },
+        {
+          "id": "ff73b5d1af671619740fd667fa84508b",
+          "title": "SpudBros make statement on Halal food - and announce Ramadan event in Preston",
+          "summary": "<p>Preston\u2019s potato sensations SpudBros have addressed questions over their stance on Halal food.</p>",
+          "link": "https://www.lep.co.uk/news/spudbros-make-statement-on-halal-food-and-announce-ramadan-event-in-preston-5504316",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 11:37:20 GMT"
+        },
+        {
+          "id": "95513562e8317b1ea43ef6d58d03487d",
+          "title": "Jim Bentley hopes Morecambe's supporters will get the Mazuma Mobile Stadium 'bouncing'",
+          "summary": "Jim Bentley is hoping for some vociferous support as he prepares for his first home match back in charge of Morecambe.",
+          "link": "https://www.lancasterguardian.co.uk/sport/football/jim-bentley-hopes-morecambes-supporters-will-get-the-mazuma-mobile-stadium-bouncing-5504348",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 11:28:21 GMT"
+        },
+        {
+          "id": "89e33a04f97dac0f480ef23d53cd1c78",
+          "title": "Jim Bentley hopes Morecambe's supporters will get the Mazuma Mobile Stadium 'bouncing'",
+          "summary": "Jim Bentley is hoping for some vociferous support as he prepares for his first home match back in charge of Morecambe.",
+          "link": "https://www.lep.co.uk/sport/football/jim-bentley-hopes-morecambes-supporters-will-get-the-mazuma-mobile-stadium-bouncing-5504348",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 11:28:21 GMT"
+        },
+        {
+          "id": "3ce803449a65e6ebdaa46208b0f90d79",
+          "title": "Luke Littler sends special message to Penwortham school pioneering a darts academy",
+          "summary": "<p>World Champion darts star Luke Littler has delivered a special message to pupils at Penwortham Priory Academy.</p>",
+          "link": "https://www.lep.co.uk/news/luke-littler-sends-special-message-to-penwortham-school-pioneering-a-darts-academy-5504264",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 11:12:20 GMT"
+        }
+      ],
+      "batch_id": "general_18"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "356bdaac268c14a3801b533d0e61a4ad",
+          "title": "Major demolitions, new shops & new apartments: all the plans submitted in Preston recently",
+          "summary": "<p>Take a look below at all planning applications submitted to Preston City Council over the past two weeks.  </p>",
+          "link": "https://www.lep.co.uk/public-notices/major-demolitions-new-shops-plans-submitted-in-preston-recently-5503931",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 10:59:07 GMT"
+        },
+        {
+          "id": "d4b87814f4d7891c78a36d06668aa742",
+          "title": "Award-winning folk singer and songwriter comes to Lancaster",
+          "summary": "Award-winning folk singer and songwriter Emily Portman returns to the road this March and arrives in Lancaster on March 19.",
+          "link": "https://www.lancasterguardian.co.uk/news/national/award-winning-folk-singer-and-songwriter-comes-to-lancaster-5504159",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 10:21:28 GMT"
+        },
+        {
+          "id": "84c330af9af35ffd9fe73fce401b4846",
+          "title": "H.G. Wells\u2019s iconic science fiction tale comes to Lancaster\u2019s The Dukes",
+          "summary": "This year, imitating the dog, one of the UK\u2019s most original and innovative theatre companies is set to push their inventive storytelling to new heights when they stage a contemporary retelling of H.G Wells\u2019s iconic science fiction tale The War of the Worlds.",
+          "link": "https://www.lancasterguardian.co.uk/news/national/hg-wellss-iconic-science-fiction-tale-comes-to-lancasters-the-dukes-5504116",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 10:07:27 GMT"
+        },
+        {
+          "id": "6d2f6191f5f7f18edfad39d9e0ff089c",
+          "title": "Black Castle Capital Partners wins Best Venture Capital & Private Equity Business of the Year",
+          "summary": "<p>They were awarded with the Global 100 2026 award for Best Venture Capital & Private Equity Business of the Year.</p>",
+          "link": "https://www.burnleyexpress.net/must-read/black-castle-capital-partners-wins-best-venture-capital-private-equity-business-of-the-year-5504089",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 09:58:34 GMT"
+        },
+        {
+          "id": "a8e13ce8acb791986c976028d6851ea2",
+          "title": "Black Castle Capital Partners wins Best Venture Capital & Private Equity Business of the Year",
+          "summary": "<p>They were awarded with the Global 100 2026 award for Best Venture Capital & Private Equity Business of the Year.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/must-read/black-castle-capital-partners-wins-best-venture-capital-private-equity-business-of-the-year-5504089",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 09:58:34 GMT"
+        }
+      ],
+      "batch_id": "general_19"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "86851008bdd5c5f4cf0a92b942925780",
+          "title": "Black Castle Capital Partners wins Best Venture Capital & Private Equity Business of the Year",
+          "summary": "<p>They were awarded with the Global 100 2026 award for Best Venture Capital & Private Equity Business of the Year.</p>",
+          "link": "https://www.lancasterguardian.co.uk/must-read/black-castle-capital-partners-wins-best-venture-capital-private-equity-business-of-the-year-5504089",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 09:58:34 GMT"
+        },
+        {
+          "id": "202792a8662d78e776cf089e965d8594",
+          "title": "Black Castle Capital Partners wins Best Venture Capital & Private Equity Business of the Year",
+          "summary": "<p>They were awarded with the Global 100 2026 award for Best Venture Capital & Private Equity Business of the Year.</p>",
+          "link": "https://www.lep.co.uk/must-read/black-castle-capital-partners-wins-best-venture-capital-private-equity-business-of-the-year-5504089",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 09:58:34 GMT"
+        },
+        {
+          "id": "59a7eb268055b0008ea134d4bd12596f",
+          "title": "Four fire engines and hazardous materials unit from Lancashire Fire and Rescue Service called to garage blaze in Padiham",
+          "summary": "The hazardous materials unit from Lancashire Fire and Rescue was among the crews called to an incident in Padiham yesterday (Wednesday)",
+          "link": "https://www.burnleyexpress.net/news/emergency-incident/four-fire-engines-and-hazardous-materials-unit-from-lancashire-fire-and-rescue-service-called-to-garage-blaze-in-padiham-5504038",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 09:31:57 GMT"
+        },
+        {
+          "id": "8e591d42ad0426c66c49cff996748564",
+          "title": "\"Make do and mend\" gives damaged items a second life",
+          "summary": "<p>Make do and mend is making a comeback, with nearly half of Brits now repairing items they\u2019d previously written off as \u2018too tough\u2019 to fix.</p>",
+          "link": "https://www.burnleyexpress.net/read-this/make-do-and-mend-gives-damaged-items-a-second-life-5503983",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 08:59:30 GMT"
+        },
+        {
+          "id": "3db971ba695f6e7901cdb9164c13fac3",
+          "title": "\"Make do and mend\" gives damaged items a second life",
+          "summary": "<p>Make do and mend is making a comeback, with nearly half of Brits now repairing items they\u2019d previously written off as \u2018too tough\u2019 to fix.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/read-this/make-do-and-mend-gives-damaged-items-a-second-life-5503983",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 08:59:30 GMT"
+        }
+      ],
+      "batch_id": "general_20"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "76b716d0724f28a696b718c9380b4047",
+          "title": "\"Make do and mend\" gives damaged items a second life",
+          "summary": "<p>Make do and mend is making a comeback, with nearly half of Brits now repairing items they\u2019d previously written off as \u2018too tough\u2019 to fix.</p>",
+          "link": "https://www.lancasterguardian.co.uk/read-this/make-do-and-mend-gives-damaged-items-a-second-life-5503983",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 08:59:30 GMT"
+        },
+        {
+          "id": "f7f99e081fe2b9060a9d3c90712b2bae",
+          "title": "\"Make do and mend\" gives damaged items a second life",
+          "summary": "<p>Make do and mend is making a comeback, with nearly half of Brits now repairing items they\u2019d previously written off as \u2018too tough\u2019 to fix.</p>",
+          "link": "https://www.lep.co.uk/read-this/make-do-and-mend-gives-damaged-items-a-second-life-5503983",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 08:59:30 GMT"
+        },
+        {
+          "id": "4215aee18e08f899f8c4d472b53d1170",
+          "title": "Flabbergasted and gobsmacked are among the words people would love to see comeback",
+          "summary": "<p>Flabbergasted, chuffed and gobsmacked are among the words people would love to see make a comeback.</p>",
+          "link": "https://www.burnleyexpress.net/read-this/flabbergasted-and-gobsmacked-are-among-the-words-people-would-love-to-see-comeback-5503600",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 08:02:19 GMT"
+        },
+        {
+          "id": "b11731deaab7822e58ac97793e207a23",
+          "title": "Flabbergasted and gobsmacked are among the words people would love to see comeback",
+          "summary": "<p>Flabbergasted, chuffed and gobsmacked are among the words people would love to see make a comeback.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/read-this/flabbergasted-and-gobsmacked-are-among-the-words-people-would-love-to-see-comeback-5503600",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 08:02:19 GMT"
+        },
+        {
+          "id": "1f2eba9cc7c8ce60d5374a736ab56e99",
+          "title": "Flabbergasted and gobsmacked are among the words people would love to see comeback",
+          "summary": "<p>Flabbergasted, chuffed and gobsmacked are among the words people would love to see make a comeback.</p>",
+          "link": "https://www.lancasterguardian.co.uk/read-this/flabbergasted-and-gobsmacked-are-among-the-words-people-would-love-to-see-comeback-5503600",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 08:02:19 GMT"
+        }
+      ],
+      "batch_id": "general_21"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "97cf5ee5db3e98dd0c7e88f9e68700bb",
+          "title": "Flabbergasted and gobsmacked are among the words people would love to see comeback",
+          "summary": "<p>Flabbergasted, chuffed and gobsmacked are among the words people would love to see make a comeback.</p>",
+          "link": "https://www.lep.co.uk/read-this/flabbergasted-and-gobsmacked-are-among-the-words-people-would-love-to-see-comeback-5503600",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 08:02:19 GMT"
+        },
+        {
+          "id": "0fbac254bf3dfe2830dee49782811173",
+          "title": "'It's deadline day today!' - Your last chance to nominate your community heroes for Proud Preston Awards 2026",
+          "summary": "<p>The clock is ticking as the deadline to nominate your favourite community heroes in Preston closes today.</p>",
+          "link": "https://www.lep.co.uk/news/people/deadline-day-for-proud-preston-awards-2026-nominations-5503228",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 06:01:23 GMT"
+        },
+        {
+          "id": "198cf51ec9f2edd0e18eec6be32dfded",
+          "title": "New 'music library' opens with aim to inspire the next generation of talent",
+          "summary": "<p>A space to host concerts and events - included from up-and-coming musicians - has been opened at Burnley Central Library.</p>",
+          "link": "https://www.lep.co.uk/news/politics/new-music-library-opens-with-aim-to-inspire-the-next-generation-of-talent-5503886",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 06:00:56 GMT"
+        },
+        {
+          "id": "0df5e08dc74b9c8087cbf60465c9821c",
+          "title": "Blackpool's homeless issues still more than twice the average in England",
+          "summary": "<p>Blackpool continues to deal with a homelessness issue  well over twice the average in England, a latest report says.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/blackpools-homeless-issues-still-more-than-twice-the-average-in-england-5503778",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 06:00:51 GMT"
+        },
+        {
+          "id": "211f39aad96124fb6769e8138f2e7736",
+          "title": "Showtown bosses say upturn in footfall sees thousands of children learning about Blackpool's past",
+          "summary": "<p>Bosses at  Showtown Blackpool  say they have improved footfall at the visitor attraction  - including bringing in thusands of school children.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/showtown-bosses-say-upturn-in-footfall-sees-thousands-of-children-learning-about-blackpools-past-5503667",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 06:00:46 GMT"
+        }
+      ],
+      "batch_id": "general_22"
+    },
+    {
+      "topic": "general",
+      "articles": [
+        {
+          "id": "81cf8a122ccb2b351382c416f30870f0",
+          "title": "'This is the one thing we think should happen to Preston bus gate fines', city businesses say",
+          "summary": "<p>Business leaders have called for the cash raised from \u2018bus gate\u2019 fines issued in Preston to stay in the city \u2013 and be spent on improving its roads.</p>",
+          "link": "https://www.lep.co.uk/news/traffic-and-travel/this-is-the-one-thing-we-think-should-happen-to-preston-bus-gate-fines-city-businesses-say-5503881",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 06:00:42 GMT"
+        },
+        {
+          "id": "8a4f770ce0d9db229d05c3ef0e98b248",
+          "title": "Blackpool North and Fleetwood MP backs tighter restrictions on dog breeding after influx of concerns",
+          "summary": "<p>A Fylde coast MP has joined calls to improve the breeding standards for dogs and an end to the misery caused by extreme breeding.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/mp-backs-tighter-restrictions-on-dog-breeding-after-influx-of-concerns-5503885",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 06:00:28 GMT"
+        },
+        {
+          "id": "7b9c1869cf0b94ab9a255aa4909136f1",
+          "title": "'My brother died in a one-punch attack - this is why I've forgiven the lad who did it'",
+          "summary": "<p>The brother of a Blackburn man who was killed in a one-punch attack has come face-to-face someone who did the same thing - and made a surprise announcement.</p>",
+          "link": "https://www.lep.co.uk/news/my-brother-died-in-a-one-punch-attack-this-is-why-ive-forgiven-the-lad-who-did-it-5503653",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 06:00:23 GMT"
+        }
+      ],
+      "batch_id": "general_23"
+    },
+    {
+      "topic": "council",
+      "articles": [
+        {
+          "id": "45c80c1fa06355d1833588aab2d84c53",
+          "title": "We cannot lose this play area and Multi Use Games Amenity in Fleetwood, says councillor",
+          "summary": "<p>The future of a much-used children\u2019s play area and multi use games area (MUGA) in Fleetwood is at risk, a councillor is warning.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/we-cannot-lose-this-play-area-and-multi-use-games-amenity-in-fleetwood-says-councillor-5502235",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 16:30:42 GMT"
+        },
+        {
+          "id": "2e3692128aca748456cc8c24710933ac",
+          "title": "'This is a joke...residents deserve better' - Councillor hits out over LCC's stance on Lytham tip traffic",
+          "summary": "<p>A row has broken out over traffic at Lytham tip - with Lancashire County Council\u2019s stance branded \u2018a joke\u2019.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/this-is-a-jokeresidents-deserve-better-councillor-hits-out-over-lccs-stance-on-lytham-tip-traffic-5503231",
+          "source": "Blackpool Gazette",
+          "published": "Wed, 04 Feb 2026 16:00:29 GMT"
+        },
+        {
+          "id": "9c7aa3ff0f61a476f2eb0b0f5f419ba8",
+          "title": "'This is a joke...residents deserve better' - Councillor hits out over LCC's stance on Lytham tip traffic",
+          "summary": "<p>A row has broken out over traffic at Lytham tip - with Lancashire County Council\u2019s stance branded \u2018a joke\u2019.</p>",
+          "link": "https://www.lep.co.uk/news/this-is-a-jokeresidents-deserve-better-councillor-hits-out-over-lccs-stance-on-lytham-tip-traffic-5503231",
+          "source": "LEP Preston",
+          "published": "Wed, 04 Feb 2026 16:00:29 GMT"
+        },
+        {
+          "id": "1de7080b7de418829e4a487c9e7e729d",
+          "title": "Council facing \u00a316m shortfalls vows to make no cuts",
+          "summary": "Blackpool Council says despite having to make up the surplus it will strive to protect public services.",
+          "link": "https://www.bbc.com/news/articles/cm246yl8v68o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Lancashire",
+          "published": "Tue, 03 Feb 2026 11:17:51 GMT"
+        },
+        {
+          "id": "af691df18529e85ba01793c0709d598c",
+          "title": "Council issues major update on future of 'poor condition' Lancashire care homes",
+          "summary": "<p>The leader of Lancashire County Council has said the authority has \u201cno intention to close\u201d any of the five elderly care homes whose futures it has been reviewing.</p>",
+          "link": "https://www.burnleyexpress.net/politics/council-issues-major-update-on-future-of-poor-condition-lancashire-care-homes-5505449",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 21:40:38 GMT"
+        }
+      ],
+      "batch_id": "council_0"
+    },
+    {
+      "topic": "council",
+      "articles": [
+        {
+          "id": "4911a243f15e6187fe3d631065a355f1",
+          "title": "Council issues major update on future of 'poor condition' Lancashire care homes",
+          "summary": "<p>The leader of Lancashire County Council has said the authority has \u201cno intention to close\u201d any of the five elderly care homes whose futures it has been reviewing.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/politics/council-issues-major-update-on-future-of-poor-condition-lancashire-care-homes-5505449",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 21:40:38 GMT"
+        },
+        {
+          "id": "31df2fb021bf609c0a04cb5c1dd2dfc5",
+          "title": "Council issues major update on future of 'poor condition' Lancashire care homes",
+          "summary": "<p>The leader of Lancashire County Council has said the authority has \u201cno intention to close\u201d any of the five elderly care homes whose futures it has been reviewing.</p>",
+          "link": "https://www.lancasterguardian.co.uk/politics/council-issues-major-update-on-future-of-poor-condition-lancashire-care-homes-5505449",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 21:40:38 GMT"
+        },
+        {
+          "id": "22e5d6d74cebddad8309f4cf2bd15d7e",
+          "title": "Council issues major update on future of 'poor condition' Lancashire care homes",
+          "summary": "<p>The leader of Lancashire County Council has said the authority has \u201cno intention to close\u201d any of the five elderly care homes whose futures it has been reviewing.</p>",
+          "link": "https://www.lep.co.uk/politics/council-issues-major-update-on-future-of-poor-condition-lancashire-care-homes-5505449",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 21:40:38 GMT"
+        },
+        {
+          "id": "230034c063d7399ef91d865034fb5af0",
+          "title": "Blackpool's iconic Winter Gardens  to be managed by council-owned tourism company",
+          "summary": "<p>One of Blackpool\u2019s most iconic venues is set for a major new chapter after plans were agreed to transfer its operation to Blackpool Council\u2019s wholly owned tourism company.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/blackpools-iconic-winter-gardens-to-be-managed-by-council-owned-tourism-company-5504894",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 15:41:44 GMT"
+        },
+        {
+          "id": "b1ec4bc125b18282f09aa5d69a049930",
+          "title": "Burnley councillor at centre of row over failing to declare her financial interests speaks for first time to defend herself",
+          "summary": "The senior councillor at the centre of a row over failing to properly declare her financial interests has said \u2018there was no intent to mislead, no financial gain or attempt to achieve it\u2019.",
+          "link": "https://www.burnleyexpress.net/news/politics/burnley-councillor-at-centre-of-row-over-failing-to-declare-her-financial-interests-speaks-for-first-time-to-defend-herself-5504879",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 14:42:31 GMT"
+        }
+      ],
+      "batch_id": "council_1"
+    },
+    {
+      "topic": "council",
+      "articles": [
+        {
+          "id": "ca3b40dfd2fc5390e699eb15a665bc14",
+          "title": "Blackpool Council is seeking new operators for exciting new padel courts - here's what you need to know",
+          "summary": "<p>Blackpool Sports Centre could soon welcome four new padel courts as the council seeks operators to build and run the popular racquet sport facility.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/blackpool-council-is-seeking-new-operators-for-exciting-new-padel-courts-heres-what-you-need-to-know-5504685",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 13:47:26 GMT"
+        },
+        {
+          "id": "3f3365a8240581f83e363edb18b2144c",
+          "title": "Raft of events including food festival, carnival, Proms in the Park and soapbox challenge announced by council",
+          "summary": "<p>Hyndburn Council will support 23 events in 2026 promising activities for all the family spread across high streets and green spaces around the borough.</p>",
+          "link": "https://www.lep.co.uk/lifestyle/food-and-drink/raft-of-events-including-food-festival-carnival-proms-in-the-park-and-soapbox-challenge-announced-by-council-5503085",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 06:00:33 GMT"
+        },
+        {
+          "id": "3a73d27beffda41653fe1ee8e43188c7",
+          "title": "Preston apartment block plan kicked out by council",
+          "summary": "<p>A bid to build a new three-storey apartment block near Preston city centre has been rejected.</p>",
+          "link": "https://www.lep.co.uk/news/politics/preston-apartment-block-plan-kicked-out-by-council-5503884",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 06:00:20 GMT"
+        }
+      ],
+      "batch_id": "council_2"
+    },
+    {
+      "topic": "burnley_sport",
+      "articles": [
+        {
+          "id": "1a62713aaab8b0756b60340f4bc6b1b4",
+          "title": "Exhibition of ceramics, felting, silk painting and mosaics by arts and craft group Ground Up opens in Burnley's St James Street",
+          "summary": "A vibrant showcase of ceramics, felting, silk painting, banners and mosaic has gone on display in Burnley.",
+          "link": "https://www.burnleyexpress.net/news/people/exhibition-of-ceramics-felting-silk-painting-and-mosaics-by-arts-and-craft-group-ground-up-opens-in-burnleys-st-james-street-5503375",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 14:59:46 GMT"
+        },
+        {
+          "id": "cb780cf2d18942478f529fda90a98de9",
+          "title": "Upcoming traffic changes set to begin in Burnley as improvement works start as part of \u00a355m. Levelling Up investment",
+          "summary": "Motorists and pedestrians are set to see huge changes on the main routes into Burnley town centre in the coming months as work beigns on the town\u2019s share of a \u00a355m. improvement programme.",
+          "link": "https://www.burnleyexpress.net/news/transport/upcoming-traffic-changes-set-to-begin-in-burnley-as-improvement-works-start-as-part-of-ps55m-levelling-up-investment-5503065",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 14:05:11 GMT"
+        },
+        {
+          "id": "5f0636e130d5c5d79135136a2a1b1362",
+          "title": "Culture Burnley Awards 2026: Nominations announced for glittering awards ceremony",
+          "summary": "A total of 40 organisations, events, projects and individuals have been shortlisted for this year\u2019s Culture Burnley Awards.",
+          "link": "https://www.burnleyexpress.net/news/people/culture-burnley-awards-2026-nominations-announced-for-glittering-awards-ceremony-5502340",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 12:28:25 GMT"
+        },
+        {
+          "id": "22246c72ffe51bbde35085351f00b994",
+          "title": "'Sticky': Scott Parker addresses Quilindschy Hartman's continued Burnley absence",
+          "summary": "Scott Parker admits Burnley need to get Quilindschy Hartman back up to speed after a \u201csticky\u201d few weeks.",
+          "link": "https://www.burnleyexpress.net/sport/football/sticky-scott-parker-addresses-quilindschy-hartmans-continued-burnley-absence-5502990",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 12:14:21 GMT"
+        },
+        {
+          "id": "dcdbf7f345492b172ec138ec7163f0a1",
+          "title": "Residents to be consulted on proposed plans for 3G football pitch and BMX race track at Nelson's Hodge House playing fields",
+          "summary": "Residents living close to playing fields in Nelson are to be asked for their views on proposals to create a 3G football pitch and BMX race track on the site.",
+          "link": "https://www.burnleyexpress.net/lifestyle/outdoors/residents-to-be-consulted-on-proposed-plans-for-3g-football-pitch-and-bmx-race-track-at-nelsons-hodge-house-playing-fields-5502691",
+          "source": "Burnley Express",
+          "published": "Wed, 04 Feb 2026 11:02:27 GMT"
+        }
+      ],
+      "batch_id": "burnley_sport_0"
+    },
+    {
+      "topic": "burnley_sport",
+      "articles": [
+        {
+          "id": "5b06947870e7575976151d6ea8ae8301",
+          "title": "West Ham boss Nuno Espirito Santo on Burnley clash, Alex Disasi debut and team news",
+          "summary": "Many have already written off Burnley in their fight for survival, but if they\u2019re to give themselves any hope \u2013 they simply must beat West Ham this weekend.",
+          "link": "https://www.burnleyexpress.net/sport/football/west-ham-boss-nuno-espirito-santo-on-burnley-clash-alex-disasi-debut-and-team-news-5505339",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 17:18:27 GMT"
+        },
+        {
+          "id": "30ed4b943769d86731f6d5d4e4430cef",
+          "title": "AFC Fylde players stuck to their plan well to pick up three points",
+          "summary": "Craig Mahon said victory was all that mattered after watching his AFC Fylde players return to winning ways in midweek.",
+          "link": "https://www.blackpoolgazette.co.uk/sport/football/afc-fylde-players-stuck-to-their-plan-well-to-pick-up-three-points-5504520",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 12:26:58 GMT"
+        },
+        {
+          "id": "67e178a5d8732dd94111d786e5ea8fdc",
+          "title": "Excel Fostering appealing for foster families in Burnley and Pendle",
+          "summary": "A fostering agency is urging people across Burnley and Pendle to consider opening their homes to children and young people in care.",
+          "link": "https://www.burnleyexpress.net/news/people/excel-fostering-appealing-for-foster-families-in-burnley-and-pendle-5504433",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 11:54:32 GMT"
+        },
+        {
+          "id": "cc46ecade330d147b52dd125f75c6720",
+          "title": "Thompson Park Miniature Railway Society in Burnley looking for new volunteers",
+          "summary": "An announcement has been made for wannabe train drivers and other volunteers to help out at Burnley\u2019s popular Thompson Park Miniature Railway Society.",
+          "link": "https://www.burnleyexpress.net/whats-on/things-to-do/thompson-park-miniature-railway-society-in-burnley-looking-for-new-volunteers-5504242",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 10:48:06 GMT"
+        },
+        {
+          "id": "e7ec97c22d0b4843d1d032afa90a00b8",
+          "title": "Blackpool FC Community Trust column: Nobody should face cancer on their own",
+          "summary": "Wednesday of this week marked World Cancer Day and Blackpool FC Community Trust is highlighting the vital support we provide to people affected by cancer across our local area.",
+          "link": "https://www.blackpoolgazette.co.uk/sport/football/blackpool-fc/blackpool-fc-community-trust-column-nobody-should-face-cancer-on-their-own-5504013",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 09:18:11 GMT"
+        }
+      ],
+      "batch_id": "burnley_sport_1"
+    },
+    {
+      "topic": "burnley_sport",
+      "articles": [
+        {
+          "id": "a0b289e342719da75571f737026cb3a4",
+          "title": "Police investigating reports of a man exposing himself close to the Nelson and Burnley border",
+          "summary": "Police are investigating reports that a man exposed himself to a teenage girl close to the Nelson-Burnley border.",
+          "link": "https://www.burnleyexpress.net/news/crime/police-investigating-reports-of-a-man-exposing-himself-close-to-the-nelson-and-burnley-border-5503949",
+          "source": "Burnley Express",
+          "published": "Thu, 05 Feb 2026 08:31:07 GMT"
+        }
+      ],
+      "batch_id": "burnley_sport_2"
+    },
+    {
+      "topic": "traffic",
+      "articles": [
+        {
+          "id": "a8bcbff3b5676f3f153410f330cd7164",
+          "title": "Misery for drivers as A6 Garstang Road gas works delays set to last another eight weeks",
+          "summary": "<p>Drivers face nearly two more months of disruption after roadworks causing long delays on the A6 Garstang Road are set to continue until April.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/misery-for-drivers-as-a6-garstang-road-gas-works-delays-set-to-last-another-eight-weeks-5505430",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 19:24:15 GMT"
+        },
+        {
+          "id": "04ec4388179a3fe63e09f54d37218409",
+          "title": "Misery for drivers as A6 Garstang Road gas works delays set to last another eight weeks",
+          "summary": "<p>Drivers face nearly two more months of disruption after roadworks causing long delays on the A6 Garstang Road are set to continue until April.</p>",
+          "link": "https://www.lep.co.uk/news/misery-for-drivers-as-a6-garstang-road-gas-works-delays-set-to-last-another-eight-weeks-5505430",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 19:24:15 GMT"
+        },
+        {
+          "id": "453c748323e0840c4570493ea8d409ed",
+          "title": "Road closures as resurfacing work begins across Blackpool - here\u2019s everything you need to know",
+          "summary": "<p>Blackpool Council is set to carry out a series of road resurfacing improvements over the next two months, beginning February, Monday, 9.</p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/road-closures-as-resurfacing-work-begins-across-blackpool-heres-everything-you-need-to-know-5504799",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 16:00:17 GMT"
+        },
+        {
+          "id": "7017328c0c0f212b0a3642cbcc80b9bf",
+          "title": "Motorists banned from stopping on road by Lancaster school under new order",
+          "summary": "An order banning motorists from stopping on a stretch of road close to a Lancaster primary school has been passed.",
+          "link": "https://www.lancasterguardian.co.uk/education/motorists-banned-from-stopping-on-road-by-lancaster-school-under-new-order-5504192",
+          "source": "Lancaster Guardian",
+          "published": "Thu, 05 Feb 2026 10:29:04 GMT"
+        }
+      ],
+      "batch_id": "traffic_0"
+    },
+    {
+      "topic": "weather",
+      "articles": [
+        {
+          "id": "1d5b3a0a0268c68a6412960e46249e5e",
+          "title": "When snow will hit Lancashire today as Met Office issues 12-hour weather warning",
+          "summary": "<p>A yellow weather warning for snow has been issued for parts of Lancashire, with forecasters warning of potential travel disruption from Thursday afternoon into Friday morning.  </p>",
+          "link": "https://www.blackpoolgazette.co.uk/news/when-snow-will-hit-lancashire-today-as-met-office-issues-12-hour-weather-warning-5504620",
+          "source": "Blackpool Gazette",
+          "published": "Thu, 05 Feb 2026 13:09:33 GMT"
+        },
+        {
+          "id": "ca285986edb44d6341b4bb060373beb7",
+          "title": "When snow will hit Lancashire today as Met Office issues 12-hour weather warning",
+          "summary": "<p>A yellow weather warning for snow has been issued for parts of Lancashire, with forecasters warning of potential travel disruption from Thursday afternoon into Friday morning.  </p>",
+          "link": "https://www.lep.co.uk/news/when-snow-will-hit-lancashire-today-as-met-office-issues-12-hour-weather-warning-5504620",
+          "source": "LEP Preston",
+          "published": "Thu, 05 Feb 2026 13:09:33 GMT"
+        }
+      ],
+      "batch_id": "weather_0"
+    }
+  ]
+}

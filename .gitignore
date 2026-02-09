@@ -1,0 +1,26 @@
+# Database (large, binary)
+db/
+*.db
+*.db-journal
+
+# Logs
+logs/
+*.log
+
+# Environment / secrets
+.env
+
+# Hugo build output
+site/public/
+site/resources/
+
+# Node modules
+node_modules/
+
+# Temp files
+*.pyc
+__pycache__/
+.DS_Store
+
+# News Burnley deploy dir
+/newsburnley/

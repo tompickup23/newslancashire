@@ -1,0 +1,52 @@
+{
+  "generated": "2026-02-09T01:32:41.207907",
+  "total_articles": 431,
+  "weeks_analyzed": 0,
+  "trending": [],
+  "top_words": [],
+  "borough_trends": {
+    "unknown": [
+      [
+        "lancashire",
+        72
+      ],
+      [
+        "council",
+        42
+      ],
+      [
+        "stories",
+        41
+      ],
+      [
+        "blackpool",
+        41
+      ],
+      [
+        "know",
+        40
+      ],
+      [
+        "need",
+        39
+      ],
+      [
+        "digest",
+        34
+      ],
+      [
+        "preston",
+        34
+      ],
+      [
+        "reform",
+        34
+      ],
+      [
+        "burnley",
+        33
+      ]
+    ]
+  },
+  "weekly_summary": {}
+}

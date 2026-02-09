@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { border-bottom: 3px solid #1a1a1a; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .tagline { color: #666; font-size: 1.1em; }
+        nav { margin: 20px 0; padding: 15px 0; border-bottom: 1px solid #eee; }
+        nav a { margin-right: 20px; text-decoration: none; color: #1a1a1a; font-weight: 500; }
+        nav a:hover { color: #0066cc; }
+        .article { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        .article h2 { font-size: 1.4em; margin-bottom: 8px; }
+        .article h2 a { color: #1a1a1a; text-decoration: none; }
+        .meta { color: #666; font-size: 0.9em; margin-bottom: 10px; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; font-weight: bold; margin-right: 8px; }
+        .badge-ai { background: #e3f2fd; color: #1565c0; }
+        .badge-original { background: #e8f5e9; color: #2e7d32; }
+        .badge-guest { background: #fff3e0; color: #ef6c00; }
+        footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ .Site.Title }}</h1>
+        <p class="tagline">{{ .Site.Params.description }}</p>
+    </header>
+    
+    <nav>
+        <a href="/">Home</a>
+        <a href="/original/">Original Reporting</a>
+        <a href="/digest/">AI Digest</a>
+        <a href="/guest/">Guest Posts</a>
+        <a href="/burnley/">Burnley</a>
+    </nav>
+    
+    <main>
+        {{ range .Site.RegularPages | first 10 }}
+        <article class="article">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p class="meta">{{ .Date.Format "January 2, 2006" }} | {{ .Params.source }}</p>
+            <p>{{ .Summary }}</p>
+        </article>
+        {{ end }}
+    </main>
+    
+    <footer>
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. AI Digest summaries are automatically generated.</p>
+    </footer>
+</body>
+</html>

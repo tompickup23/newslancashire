@@ -1,0 +1,106 @@
+{
+  "categories": {
+    "politics": {
+      "keywords": ["council", "councillor", "cllr", "mp", "election", "vote", "reform", "labour",
+        "conservative", "lib dem", "liberal democrat", "green party", "cabinet", "budget", "tax",
+        "planning committee", "tom pickup", "reform uk", "parliament", "bill", "legislation",
+        "devolution", "unitary", "lgr", "local government", "manifesto", "candidate",
+        "minister", "government", "starmer", "sunak", "farage", "shortfall", "cuts",
+        "consultation", "ballot", "constituency", "whitehall", "downing street",
+        "secretary of state", "public spending", "referendum"],
+      "icon": "🏛️",
+      "color": "#0a84ff"
+    },
+    "sport": {
+      "keywords": ["fc", "football", "cricket", "rugby", "league", "match", "goal", "championship",
+        "premier league", "burnley fc", "blackpool fc", "preston north end", "pne", "fleetwood town",
+        "morecambe fc", "accrington stanley", "nelson fc", "manager", "transfer", "relegation",
+        "promotion", "cup", "fa cup", "carabao", "efl", "fixture", "stadium", "turf moor",
+        "winger", "striker", "goalkeeper", "midfielder", "score", "defeat", "victory",
+        "sporting", "athlete", "marathon", "race", "swimming", "tennis", "boxing",
+        "half-time", "full-time", "pitch", "referee"],
+      "icon": "⚽",
+      "color": "#30d158"
+    },
+    "crime": {
+      "keywords": ["police", "crime", "court", "arrest", "theft", "robbery", "murder", "assault",
+        "drug", "drugs", "sentence", "jail", "prison", "magistrate", "crown court", "fraud",
+        "stabbing", "shooting", "missing", "appeal", "witness", "investigation", "cctv",
+        "burglary", "arson", "domestic", "guilty", "not guilty", "verdict", "manslaughter",
+        "sexual", "explicit", "offender", "victim", "charged", "detained", "inquest",
+        "coroner", "illegal", "raids", "streaming", "warrant", "bail", "remand",
+        "probation", "suspended sentence", "jury", "prosecution", "defendant", "violent",
+        "abuse", "shook", "killed", "death", "died", "fatal", "hit-and-run"],
+      "icon": "🚨",
+      "color": "#ff453a"
+    },
+    "business": {
+      "keywords": ["business", "company", "shop", "restaurant", "investment", "jobs", "employment",
+        "unemployment", "economy", "market", "retail", "developer", "regeneration", "factory",
+        "supermarket", "closure", "opening", "startup", "enterprise", "firm", "brand",
+        "trademark", "staff", "strike", "union", "workers", "bae", "redundancy",
+        "profit", "loss", "shares", "takeover", "merger", "warehouse", "industrial"],
+      "icon": "💼",
+      "color": "#ff9f0a"
+    },
+    "community": {
+      "keywords": ["charity", "volunteer", "community", "festival", "event", "church", "mosque",
+        "remembrance", "park", "library", "museum", "litter", "clean-up", "fundraiser",
+        "award", "honour", "legacy", "memorial", "exhibition", "art", "gallery",
+        "theatre", "concert", "celebration", "ceremony", "knitted", "knitting",
+        "cathedral", "heritage", "prom", "hospice", "elderly", "care", "fun"],
+      "icon": "🤝",
+      "color": "#bf5af2"
+    },
+    "transport": {
+      "keywords": ["road", "traffic", "bus", "train", "rail", "closure", "m65", "m6", "m55",
+        "a59", "a666", "a56", "pothole", "highway", "cycling", "roadworks", "accident",
+        "crash", "diversion", "network rail", "northern rail", "avanti",
+        "parking", "congestion", "motorway", "junction", "bypass"],
+      "icon": "🚗",
+      "color": "#64d2ff"
+    },
+    "health": {
+      "keywords": ["hospital", "nhs", "health", "doctor", "gp", "mental health", "ambulance",
+        "royal blackburn", "burnley general", "royal preston", "victoria hospital",
+        "care home", "dementia", "cancer", "surgery", "waiting list", "a&e", "ucht",
+        "beds", "patient", "nurse", "nursing", "ward", "clinic", "treatment",
+        "prescription", "vaccine", "maternity", "dentist", "pharmacy", "exercise"],
+      "icon": "🏥",
+      "color": "#30d158"
+    },
+    "education": {
+      "keywords": ["school", "college", "university", "uclan", "student", "ofsted", "teacher",
+        "gcse", "a-level", "academy", "headteacher", "pupil", "nursery", "sixth form",
+        "burnley college", "nelson and colne", "runshaw", "myerscough", "edge hill",
+        "classroom", "exam", "grades", "curriculum", "governor", "attendance",
+        "exclusion", "special needs", "sen", "truancy", "absence"],
+      "icon": "📚",
+      "color": "#ffd60a"
+    },
+    "weather": {
+      "keywords": ["weather", "flood", "flooding", "storm", "snow", "rain", "warning", "met office",
+        "amber warning", "yellow warning", "red warning", "ice", "heatwave", "drought",
+        "temperature", "wind", "gale", "lightning", "fog", "frost"],
+      "icon": "🌦️",
+      "color": "#64d2ff"
+    }
+  },
+  "interest_boosters": {
+    "reform uk": 40,
+    "reform party": 40,
+    "tom pickup": 50,
+    "cllr pickup": 50,
+    "breaking": 30,
+    "exclusive": 25,
+    "investigation": 30,
+    "scandal": 35,
+    "cancelled": 25,
+    "axed": 25,
+    "fury": 20,
+    "outrage": 20,
+    "shocking": 20,
+    "tragedy": 25,
+    "crisis": 25
+  }
+}

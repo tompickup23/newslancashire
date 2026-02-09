@@ -1,0 +1,151 @@
+{
+  "generated": "2026-02-09T01:32:35.425525",
+  "total_articles": 431,
+  "borough_coverage": {
+    "unknown": 431
+  },
+  "category_distribution": {
+    "politics": 152,
+    "crime": 69,
+    "community": 35,
+    "general": 33,
+    "business": 30,
+    "sport": 23,
+    "transport": 20,
+    "health": 13,
+    "education": 13,
+    "weather": 10,
+    "hyndburn": 3,
+    "pendle": 3,
+    "blackpool": 3,
+    "preston": 3,
+    "south_ribble": 3
+  },
+  "top_keywords": [],
+  "date_statistics": {},
+  "content_gaps": {
+    "underserved_boroughs": [
+      {
+        "borough": "burnley",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "blackburn",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "blackpool",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "preston",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "lancaster",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "chorley",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "south_ribble",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "rossendale",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "hyndburn",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "pendle",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "ribble_valley",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "wyre",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "fylde",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "west_lancashire",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "bolton",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "bury",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "wigan",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "salford",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "rochdale",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "borough": "oldham",
+        "article_count": 0,
+        "priority": "high"
+      }
+    ],
+    "missing_categories": [
+      {
+        "category": "council",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "category": "housing",
+        "article_count": 0,
+        "priority": "high"
+      },
+      {
+        "category": "environment",
+        "article_count": 0,
+        "priority": "high"
+      }
+    ],
+    "recommendations": [
+      "Increase coverage in Burnley",
+      "Add more council content"
+    ]
+  }
+}

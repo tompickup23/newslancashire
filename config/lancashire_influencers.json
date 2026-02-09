@@ -1,0 +1,137 @@
+{
+  "_comment": "Expanded Lancashire Influencers - Business, TV, Sports, Culture",
+  
+  "lancashire_influencers": [
+    {"handle": "diannebuswell", "name": "Dianne Buswell", "platform": "instagram", "borough": "blackpool", "category": "celebrity", "notes": "Strictly dancer, Blackpool connection", "priority": "high"},
+    {"handle": "joe_sugg", "name": "Joe Sugg", "platform": "instagram", "borough": "all", "category": "celebrity", "notes": "YouTube/Strictly, Lancashire roots", "priority": "high"},
+    {"handle": "ianbrown", "name": "Ian Brown", "platform": "instagram", "borough": "all", "category": "music", "notes": "Stone Roses frontman", "priority": "high"},
+    {"handle": "grimmers", "name": "Nick Grimshaw", "platform": "instagram", "borough": "oldham", "category": "media", "notes": "Radio 1 DJ, Oldham/Lancashire", "priority": "medium"},
+    {"handle": "officialjamesmay", "name": "James May", "platform": "instagram", "borough": "all", "category": "tv", "notes": "Top Gear, Lancashire connection", "priority": "medium"},
+    {"handle": "danwalker", "name": "Dan Walker", "platform": "instagram", "borough": "all", "category": "media", "notes": "BBC/Channel 5, strong Lancs presence", "priority": "medium"},
+    {"handle": "jimmyanderson", "name": "James Anderson", "platform": "instagram", "borough": "burnley", "category": "sport", "notes": "England cricketer, Burnley FC fan", "priority": "high"},
+    {"handle": "tom_aspinall", "name": "Tom Aspinall", "platform": "instagram", "borough": "salford", "category": "sport", "notes": "UFC heavyweight, Salford/Lancashire", "priority": "high"},
+    {"handle": "paddy_mcguinness", "name": "Paddy McGuinness", "platform": "instagram", "borough": "bolton", "category": "tv", "notes": "Top Gear, Bolton", "priority": "high"},
+    {"handle": "petersavage77", "name": "Peter Kay", "platform": "instagram", "borough": "bolton", "category": "comedy", "notes": "Comedian, Bolton/Lancashire", "priority": "high"},
+    {"handle": "titanictommy", "name": "Tommy Fury", "platform": "instagram", "borough": "manchester", "category": "sport", "notes": "Boxer, Love Island, strong Lancs following", "priority": "medium"},
+    {"handle": "mollymae", "name": "Molly-Mae Hague", "platform": "instagram", "borough": "all", "category": "influencer", "notes": "Love Island, massive following, Lancashire events", "priority": "medium"},
+    {"handle": "sophiearmitage", "name": "Sophie Armitage", "platform": "instagram", "borough": "blackpool", "category": "influencer", "notes": "Blackpool FC, local influencer", "priority": "medium"},
+    
+    {"handle": "vernonkay", "name": "Vernon Kay", "platform": "instagram", "borough": "bolton", "category": "tv", "notes": "TV presenter, I'm a Celebrity, Bolton", "priority": "high"},
+    {"handle": "zoetheball", "name": "Zoe Ball", "platform": "instagram", "borough": "blackpool", "category": "media", "notes": "Radio 2 DJ, grew up in Blackpool", "priority": "high"},
+    {"handle": "coleennolan", "name": "Coleen Nolan", "platform": "instagram", "borough": "blackpool", "category": "tv", "notes": "Singer/TV presenter, Loose Women, Blackpool", "priority": "high"},
+    {"handle": "thejennyryan", "name": "Jenny Ryan", "platform": "instagram", "borough": "wigan", "category": "tv", "notes": "The Chase, from Standish/Wigan", "priority": "high"},
+    {"handle": "mark_radcliffe", "name": "Mark Radcliffe", "platform": "instagram", "borough": "bolton", "category": "media", "notes": "Radio 2/6Music DJ, Bolton", "priority": "medium"},
+    {"handle": "jasonmanford", "name": "Jason Manford", "platform": "instagram", "borough": "salford", "category": "comedy", "notes": "Comedian/TV presenter, Salford", "priority": "high"},
+    {"handle": "davespikey", "name": "Dave Spikey", "platform": "instagram", "borough": "bolton", "category": "comedy", "notes": "Comedian, Phoenix Nights, Bolton", "priority": "medium"},
+    {"handle": "tedrobbins", "name": "Ted Robbins", "platform": "instagram", "borough": "all", "category": "comedy", "notes": "Comedian, actor, Lancashire roots", "priority": "medium"},
+    {"handle": "jonichanian", "name": "Jon Richardson", "platform": "instagram", "borough": "all", "category": "comedy", "notes": "Comedian, 8 Out of 10 Cats, Lancs upbringing", "priority": "high"},
+    {"handle": "sianwelby", "name": "Sian Welby", "platform": "instagram", "borough": "all", "category": "media", "notes": "Capital FM DJ, TV presenter, Lancs connection", "priority": "medium"},
+    
+    {"handle": "elbowofficial", "name": "Guy Garvey / Elbow", "platform": "instagram", "borough": "bury", "category": "music", "notes": "Elbow frontman, Bury", "priority": "high"},
+    {"handle": "lisastansfield", "name": "Lisa Stansfield", "platform": "instagram", "borough": "rochdale", "category": "music", "notes": "Singer, All Around The World, Rochdale", "priority": "high"},
+    {"handle": "badlydrawnboy", "name": "Damon Gough / Badly Drawn Boy", "platform": "instagram", "borough": "bolton", "category": "music", "notes": "Singer-songwriter, Bolton", "priority": "medium"},
+    {"handle": "theverve", "name": "The Verve", "platform": "instagram", "borough": "wigan", "category": "music", "notes": "Band, Bitter Sweet Symphony, Wigan", "priority": "high"},
+    {"handle": "officialkenneth", "name": "Kiran Leonard", "platform": "instagram", "borough": "westhoughton", "category": "music", "notes": "Singer-songwriter, Westhoughton", "priority": "medium"},
+    
+    {"handle": "philneville18", "name": "Phil Neville", "platform": "instagram", "borough": "bury", "category": "sport", "notes": "Ex-England/Man Utd, Bury/Bolton roots", "priority": "high"},
+    {"handle": "gneville2", "name": "Gary Neville", "platform": "instagram", "borough": "bury", "category": "sport", "notes": "Ex-England/Man Utd, pundit, Bury/Bolton", "priority": "high"},
+    {"handle": "davidbeckham", "name": "David Beckham", "platform": "instagram", "borough": "leyland", "category": "sport", "notes": "England legend, attended school in Leyland area", "priority": "high"},
+    {"handle": "flintoff11", "name": "Freddie Flintoff", "platform": "instagram", "borough": "preston", "category": "sport", "notes": "Ex-England cricket, TV presenter, Preston", "priority": "high"},
+    {"handle": "tyson_fury", "name": "Tyson Fury", "platform": "instagram", "borough": "manchester", "category": "sport", "notes": "Heavyweight boxing champ, fights in Manchester/Lancs", "priority": "high"},
+    {"handle": "rickyhattonmbe", "name": "Ricky Hatton", "platform": "instagram", "borough": "stockport", "category": "sport", "notes": "Boxing legend, strong Manchester/Lancs presence", "priority": "medium"},
+    {"handle": "robbiesavage8", "name": "Robbie Savage", "platform": "instagram", "borough": "wrexham", "category": "sport", "notes": "Pundit, played for Blackburn Rovers, Wrexham but Lancs connection", "priority": "medium"},
+    
+    {"handle": "fred.done", "name": "Sir Fred Done", "platform": "instagram", "borough": "salford", "category": "business", "notes": "Betfred founder, billionaire, Salford", "priority": "high"},
+    {"handle": "tombloxham", "name": "Tom Bloxham", "platform": "instagram", "borough": "manchester", "category": "business", "notes": "Urban Splash founder, property developer", "priority": "medium"},
+    {"handle": "simondolan", "name": "Simon Dolan", "platform": "instagram", "borough": "salford", "category": "business", "notes": "Entrepreneur, Salford-born, Jota Sport", "priority": "medium"},
+    {"handle": "lord Sugar", "name": "Lord Alan Sugar", "platform": "instagram", "borough": "all", "category": "business", "notes": "The Apprentice, frequent Manchester visits", "priority": "low"},
+    
+    {"handle": "jeanettewinterson", "name": "Jeanette Winterson", "platform": "instagram", "borough": "accrington", "category": "author", "notes": "Author, Oranges Are Not the Only Fruit, Accrington", "priority": "medium"},
+    {"handle": "benjaminzephaniah", "name": "Benjamin Zephaniah", "platform": "instagram", "borough": "all", "category": "author", "notes": "Poet, grew up in Birmingham but strong Northern presence", "priority": "low"},
+    
+    {"handle": "lancashirelife", "name": "Lancashire Life", "platform": "instagram", "borough": "all", "category": "lifestyle", "notes": "Magazine, events, local culture", "priority": "high"},
+    {"handle": "visitlancashire", "name": "Visit Lancashire", "platform": "instagram", "borough": "all", "category": "tourism", "notes": "Official tourism board", "priority": "high"},
+    {"handle": "lancashirefood", "name": "Lancashire Food", "platform": "instagram", "borough": "all", "category": "food", "notes": "Local food scene", "priority": "medium"},
+    {"handle": "lancashirebusiness", "name": "Lancashire Business View", "platform": "instagram", "borough": "all", "category": "business", "notes": "Business news and features", "priority": "medium"},
+    {"handle": "boltonfood", "name": "Bolton Food", "platform": "instagram", "borough": "bolton", "category": "food", "notes": "Bolton food scene", "priority": "low"},
+    {"handle": "prestonfood", "name": "Preston Food", "platform": "instagram", "borough": "preston", "category": "food", "notes": "Preston food scene", "priority": "low"},
+    
+    {"handle": "burnleyfc", "name": "Burnley FC", "platform": "instagram", "borough": "burnley", "category": "sport", "notes": "Official club account", "priority": "critical"},
+    {"handle": "pnefc", "name": "Preston North End", "platform": "instagram", "borough": "preston", "category": "sport", "notes": "Official club account", "priority": "critical"},
+    {"handle": "blackpoolfc", "name": "Blackpool FC", "platform": "instagram", "borough": "blackpool", "category": "sport", "notes": "Official club account", "priority": "critical"},
+    {"handle": "lancashireccc", "name": "Lancashire Cricket", "platform": "instagram", "borough": "manchester", "category": "sport", "notes": "Official cricket club", "priority": "high"},
+    {"handle": "rovers", "name": "Blackburn Rovers", "platform": "instagram", "borough": "blackburn", "category": "sport", "notes": "Official club account", "priority": "critical"},
+    {"handle": "officialbwfc", "name": "Bolton Wanderers", "platform": "instagram", "borough": "bolton", "category": "sport", "notes": "Official club account", "priority": "critical"},
+    {"handle": "wiganathletic", "name": "Wigan Athletic", "platform": "instagram", "borough": "wigan", "category": "sport", "notes": "Official club account", "priority": "critical"},
+    {"handle": "accringtonstanley", "name": "Accrington Stanley", "platform": "instagram", "borough": "accrington", "category": "sport", "notes": "Official club account", "priority": "medium"},
+    {"handle": "fleetwoodtownfc", "name": "Fleetwood Town", "platform": "instagram", "borough": "fleetwood", "category": "sport", "notes": "Official club account", "priority": "medium"},
+    {"handle": "morecambefc", "name": "Morecambe FC", "platform": "instagram", "borough": "morecambe", "category": "sport", "notes": "Official club account", "priority": "medium"},
+    {"handle": "rochdaleafc", "name": "Rochdale AFC", "platform": "instagram", "borough": "rochdale", "category": "sport", "notes": "Official club account", "priority": "medium"},
+    {"handle": "salfordcityfc", "name": "Salford City", "platform": "instagram", "borough": "salford", "category": "sport", "notes": "Class of 92 owned club", "priority": "high"},
+    {"handle": "fcunitedmcr", "name": "FC United of Manchester", "platform": "instagram", "borough": "manchester", "category": "sport", "notes": "Fan-owned club", "priority": "medium"},
+    {"handle": "wiganwarriorsrl", "name": "Wigan Warriors", "platform": "instagram", "borough": "wigan", "category": "sport", "notes": "Rugby league", "priority": "high"},
+    {"handle": "saints1890", "name": "St Helens RLFC", "platform": "instagram", "borough": "sthelens", "category": "sport", "notes": "Rugby league (St Helens, near Lancs)", "priority": "medium"}
+  ],
+  
+  "x_lancashire_influencers": [
+    {"handle": "paddymcguinness", "name": "Paddy McGuinness", "borough": "bolton", "category": "tv"},
+    {"handle": "peterkay_co_uk", "name": "Peter Kay", "borough": "bolton", "category": "comedy"},
+    {"handle": "vernonkay", "name": "Vernon Kay", "borough": "bolton", "category": "tv"},
+    {"handle": "zoetheball", "name": "Zoe Ball", "borough": "blackpool", "category": "media"},
+    {"handle": "coleennolan", "name": "Coleen Nolan", "borough": "blackpool", "category": "tv"},
+    {"handle": "thejennyryan", "name": "Jenny Ryan", "borough": "wigan", "category": "tv"},
+    {"handle": "jasonmanford", "name": "Jason Manford", "borough": "salford", "category": "comedy"},
+    {"handle": "ianbrown", "name": "Ian Brown", "borough": "all", "category": "music"},
+    {"handle": "guygarvey", "name": "Guy Garvey", "borough": "bury", "category": "music"},
+    {"handle": "lisastansfield", "name": "Lisa Stansfield", "borough": "rochdale", "category": "music"},
+    {"handle": "burnleyofficial", "name": "Burnley FC", "borough": "burnley", "category": "sport", "priority": "critical"},
+    {"handle": "pnefc", "name": "Preston North End", "borough": "preston", "category": "sport", "priority": "critical"},
+    {"handle": "blackpoolfc", "name": "Blackpool FC", "borough": "blackpool", "category": "sport", "priority": "critical"},
+    {"handle": "rovers", "name": "Blackburn Rovers", "borough": "blackburn", "category": "sport", "priority": "critical"},
+    {"handle": "officialbwfc", "name": "Bolton Wanderers", "borough": "bolton", "category": "sport", "priority": "critical"},
+    {"handle": "lancashireccc", "name": "Lancashire Cricket", "borough": "manchester", "category": "sport"},
+    {"handle": "gneville2", "name": "Gary Neville", "borough": "bury", "category": "sport"},
+    {"handle": "philneville18", "name": "Phil Neville", "borough": "bury", "category": "sport"},
+    {"handle": "flintoff11", "name": "Freddie Flintoff", "borough": "preston", "category": "sport"},
+    {"handle": "visitlancashire", "name": "Visit Lancashire", "borough": "all", "category": "tourism"},
+    {"handle": "lancashirelife", "name": "Lancashire Life", "borough": "all", "category": "lifestyle"},
+    {"handle": "Tom_aspinall", "name": "Tom Aspinall", "borough": "all", "category": "sport"}
+  ],
+  
+  "tiktok_lancashire": [
+    {"handle": "paddymcguinness", "name": "Paddy McGuinness", "borough": "bolton", "category": "tv"},
+    {"handle": "vernonkay", "name": "Vernon Kay", "borough": "bolton", "category": "tv"},
+    {"handle": "jasonmanford", "name": "Jason Manford", "borough": "salford", "category": "comedy"},
+    {"handle": "jonichanian", "name": "Jon Richardson", "borough": "all", "category": "comedy"},
+    {"handle": "burnleyfc", "name": "Burnley FC", "borough": "burnley", "category": "sport"},
+    {"handle": "blackpoolfc", "name": "Blackpool FC", "borough": "blackpool", "category": "sport"},
+    {"handle": "rovers", "name": "Blackburn Rovers", "borough": "blackburn", "category": "sport"},
+    {"handle": "officialbwfc", "name": "Bolton Wanderers", "borough": "bolton", "category": "sport"},
+    {"handle": "lancashirelife", "name": "Lancashire Life", "borough": "all", "category": "lifestyle"},
+    {"handle": "zoetheball", "name": "Zoe Ball", "borough": "blackpool", "category": "media"},
+    {"handle": "thejennyryan", "name": "Jenny Ryan", "borough": "wigan", "category": "tv"}
+  ],
+  
+  "bluesky_influencers": [
+    {"handle": "paddymcguinness.bsky.social", "name": "Paddy McGuinness", "borough": "bolton", "category": "tv"},
+    {"handle": "visitlancashire.bsky.social", "name": "Visit Lancashire", "borough": "all", "category": "tourism"},
+    {"handle": "jasonmanford.bsky.social", "name": "Jason Manford", "borough": "salford", "category": "comedy"},
+    {"handle": "guygarvey.bsky.social", "name": "Guy Garvey", "borough": "bury", "category": "music"}
+  ],
+  
+  "business_leaders": [
+    {"name": "Sir Fred Done", "company": "Betfred", "sector": "gambling", "borough": "salford", "notes": "Billionaire founder"},
+    {"name": "Tom Bloxham", "company": "Urban Splash", "sector": "property", "borough": "manchester", "notes": "Property developer"},
+    {"name": "Simon Dolan", "company": "Jota Group", "sector": "motorsport/business", "borough": "salford", "notes": "Entrepreneur"},
+    {"name": "John Caudwell", "company": "Phones4u", "sector": "retail", "borough": "stoke", "notes": "Billionaire philanthropist, NW presence"},
+    {"name": "Theo Paphitis", "company": "Ryman", "sector": "retail", "borough": "all", "notes": "Dragons Den, frequent Northern business events"},
+    {"name": "Sara Davies", "company": "Crafter's Companion", "sector": "retail", "borough": "durham", "notes": "Dragons Den, North East but Lancs connections"}
+  ],
+  
+  "categories": {
+    "critical": "Football clubs - major news sources",
+    "high": "Celebrities, major sports figures, TV stars",
+    "medium": "Influencers, comedians, musicians",
+    "low": "Secondary accounts, niche interests"
+  }
+}

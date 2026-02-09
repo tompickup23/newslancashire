@@ -1,0 +1,77 @@
+{
+  "rss": [
+    {"url": "http://feeds.bbci.co.uk/news/england/lancashire/rss.xml", "name": "BBC Lancashire", "borough_focus": "all"},
+    {"url": "https://www.lancashiretelegraph.co.uk/news/rss/", "name": "Lancashire Telegraph", "borough_focus": "east_lancs"},
+    {"url": "https://www.burnleyexpress.net/news/rss/", "name": "Burnley Express", "borough_focus": "burnley"},
+    {"url": "https://www.blackpoolgazette.co.uk/news/rss/", "name": "Blackpool Gazette", "borough_focus": "blackpool"},
+    {"url": "https://www.lancasterguardian.co.uk/news/rss/", "name": "Lancaster Guardian", "borough_focus": "lancaster"},
+    {"url": "https://www.lep.co.uk/news/rss/", "name": "Lancashire Evening Post", "borough_focus": "preston"},
+    {"url": "https://www.reformparty.uk/feed", "name": "Reform UK National", "borough_focus": "all", "category": "politics"}
+  ],
+  "council": [
+    {"url": "https://www.lancashire.gov.uk/news/feed/", "name": "Lancashire County Council", "borough_focus": "all"},
+    {"url": "https://burnleycouncil.co.uk/feed.xml", "name": "Burnley Council Watch", "borough_focus": "burnley"}
+  ],
+  "bluesky": {
+    "api_base": "https://public.api.bsky.app/xrpc",
+    "accounts": [
+      {"handle": "oliverryanmp.bsky.social", "name": "Oliver Ryan MP", "role": "MP (Ind, ex-Lab)", "borough": "burnley"},
+      {"handle": "sarahsmithlab.bsky.social", "name": "Sarah Smith MP", "role": "MP (Lab)", "borough": "hyndburn"},
+      {"handle": "andymacnaemp.bsky.social", "name": "Andy MacNae MP", "role": "MP (Lab)", "borough": "rossendale"},
+      {"handle": "markhendrickmp.bsky.social", "name": "Mark Hendrick MP", "role": "MP (Lab Co-op)", "borough": "preston"},
+      {"handle": "catsmithmp.bsky.social", "name": "Cat Smith MP", "role": "MP (Lab)", "borough": "lancaster"},
+      {"handle": "lizzicollinge.bsky.social", "name": "Lizzi Collinge MP", "role": "MP (Lab)", "borough": "lancaster"},
+      {"handle": "ashleydaltonmp.bsky.social", "name": "Ashley Dalton MP", "role": "MP (Lab)", "borough": "west_lancashire"},
+      {"handle": "chriswebbmp.bsky.social", "name": "Chris Webb MP", "role": "MP (Lab)", "borough": "blackpool"},
+      {"handle": "mayaellismp.bsky.social", "name": "Maya Ellis MP", "role": "MP (Lab)", "borough": "ribble_valley"},
+      {"handle": "commonsspeaker.parliament.uk", "name": "Lindsay Hoyle", "role": "Speaker", "borough": "chorley"},
+      {"handle": "lukebeardsworth.bsky.social", "name": "Luke Beardsworth", "role": "Journalist (The Lead)", "borough": "all"},
+      {"handle": "northlancsgreens.bsky.social", "name": "North Lancs Greens", "role": "Party", "borough": "lancaster"}
+    ],
+    "lancashire_keywords": ["lancashire", "burnley", "pendle", "blackburn", "blackpool", "preston",
+      "lancaster", "chorley", "rossendale", "hyndburn", "ribble valley", "south ribble",
+      "wyre", "fylde", "west lancashire", "council", "nhs", "m65", "reform", "lcc",
+      "nelson", "colne", "accrington", "darwen", "morecambe", "fleetwood", "tom pickup",
+      "luke parker", "stephen atkinson", "padiham"]
+  },
+  "x_accounts": [
+    {"handle": "LancsPolice", "name": "Lancashire Police", "borough": "all", "category": "crime"},
+    {"handle": "LancsPCC", "name": "Lancashire PCC", "borough": "all", "category": "crime"},
+    {"handle": "ReformParty_UK", "name": "Reform UK", "borough": "all", "category": "politics"},
+    {"handle": "LancashireCC", "name": "Lancashire County Council", "borough": "all", "category": "politics"},
+    {"handle": "BurnleyCouncil", "name": "Burnley Council", "borough": "burnley", "category": "politics"},
+    {"handle": "OliverRyanUK", "name": "Oliver Ryan MP", "borough": "burnley", "category": "politics"},
+    {"handle": "sarahsmithlab", "name": "Sarah Smith MP", "borough": "hyndburn", "category": "politics"},
+    {"handle": "CatSmithMP", "name": "Cat Smith MP", "borough": "lancaster", "category": "politics"},
+    {"handle": "LizziCollinge", "name": "Lizzi Collinge MP", "borough": "lancaster", "category": "politics"},
+    {"handle": "ChrisWebbMP", "name": "Chris Webb MP", "borough": "blackpool", "category": "politics"},
+    {"handle": "PaulFosterMP", "name": "Paul Foster MP", "borough": "south_ribble", "category": "politics"},
+    {"handle": "AshleyDalton_MP", "name": "Ashley Dalton MP", "borough": "west_lancashire", "category": "politics"},
+    {"handle": "Jonathan_Hinder", "name": "Jonathan Hinder MP", "borough": "pendle", "category": "politics"},
+    {"handle": "AndyMacnae", "name": "Andy MacNae MP", "borough": "rossendale", "category": "politics"},
+    {"handle": "BeaversLorraine", "name": "Lorraine Beavers MP", "borough": "blackpool", "category": "politics"},
+    {"handle": "A_J_Snowden", "name": "Andrew Snowden MP", "borough": "fylde", "category": "politics"},
+    {"handle": "LindsayHoyle_MP", "name": "Lindsay Hoyle MP", "borough": "chorley", "category": "politics"},
+    {"handle": "AdnanHussainMP", "name": "Adnan Hussain MP", "borough": "blackburn", "category": "politics"},
+    {"handle": "antony_hig", "name": "Antony Higginbotham", "borough": "burnley", "category": "politics"},
+    {"handle": "burnaborton", "name": "Burnley Express", "borough": "burnley", "category": "general"}
+  ],
+  "facebook_pages": [
+    {"page": "LancashirePolice", "name": "Lancashire Police", "borough": "all", "category": "crime", "priority": "high"},
+    {"page": "LancashireCountyCouncil", "name": "Lancashire CC", "borough": "all", "category": "politics", "priority": "high"},
+    {"page": "tompickupburnley", "name": "Tom Pickup", "borough": "burnley", "category": "politics", "priority": "critical", "note": "Reform County Councillor for Padiham & Burnley West"},
+    {"page": "lukeparkerukreform", "name": "Luke Parker", "borough": "preston", "category": "politics", "priority": "critical", "note": "Reform County Councillor for Preston East, Group Whip"},
+    {"page": "ReformUKLancashire", "name": "Reform UK Lancashire", "borough": "all", "category": "politics", "priority": "high"},
+    {"page": "SarahSmithForHH", "name": "Sarah Smith MP", "borough": "hyndburn", "category": "politics", "priority": "medium"},
+    {"page": "LorraineBeaversMP", "name": "Lorraine Beavers MP", "borough": "blackpool", "category": "politics", "priority": "medium"},
+    {"page": "AndrewForFylde", "name": "Andrew Snowden MP", "borough": "fylde", "category": "politics", "priority": "medium"},
+    {"page": "BurnleyBoroughCouncil", "name": "Burnley Borough Council", "borough": "burnley", "category": "politics", "priority": "medium"},
+    {"page": "ReformPrestonUK", "name": "Reform UK Preston", "borough": "preston", "category": "politics", "priority": "high"},
+    {"page": "ReformWestLancs", "name": "Reform UK West Lancs", "borough": "west_lancashire", "category": "politics", "priority": "high"}
+  ],
+  "instagram_accounts": [
+    {"handle": "tompickupburnley", "name": "Tom Pickup", "borough": "burnley", "category": "politics", "priority": "critical"},
+    {"handle": "lukeparkerukreform", "name": "Luke Parker", "borough": "preston", "category": "politics", "priority": "critical"},
+    {"handle": "oliverryanmp", "name": "Oliver Ryan MP", "borough": "burnley", "category": "politics"}
+  ]
+}

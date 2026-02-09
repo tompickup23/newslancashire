@@ -1,0 +1,73 @@
+baseURL = 'https://newslancashire.co.uk'
+languageCode = 'en-gb'
+title = 'News Lancashire'
+theme = 'newslancashire-theme-v2'
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = false
+summaryLength = 40
+
+[params]
+description = 'Lancashire news, AI-powered digests and original local reporting across all 14 boroughs'
+author = 'News Lancashire'
+keywords = ['Lancashire news', 'Burnley news', 'Blackpool news', 'Preston news', 'Lancaster news', 'Lancashire local news', 'Pendle news', 'Rossendale news', 'Hyndburn news', 'Chorley news', 'Ribble Valley news', 'South Ribble news', 'West Lancashire news', 'Wyre news', 'Fylde news', 'Blackburn news', 'Tom Pickup', 'Reform UK Lancashire']
+tagline = 'Lancashire News - Informed by AI, Written by Locals'
+
+[permalinks]
+original = '/original/:year/:month/:slug/'
+digest = '/digest/:year/:month/:slug/'
+guest = '/guest/:year/:month/:slug/'
+burnley = '/burnley/:slug/'
+pendle = '/pendle/:slug/'
+rossendale = '/rossendale/:slug/'
+hyndburn = '/hyndburn/:slug/'
+ribble-valley = '/ribble-valley/:slug/'
+blackburn = '/blackburn/:slug/'
+chorley = '/chorley/:slug/'
+south-ribble = '/south-ribble/:slug/'
+preston = '/preston/:slug/'
+west-lancashire = '/west-lancashire/:slug/'
+lancaster = '/lancaster/:slug/'
+wyre = '/wyre/:slug/'
+fylde = '/fylde/:slug/'
+blackpool = '/blackpool/:slug/'
+
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+location = 'locations'
+
+[outputs]
+home = ['HTML', 'RSS', 'JSON']
+section = ['HTML', 'RSS']
+
+[outputFormats.RSS]
+mediatype = 'application/rss+xml'
+baseName = 'index'
+
+[outputFormats.JSON]
+mediatype = 'application/json'
+baseName = 'index'
+
+[privacy]
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = true
+[privacy.instagram]
+disable = true
+[privacy.twitter]
+disable = true
+[privacy.vimeo]
+disable = true
+[privacy.youtube]
+disable = true
+
+[imaging]
+quality = 85
+resampleFilter = 'lanczos'
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
