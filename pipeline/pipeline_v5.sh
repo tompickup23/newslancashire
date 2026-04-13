@@ -63,6 +63,11 @@ fi
 # ── Phase 6: Enrich articles with full text from source URLs ──
 run_script pipeline/article_enricher.py "Article Enricher" 180
 
+# ── Phase 6b: Social media crawl (X via Playwright, every 6h) ──
+if [ $((HOUR % 6)) -eq 0 ]; then
+  run_script "pipeline/social_crawler.py --platform x --max 10" "X Crawler" 300
+fi
+
 # ── Phase 7: Submit articles to SR editorial for review ──
 run_script pipeline/sr_submit.py "SR Submit" 30
 
