@@ -13,30 +13,30 @@
 
 // ── Borough civic buildings (for council/politics stories) ──
 const BOROUGH_CIVIC: Record<string, string> = {
-  burnley: "/images/boroughs/burnley-town-hall.jpg",
-  pendle: "/images/boroughs/pendle-town-hall.jpg",
-  hyndburn: "/images/boroughs/hyndburn-town-hall.jpg",
-  rossendale: "/images/boroughs/rossendale-town.jpg",
-  "ribble-valley": "/images/boroughs/ribble-valley-castle.jpg",
-  lancaster: "/images/boroughs/lancaster-ashton-memorial.jpg",
-  blackburn: "/images/boroughs/blackburn-town-hall.jpg",
-  blackpool: "/images/boroughs/blackpool-tower.jpg",
-  preston: "/images/boroughs/preston-harris-museum.jpg",
-  chorley: "/images/boroughs/chorley-town-hall.jpg",
-  "south-ribble": "/images/boroughs/south-ribble-civic.jpg",
-  "west-lancashire": "/images/boroughs/west-lancashire-ormskirk.jpg",
-  wyre: "/images/boroughs/wyre-poulton.jpg",
-  fylde: "/images/boroughs/fylde-lytham-hall.jpg",
-  "lancashire-wide": "/images/boroughs/lancashire-county-hall.jpg",
+  burnley: "/images/boroughs/burnley-town-hall-v2.jpg",
+  pendle: "/images/boroughs/pendle-town-hall-v2.jpg",
+  hyndburn: "/images/boroughs/hyndburn-town-hall-v2.jpg",
+  rossendale: "/images/boroughs/rossendale-town-v2.jpg",
+  "ribble-valley": "/images/boroughs/ribble-valley-castle-v2.jpg",
+  lancaster: "/images/boroughs/lancaster-ashton-memorial-v2.jpg",
+  blackburn: "/images/boroughs/blackburn-town-hall-v2.jpg",
+  blackpool: "/images/boroughs/blackpool-tower-v2.jpg",
+  preston: "/images/boroughs/preston-harris-museum-v2.jpg",
+  chorley: "/images/boroughs/chorley-town-hall-v2.jpg",
+  "south-ribble": "/images/boroughs/south-ribble-civic-v2.jpg",
+  "west-lancashire": "/images/boroughs/west-lancashire-ormskirk-v2.jpg",
+  wyre: "/images/boroughs/wyre-poulton-v2.jpg",
+  fylde: "/images/boroughs/fylde-lytham-hall-v2.jpg",
+  "lancashire-wide": "/images/boroughs/lancashire-county-hall-v2.jpg",
 };
 
 // ── Football grounds (for sport stories mentioning clubs) ──
 const FOOTBALL_GROUNDS: Record<string, { image: string; keywords: string[] }> = {
-  burnley: { image: "/images/sport/turf-moor-burnley.jpg", keywords: ["burnley fc", "turf moor", "clarets"] },
-  blackburn: { image: "/images/sport/ewood-park-blackburn.jpg", keywords: ["blackburn rovers", "ewood park", "rovers"] },
-  preston: { image: "/images/sport/deepdale-preston.jpg", keywords: ["preston north end", "deepdale", "pne"] },
-  blackpool: { image: "/images/sport/bloomfield-road-blackpool.jpg", keywords: ["blackpool fc", "bloomfield road", "seasiders"] },
-  hyndburn: { image: "/images/sport/wham-stadium-accrington.jpg", keywords: ["accrington stanley", "wham stadium"] },
+  burnley: { image: "/images/sport/turf-moor-burnley-v2.jpg", keywords: ["burnley fc", "turf moor", "clarets"] },
+  blackburn: { image: "/images/sport/ewood-park-blackburn-v2.jpg", keywords: ["blackburn rovers", "ewood park", "rovers"] },
+  preston: { image: "/images/sport/deepdale-preston-v2.jpg", keywords: ["preston north end", "deepdale", "pne"] },
+  blackpool: { image: "/images/sport/bloomfield-road-blackpool-v2.jpg", keywords: ["blackpool fc", "bloomfield road", "seasiders"] },
+  hyndburn: { image: "/images/sport/wham-stadium-accrington-v2.jpg", keywords: ["accrington stanley", "wham stadium"] },
 };
 
 // ── Sensitive topic keywords → memorial images ──
@@ -47,16 +47,16 @@ const SENSITIVE_KEYWORDS = [
 ];
 
 const SENSITIVE_IMAGES = [
-  "/images/sensitive/memorial-flowers.jpg",
-  "/images/sensitive/candles-memorial.jpg",
-  "/images/sensitive/church-memorial.jpg",
+  "/images/sensitive/memorial-flowers-v2.jpg",
+  "/images/sensitive/candles-memorial-v2.jpg",
+  "/images/sensitive/church-memorial-v2.jpg",
 ];
 
 // ── Transport keywords → specific images ──
 const TRANSPORT_KEYWORDS: { keywords: string[]; image: string }[] = [
-  { keywords: ["roadworks", "road closure", "road closed", "resurfacing", "pothole"], image: "/images/transport/roadworks.jpg" },
-  { keywords: ["m6", "m65", "m55", "motorway", "a59", "a56"], image: "/images/transport/motorway.jpg" },
-  { keywords: ["m6 lancaster", "m6 north"], image: "/images/transport/m6-lancaster.jpg" },
+  { keywords: ["roadworks", "road closure", "road closed", "resurfacing", "pothole"], image: "/images/transport/roadworks-v2.jpg" },
+  { keywords: ["m6", "m65", "m55", "motorway", "a59", "a56"], image: "/images/transport/motorway-v2.jpg" },
+  { keywords: ["m6 lancaster", "m6 north"], image: "/images/transport/m6-lancaster-v2.jpg" },
 ];
 
 // ── Category fallbacks ──

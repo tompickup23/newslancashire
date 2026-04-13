@@ -5,7 +5,7 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 /images/*
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400
 
 /brand/*
   Cache-Control: public, max-age=2592000, immutable
