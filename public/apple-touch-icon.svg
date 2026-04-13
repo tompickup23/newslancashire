@@ -1,4 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-  <rect width="180" height="180" rx="40" fill="#0a84ff"/>
-  <text x="90" y="118" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="80" fill="white">NL</text>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0a84ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#g)"/>
+  <path d="M132 0 L180 0 L180 48 Z" fill="#1d4ed8"/>
+  <path d="M132 0 L180 48 L132 48 Z" fill="#93c5fd" opacity="0.4"/>
+  <text x="90" y="120" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="900" font-size="100" fill="white">N</text>
 </svg>

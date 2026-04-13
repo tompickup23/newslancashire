@@ -16,7 +16,7 @@ const navLinks = [
     <img src="/brand/logo.svg" alt="News Lancashire" class="brand-logo" width="260" height="48" />
   </a>
 
-  <div class="desktop-nav" style="display: flex; align-items: center; gap: 0.25rem;">
+  <div class="desktop-nav">
     <nav class="site-nav" aria-label="Main navigation">
       {navLinks.map((link) => (
         <a href={link.href} aria-current={pathname.startsWith(link.href) ? "page" : undefined}>
@@ -36,6 +36,8 @@ const navLinks = [
   </div>
 
   <div class="site-tools">
+    <div id="google_translate_element" class="translate-widget"></div>
+
     <button
       class="search-launch"
       type="button"
@@ -95,4 +97,16 @@ const navLinks = [
   openBtn?.addEventListener("click", openDrawer);
   closeBtn?.addEventListener("click", closeDrawer);
   backdrop?.addEventListener("click", closeDrawer);
+
+  // Google Translate
+  (window as any).googleTranslateElementInit = function () {
+    new (window as any).google.translate.TranslateElement(
+      { pageLanguage: "en", layout: (window as any).google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
+      "google_translate_element"
+    );
+  };
+  const gt = document.createElement("script");
+  gt.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  gt.async = true;
+  document.head.appendChild(gt);
 </script>
