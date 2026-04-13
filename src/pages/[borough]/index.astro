@@ -30,8 +30,8 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: `${boroughName} News`,
-    description: `Latest news from ${boroughName}, Lancashire.`,
+    name: `News ${boroughName}`,
+    description: `News ${boroughName}: latest local news from ${boroughName}, Lancashire.`,
     url: `${SITE_URL}/${borough.slug}/`,
     inLanguage: "en-GB",
   },
@@ -39,8 +39,8 @@ const structuredData = [
 ---
 
 <BaseLayout
-  title={`${boroughName} News`}
-  description={`Latest local news from ${boroughName}, Lancashire. Independent journalism with no ads.`}
+  title={`News ${boroughName} — Local News for ${boroughName}`}
+  description={`News ${boroughName}: latest local news from ${boroughName}, Lancashire. Independent journalism with no ads.`}
   image={`/og/${borough.slug}.png`}
   structuredData={structuredData}
 >
@@ -50,7 +50,7 @@ const structuredData = [
       <span class="separator">/</span>
       <span>{boroughName}</span>
     </div>
-    <h1 class="hero-headline">{boroughName} News</h1>
+    <h1 class="hero-headline">News {boroughName}</h1>
     {borough.population > 0 && (
       <p class="hero-sub">
         Population {borough.population.toLocaleString("en-GB")}
