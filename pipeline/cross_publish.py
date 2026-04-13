@@ -80,6 +80,43 @@ COUNCIL_TO_BOROUGH = {
 }
 
 
+def html_to_markdown(html):
+    """Convert HTML to clean markdown, preserving tables."""
+    if not html:
+        return ''
+    text = html
+    # Convert HTML tables to markdown tables
+    # Extract rows
+    rows = re.findall(r'<tr[^>]*>(.*?)</tr>', text, re.DOTALL)
+    if rows:
+        md_rows = []
+        for row in rows:
+            cells = re.findall(r'<t[dh][^>]*>(.*?)</t[dh]>', row, re.DOTALL)
+            cells = [re.sub(r'<[^>]+>', '', c).strip() for c in cells]
+            if cells:
+                md_rows.append('| ' + ' | '.join(cells) + ' |')
+        if md_rows:
+            # Add header separator after first row
+            ncols = md_rows[0].count('|') - 1
+            separator = '| ' + ' | '.join(['---'] * ncols) + ' |'
+            table_md = md_rows[0] + '\n' + separator + '\n' + '\n'.join(md_rows[1:])
+            # Replace the HTML table with markdown
+            text = re.sub(r'<table[^>]*>.*?</table>', table_md, text, flags=re.DOTALL)
+
+    # Convert headers
+    text = re.sub(r'<h[23][^>]*>(.*?)</h[23]>', r'\n## \1\n', text, flags=re.DOTALL)
+    # Convert lists
+    text = re.sub(r'<li[^>]*>(.*?)</li>', r'- \1', text, flags=re.DOTALL)
+    # Convert paragraphs to double newlines
+    text = re.sub(r'<p[^>]*>(.*?)</p>', r'\1\n\n', text, flags=re.DOTALL)
+    # Strip remaining HTML
+    text = re.sub(r'<[^>]+>', '', text)
+    # Clean up whitespace
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    text = re.sub(r'[ \t]+', ' ', text)
+    return text.strip()
+
+
 def slugify(text, max_len=60):
     text = text.lower().strip()
     text = re.sub(r'[^\w\s-]', '', text)
@@ -255,8 +292,8 @@ def cross_publish_doge():
                 continue
 
             date = art.get('date', datetime.now().strftime('%Y-%m-%d'))
-            plain_text = re.sub(r'<[^>]+>', '', content_text)
-            summary = plain_text[:200]
+            plain_text = html_to_markdown(content_text)
+            summary = re.sub(r'[|\-\n]+', ' ', plain_text[:300]).strip()[:200]
             source_url = f"https://aidoge.co.uk/{council.replace('_', '')}council/"
             body = f"*Originally published on [AI DOGE](https://aidoge.co.uk). Covers {council.replace('_', ' ').title()} council spending.*\n\n{plain_text}"
             filename, md_content = _make_article(title, date, 'council', borough, 'AI DOGE', source_url, 75, 'cross-publish', 'aidoge', summary, body)

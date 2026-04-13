@@ -120,12 +120,13 @@ Summary: {summary or '(no summary available)'}
 Return a JSON object with:
 - "who": main people/organisations involved
 - "what": what happened (one sentence)
-- "where": location in Lancashire (be specific: town, borough)
+- "where": location in Lancashire (be specific: town, borough). If NOT about Lancashire, say "not Lancashire"
 - "when": when it happened (date or timeframe)
-- "why": why it matters to local residents
+- "why": why it matters to local residents (if it doesn't, say "not locally relevant")
 - "figures": any numbers, amounts, percentages mentioned
 - "category": one of: local, crime, politics, health, education, transport, planning, environment, business, sport, council
-- "interest_score": 0-100 how interesting/important this is to Lancashire readers
+- "interest_score": 0-100 how interesting/important this is to Lancashire readers. Score 0-20 if the article has NOTHING to do with Lancashire.
+- "is_lancashire": true if the article is about Lancashire or directly affects Lancashire residents, false if it's national/international with no local angle
 
 Return ONLY valid JSON, no markdown formatting."""
 
@@ -175,12 +176,24 @@ Title: {title}
 Original summary: {summary or '(no summary)'}
 Extracted facts: {facts_str}
 
+CRITICAL ACCURACY RULES (violations = article rejected):
+- NEVER invent names, statistics, percentages, dates, or quotes that are not in the source material above.
+- NEVER fabricate council meeting dates, vote counts, ward names, or councillor names.
+- If the source does not name someone, use their role ("the councillor", "the MP") — do NOT make up a name.
+- If the source does not give a specific figure, do NOT invent one. Say "the exact figure was not disclosed" or omit.
+- Only include facts that appear in the Title, Original summary, or Extracted facts above.
+- Attribute claims: "according to the source" or "the council said" rather than stating unverified facts as if confirmed.
+
 Writing rules:
 {rules}
 
 NEVER use these phrases: {banned}
 
-Target length: {word_min}-{word_max} words.
+Output format — return TWO parts separated by "---HEADLINE---":
+1. First line: a clean, factual headline (max 80 chars, no quotes around it)
+2. After ---HEADLINE---: the article body
+
+Target body length: {word_min}-{word_max} words.
 Write in plain text (no HTML, no markdown headers).
 Start with the news — no preamble.
 End with practical information if relevant (dates, contact details, locations).
@@ -218,6 +231,7 @@ def ensure_columns(conn):
         ('fact_check_score', 'INTEGER DEFAULT 0'),
         ('extracted_facts', 'TEXT'),
         ('engine_version', 'TEXT'),
+        ('clean_headline', 'TEXT'),
     ]:
         try:
             conn.execute(f'ALTER TABLE articles ADD COLUMN {col} {typedef}')
@@ -289,10 +303,24 @@ def process_article(conn, article, style_guide):
     time.sleep(2)  # Rate limit between API calls
 
     # Pass 2: Rewrite in local news voice
-    rewrite = pass2_rewrite(title, summary, facts, style_guide, tier)
-    if not rewrite:
+    raw_rewrite = pass2_rewrite(title, summary, facts, style_guide, tier)
+    if not raw_rewrite:
         log.warning('Pass 2 failed for %s', aid[:8])
         return False
+
+    # Parse headline from rewrite (format: headline\n---HEADLINE---\nbody)
+    clean_headline = None
+    rewrite = raw_rewrite
+    if '---HEADLINE---' in raw_rewrite:
+        parts = raw_rewrite.split('---HEADLINE---', 1)
+        clean_headline = parts[0].strip().strip('"').strip()[:120]
+        rewrite = parts[1].strip()
+    elif '\n' in raw_rewrite:
+        # Fallback: first line might be the headline
+        first_line = raw_rewrite.split('\n', 1)[0].strip()
+        if len(first_line) < 120 and not first_line.endswith('.'):
+            clean_headline = first_line
+            rewrite = raw_rewrite.split('\n', 1)[1].strip()
 
     # Update DB
     conn.execute(
@@ -301,9 +329,10 @@ def process_article(conn, article, style_guide):
             extracted_facts = ?,
             category = ?,
             content_tier = ?,
-            engine_version = ?
+            engine_version = ?,
+            clean_headline = ?
         WHERE id = ?''',
-        (rewrite, json.dumps(facts), category, tier, 'engine-v1.0', aid)
+        (rewrite, json.dumps(facts), category, tier, 'engine-v2.0', clean_headline, aid)
     )
 
     log.info('OK [%s] %s -> %d words', aid[:8], tier, len(rewrite.split()))

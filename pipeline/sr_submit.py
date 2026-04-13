@@ -169,8 +169,8 @@ def submit_to_sr_db(articles):
 
 def main():
     parser = argparse.ArgumentParser(description='Submit NL articles to SR editorial')
-    parser.add_argument('--max', type=int, default=10, help='Max articles to submit')
-    parser.add_argument('--min-score', type=int, default=60, help='Min interest score')
+    parser.add_argument('--max', type=int, default=50, help='Max articles to submit')
+    parser.add_argument('--min-score', type=int, default=40, help='Min interest score')
     parser.add_argument('--dry-run', action='store_true')
     args = parser.parse_args()
 

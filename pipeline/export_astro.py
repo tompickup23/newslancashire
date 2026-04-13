@@ -172,7 +172,11 @@ def make_summary(content, max_len=200):
 
 def article_to_markdown(row_dict):
     """Convert a DB article row to Astro markdown with frontmatter."""
-    title = (row_dict.get('title') or 'Untitled').strip()
+    # Prefer clean_headline from two-pass engine, fall back to raw title
+    title = (row_dict.get('clean_headline') or row_dict.get('title') or 'Untitled').strip()
+    # Truncate absurdly long social media post titles
+    if len(title) > 120:
+        title = title[:117].rsplit(' ', 1)[0] + '...'
     # Use best available content
     content = (
         row_dict.get('two_pass_rewrite')
