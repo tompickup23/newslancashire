@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none">
+  <!-- News Lancashire — Stacked (social avatar, square) -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0a84ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="220" rx="20" fill="#0f172a"/>
+
+  <!-- N Badge (centred, larger) -->
+  <rect x="55" y="24" width="90" height="90" rx="20" fill="url(#g)"/>
+  <path d="M120 24 L145 24 L145 49 Z" fill="#1d4ed8"/>
+  <path d="M120 24 L145 49 L120 49 Z" fill="#93c5fd" opacity="0.4"/>
+  <text x="100" y="88" text-anchor="middle" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="56" font-weight="900" fill="#FFFFFF">N</text>
+
+  <!-- Text -->
+  <text x="100" y="148" text-anchor="middle" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="28" font-weight="800" fill="#f5f5f7">NEWS</text>
+  <text x="100" y="176" text-anchor="middle" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="16" font-weight="400" letter-spacing="4" fill="#a1a1a6">LANCASHIRE</text>
+
+  <!-- Accent -->
+  <rect x="40" y="184" width="120" height="2.5" rx="1" fill="#0a84ff"/>
+
+  <!-- Category dots -->
+  <circle cx="68" cy="204" r="4" fill="#0a84ff" opacity="0.8"/>
+  <circle cx="84" cy="204" r="4" fill="#30d158" opacity="0.8"/>
+  <circle cx="100" cy="204" r="4" fill="#bf5af2" opacity="0.8"/>
+  <circle cx="116" cy="204" r="4" fill="#ff375f" opacity="0.8"/>
+  <circle cx="132" cy="204" r="4" fill="#ff9f0a" opacity="0.8"/>
+</svg>

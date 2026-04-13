@@ -177,39 +177,15 @@ button, input, select, textarea {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
   text-decoration: none;
-}
-.brand-mark {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: -0.02em;
   flex-shrink: 0;
 }
-.brand-copy {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
+.brand-logo {
+  height: 40px;
+  width: auto;
 }
-.brand-copy span {
-  font-weight: 800;
-  font-size: 1rem;
-  letter-spacing: -0.02em;
-}
-.brand-copy small {
-  font-size: 0.65rem;
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+@media (max-width: 480px) {
+  .brand-logo { height: 32px; }
 }
 
 .site-tools {
