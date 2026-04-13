@@ -60,7 +60,13 @@ if [ $? -ne 0 ]; then
   ERRORS=$((ERRORS + 1))
 fi
 
-# ── Phase 6: Digests (every 2 hours) ──
+# ── Phase 6: Cross-publish (LT, Asylum Stats, DOGE → NL) ──
+run_script pipeline/cross_publish.py "Cross-Publish" 60
+
+# ── Phase 7: Submit top articles to SR editorial ──
+run_script pipeline/sr_submit.py "SR Submit" 30
+
+# ── Phase 8: Digests (every 2 hours) ──
 HOUR=$(date +%-H)
 if [ $((HOUR % 2)) -eq 0 ]; then
   if [ -f scripts/digest/ai_digest_generator.py ]; then
@@ -68,7 +74,7 @@ if [ $((HOUR % 2)) -eq 0 ]; then
   fi
 fi
 
-# ── Phase 7: Build + Deploy Astro (every 6 hours) ──
+# ── Phase 9: Build + Deploy Astro (every 6 hours) ──
 if [ $ERRORS -eq 0 ] && [ $((HOUR % 6)) -eq 0 ]; then
   log_phase "Phase: Astro build + deploy..."
   cd "$NL_ASTRO"
