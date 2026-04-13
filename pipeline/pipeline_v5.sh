@@ -60,7 +60,10 @@ if [ $? -ne 0 ]; then
   ERRORS=$((ERRORS + 1))
 fi
 
-# ── Phase 6: Submit articles to SR editorial for review ──
+# ── Phase 6: Enrich articles with full text from source URLs ──
+run_script pipeline/article_enricher.py "Article Enricher" 180
+
+# ── Phase 7: Submit articles to SR editorial for review ──
 run_script pipeline/sr_submit.py "SR Submit" 30
 
 # ── Phase 7: Export ONLY SR-approved articles to live Astro ──
