@@ -1,5 +1,6 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
+import SearchDialog from "../islands/SearchDialog";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 import {
@@ -183,6 +184,7 @@ const structuredData: StructuredDataNode[] = [
   <body class={bodyClass}>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <SiteHeader />
+    <SearchDialog client:idle />
     <main id="main-content" class:list={["shell", mainClass]} tabindex="-1">
       <slot />
     </main>
