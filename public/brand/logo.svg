@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 80" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 76" fill="none">
   <!-- News Lancashire — Primary Horizontal Logo
-       Elevated N badge (gradient blue, newspaper fold detail) + wordmark.
-       Matches News Burnley design system. Blue = Lancashire brand colour. -->
+       N badge (gradient blue, newspaper fold) + wordmark. No tagline — keeps clean at small sizes. -->
   <defs>
     <linearGradient id="badge-grad" x1="0" y1="0" x2="0.5" y2="1">
       <stop offset="0%" stop-color="#2563eb"/>
@@ -9,29 +8,16 @@
     </linearGradient>
   </defs>
 
-  <!-- N Badge — rounded rectangle with newspaper fold -->
-  <rect x="0" y="4" width="68" height="68" rx="15" fill="url(#badge-grad)"/>
-
-  <!-- Newspaper fold triangle (top-right corner) -->
-  <path d="M52 4 L68 4 L68 20 Z" fill="#1d4ed8"/>
-  <path d="M52 4 L68 20 L52 20 Z" fill="#93c5fd" opacity="0.4"/>
-
-  <!-- N letterform — bold, clean -->
-  <text x="34" y="53" text-anchor="middle" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="40" font-weight="900" fill="#FFFFFF">N</text>
+  <!-- N Badge -->
+  <rect x="0" y="2" width="68" height="68" rx="15" fill="url(#badge-grad)"/>
+  <path d="M52 2 L68 2 L68 18 Z" fill="#1d4ed8"/>
+  <path d="M52 2 L68 18 L52 18 Z" fill="#93c5fd" opacity="0.4"/>
+  <text x="34" y="51" text-anchor="middle" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="40" font-weight="900" fill="#FFFFFF">N</text>
 
   <!-- Wordmark -->
-  <text x="84" y="35" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.5" fill="#f5f5f7">
-    NEWS
-  </text>
-  <text x="84" y="63" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="20" font-weight="400" letter-spacing="4" fill="#a1a1a6">
-    LANCASHIRE
-  </text>
+  <text x="84" y="34" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.5" fill="#f5f5f7">NEWS</text>
+  <text x="84" y="60" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="18" font-weight="400" letter-spacing="4.5" fill="#94a3b8">LANCASHIRE</text>
 
   <!-- Accent underline -->
-  <rect x="84" y="70" width="140" height="2.5" rx="1" fill="#0a84ff"/>
-
-  <!-- Tagline -->
-  <text x="290" y="50" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="500" fill="#6e6e73" letter-spacing="1.5">
-    INDEPENDENT LOCAL NEWS
-  </text>
+  <rect x="84" y="67" width="140" height="2.5" rx="1" fill="#0a84ff"/>
 </svg>
