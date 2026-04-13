@@ -28,9 +28,9 @@ import sqlite3
 from datetime import datetime
 from pathlib import Path
 
-BASE = Path('/home/ubuntu/newslancashire')
+BASE = Path(os.environ.get('NL_PIPELINE_DIR', '/root/newslancashire-pipeline'))
 DB_PATH = BASE / 'db' / 'news.db'
-DEFAULT_OUTPUT = Path('/home/ubuntu/newslancashire/astro-content/articles')
+DEFAULT_OUTPUT = Path(os.environ.get('NL_ASTRO_DIR', '/root/newslancashire')) / 'src' / 'content' / 'articles'
 LOG_DIR = BASE / 'logs'
 
 LOG_DIR.mkdir(exist_ok=True)

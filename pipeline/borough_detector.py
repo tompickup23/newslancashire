@@ -20,7 +20,7 @@ import re
 import sqlite3
 from pathlib import Path
 
-BASE = Path('/home/ubuntu/newslancashire')
+BASE = Path(os.environ.get('NL_PIPELINE_DIR', '/root/newslancashire-pipeline'))
 DB_PATH = BASE / 'db' / 'news.db'
 LOG_DIR = BASE / 'logs'
 

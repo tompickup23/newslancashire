@@ -28,7 +28,7 @@ import urllib.request
 import urllib.error
 from pathlib import Path
 
-BASE = Path('/home/ubuntu/newslancashire')
+BASE = Path(os.environ.get('NL_PIPELINE_DIR', '/root/newslancashire-pipeline'))
 DB_PATH = BASE / 'db' / 'news.db'
 LOG_DIR = BASE / 'logs'
 STYLE_GUIDE_PATH = Path(__file__).parent / 'nl_style_guide.json'

@@ -1,15 +1,23 @@
 #!/bin/bash
-# News Lancashire Pipeline v5.0 — Astro-native pipeline
-# Runs every 30 minutes via cron on vps-news
-# Flow: crawl → score → two-pass rewrite → borough detect → fact check → export Astro → deploy
-cd /home/ubuntu/newslancashire
-LOG=/home/ubuntu/newslancashire/logs/pipeline.log
-ERRORS=0
-PIPELINE_DIR="$(dirname "$0")"
+# News Lancashire Pipeline v5.0 — Unified pipeline on vps-main
+# Runs every 30 minutes via cron
+# Flow: crawl → rewrite → borough detect → two-pass engine → export Astro → build → deploy
+set -o pipefail
 
-# Use pipeline dir for new scripts, scripts/ for legacy
-PIPELINE="${PIPELINE_DIR}"
-SCRIPTS="/home/ubuntu/newslancashire/scripts"
+NL_PIPELINE="/root/newslancashire-pipeline"
+NL_ASTRO="/root/newslancashire"
+LOG="$NL_PIPELINE/logs/pipeline.log"
+ERRORS=0
+
+cd "$NL_PIPELINE"
+mkdir -p logs
+
+# Source environment variables (API keys, CF tokens)
+if [ -f "$NL_PIPELINE/.env" ]; then
+  set -a
+  source "$NL_PIPELINE/.env"
+  set +a
+fi
 
 log_phase() {
   echo "$(date '+%Y-%m-%d %H:%M') $1" >> "$LOG"
@@ -32,22 +40,21 @@ run_script() {
 log_phase "Pipeline v5.0 start"
 
 # ── Phase 1: Crawl RSS + council feeds ──
-run_script "$SCRIPTS/crawler_v3.py" "Crawler" 90
+run_script scripts/crawler_v3.py "Crawler" 90
 
-# ── Phase 2: AI rewrite (legacy single-pass for all articles) ──
-run_script "$SCRIPTS/ai_rewriter.py" "AI Rewriter" 180
+# ── Phase 2: AI rewrite (single-pass for all articles) ──
+run_script scripts/ai_rewriter.py "AI Rewriter" 180
 
 # ── Phase 3: Borough detection (enhanced) ──
-run_script "$PIPELINE/borough_detector.py" "Borough Detector" 60
+run_script pipeline/borough_detector.py "Borough Detector" 60
 
-# ── Phase 4: Two-pass article engine (high-interest articles only) ──
-# Only runs on articles with interest_score >= 40 that haven't been two-pass processed
-run_script "$PIPELINE/article_engine.py" "Article Engine" 300
+# ── Phase 4: Two-pass article engine (high-interest only) ──
+run_script pipeline/article_engine.py "Article Engine" 300
 
 # ── Phase 5: Export to Astro markdown ──
-ASTRO_CONTENT="/home/ubuntu/newslancashire/astro-content/articles"
+ASTRO_CONTENT="$NL_ASTRO/src/content/articles"
 mkdir -p "$ASTRO_CONTENT"
-python3 "$PIPELINE/export_astro.py" --output "$ASTRO_CONTENT" --clean >> "$LOG" 2>&1
+python3 pipeline/export_astro.py --output "$ASTRO_CONTENT" --clean >> "$LOG" 2>&1
 if [ $? -ne 0 ]; then
   log_phase "ERROR: Astro export failed"
   ERRORS=$((ERRORS + 1))
@@ -56,42 +63,28 @@ fi
 # ── Phase 6: Digests (every 2 hours) ──
 HOUR=$(date +%-H)
 if [ $((HOUR % 2)) -eq 0 ]; then
-  if [ -f "$SCRIPTS/digest/ai_digest_generator.py" ]; then
-    run_script "$SCRIPTS/digest/ai_digest_generator.py" "Digests" 120
+  if [ -f scripts/digest/ai_digest_generator.py ]; then
+    run_script scripts/digest/ai_digest_generator.py "Digests" 120
   fi
 fi
 
-# ── Phase 7: News Burnley sync ──
-if [ -f "$SCRIPTS/enhanced_sources/news_burnley_sync.py" ]; then
-  run_script "$SCRIPTS/enhanced_sources/news_burnley_sync.py" "News Burnley Sync" 30
-elif [ -f "$SCRIPTS/news_burnley_sync.py" ]; then
-  run_script "$SCRIPTS/news_burnley_sync.py" "News Burnley Sync" 30
-fi
-
-# ── Phase 8: Deploy Astro site (via vps-main, every 6 hours) ──
+# ── Phase 7: Build + Deploy Astro (every 6 hours) ──
 if [ $ERRORS -eq 0 ] && [ $((HOUR % 6)) -eq 0 ]; then
-  log_phase "Phase: Rsync Astro content to vps-main..."
-  # Sync exported articles to vps-main for Astro build
-  if rsync -az --delete "$ASTRO_CONTENT/" vps-main:/root/newslancashire/src/content/articles/ >> "$LOG" 2>&1; then
-    log_phase "Rsync OK"
-    # Trigger build on vps-main
-    if ssh -o ConnectTimeout=10 vps-main "cd /root/newslancashire && npm run build && wrangler pages deploy dist --project-name=newslancashire" >> "$LOG" 2>&1; then
-      log_phase "Astro deploy OK"
+  log_phase "Phase: Astro build + deploy..."
+  cd "$NL_ASTRO"
+  git pull --ff-only origin main >> "$LOG" 2>&1 || true
+  if npx astro build >> "$LOG" 2>&1; then
+    log_phase "Astro build OK"
+    if npx wrangler pages deploy dist --project-name=newslancashire --commit-dirty=true >> "$LOG" 2>&1; then
+      log_phase "CF Pages deploy OK"
     else
-      log_phase "WARN: Astro deploy failed"
+      log_phase "WARN: CF Pages deploy failed"
     fi
   else
-    log_phase "WARN: Rsync to vps-main failed"
+    log_phase "ERROR: Astro build failed"
+    ERRORS=$((ERRORS + 1))
   fi
-fi
-
-# ── Phase 9: News Burnley deploy (via vps-main) ──
-if [ $ERRORS -eq 0 ]; then
-  if ssh -o ConnectTimeout=10 vps-main "bash /root/aidoge/deploy_newsburnley.sh" >> "$LOG" 2>&1; then
-    log_phase "News Burnley deploy OK"
-  else
-    log_phase "WARN: News Burnley deploy failed"
-  fi
+  cd "$NL_PIPELINE"
 fi
 
 log_phase "Pipeline v5.0 complete (errors: $ERRORS)"
