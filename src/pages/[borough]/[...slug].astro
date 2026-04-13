@@ -101,9 +101,6 @@ const structuredData: StructuredDataNode[] = [
         {article.data.content_tier === "investigation" && (
           <span class="badge badge-investigation">Investigation</span>
         )}
-        {article.data.content_tier === "cross-publish" && article.data.cross_project && (
-          <span class="badge badge-tier">via {article.data.cross_project}</span>
-        )}
       </div>
 
       <h1 style="font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 0.75rem;">
