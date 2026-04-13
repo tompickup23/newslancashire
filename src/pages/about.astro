@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { BOROUGHS } from "../data/boroughs";
+---
+
+<BaseLayout title="About" description="News Lancashire is an independent local news project covering all 14 Lancashire boroughs with quality, ad-free journalism.">
+  <section class="hero" style="padding-bottom: 1rem;">
+    <h1 class="hero-headline">About News Lancashire</h1>
+  </section>
+
+  <div class="article-body">
+    <p>
+      News Lancashire is an independent local news project covering all 14 Lancashire boroughs.
+      We believe the local news market is broken. Advertising-dependent websites serve clickbait
+      headlines over quality journalism. We do the opposite.
+    </p>
+
+    <h2>What we cover</h2>
+    <p>
+      We track local news across {BOROUGHS.length} Lancashire boroughs: {BOROUGHS.map(b => b.name).join(", ")}.
+      Our coverage spans politics, crime, health, education, transport, planning, environment,
+      business, and sport.
+    </p>
+
+    <h2>Our approach</h2>
+    <p>
+      Every article on this site is either sourced from verified official records or written
+      from first-hand reporting. We use data from council spending transparency records,
+      Companies House filings, electoral commission returns, and other public sources.
+    </p>
+    <p>
+      Investigation articles go through a four-layer fact-checking process: style compliance,
+      numerical accuracy, citation integrity, and framing review. Every claim is sourced.
+    </p>
+
+    <h2>No ads. No tracking. No cookies.</h2>
+    <p>
+      This site uses no advertising, no third-party tracking, and no cookies.
+      We use Cloudflare Web Analytics for aggregate visitor counts, which collects no
+      personal data and sets no cookies.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      News Lancashire is produced by Tom Pickup.
+      For corrections, tips, or enquiries, contact us via the methods listed on our social channels.
+    </p>
+
+    <h2>Data sources</h2>
+    <ul>
+      <li>Council spending transparency publications (14 Lancashire councils)</li>
+      <li>Companies House API (company filings, directorships)</li>
+      <li>Electoral Commission (donations, party finance)</li>
+      <li>Parliament APIs (MPs, votes, expenses via IPSA)</li>
+      <li>ONS Census and Nomis (demographics, population)</li>
+      <li>Home Office (asylum and immigration statistics)</li>
+      <li>Lancashire Police (crime data)</li>
+      <li>BBC, Lancashire Telegraph, local press (verified news sources)</li>
+    </ul>
+  </div>
+</BaseLayout>

@@ -1,0 +1,146 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { BOROUGHS } from "../data/boroughs";
+import { getCategoryName, getCategoryColour } from "../data/categories";
+import { getBoroughName } from "../data/boroughs";
+import { formatDateShort } from "../lib/site";
+import { articlePath } from "../lib/articles";
+
+const allArticles = await getCollection("articles");
+const articles = allArticles
+  .sort((a, b) => b.data.date.localeCompare(a.data.date))
+  .slice(0, 12);
+
+const featured = articles[0];
+const latest = articles.slice(1, 9);
+const investigations = allArticles
+  .filter((a) => a.data.content_tier === "investigation" || a.data.category === "investigation")
+  .sort((a, b) => b.data.date.localeCompare(a.data.date))
+  .slice(0, 3);
+---
+
+<BaseLayout title="News Lancashire — Independent Local News">
+  <section class="hero">
+    <h1 class="hero-headline">Lancashire News</h1>
+    <p class="hero-sub">
+      Independent journalism for all 14 boroughs. No ads. No clickbait. Just
+      quality local reporting backed by data.
+    </p>
+  </section>
+
+  <!-- Borough pills -->
+  <nav class="borough-pills" aria-label="Browse by borough">
+    <a href="/lancashire-wide/" class="borough-pill">All Lancashire</a>
+    {BOROUGHS.map((b) => (
+      <a href={`/${b.slug}/`} class="borough-pill">
+        {b.name}
+      </a>
+    ))}
+  </nav>
+
+  <!-- Featured article -->
+  {featured && (
+    <section style="margin-top: 2rem;">
+      <a
+        href={articlePath(featured)}
+        class="card article-card"
+        style="padding: 2rem;"
+      >
+        <div class="article-card-meta">
+          <span class="badge badge-borough">{getBoroughName(featured.data.borough)}</span>
+          <span class="badge badge-category" style={`color: ${getCategoryColour(featured.data.category)}`}>
+            {getCategoryName(featured.data.category)}
+          </span>
+        </div>
+        <h2 class="article-card-headline" style="font-size: 1.5rem;">
+          {featured.data.headline}
+        </h2>
+        <p class="article-card-summary" style="-webkit-line-clamp: 4;">
+          {featured.data.summary}
+        </p>
+        <div class="article-card-footer">
+          <span>{formatDateShort(featured.data.date)}</span>
+          <span>&middot;</span>
+          <span>{featured.data.source}</span>
+        </div>
+      </a>
+    </section>
+  )}
+
+  <!-- Latest news grid -->
+  {latest.length > 0 && (
+    <section style="margin-top: 2.5rem;">
+      <div class="section-head">
+        <h2>Latest</h2>
+      </div>
+      <div class="grid-3">
+        {latest.map((article) => (
+          <a
+            href={articlePath(article)}
+            class="card article-card"
+          >
+            <div class="article-card-meta">
+              <span class="badge badge-borough">
+                {getBoroughName(article.data.borough)}
+              </span>
+              <span
+                class="badge badge-category"
+                style={`color: ${getCategoryColour(article.data.category)}`}
+              >
+                {getCategoryName(article.data.category)}
+              </span>
+            </div>
+            <h3 class="article-card-headline">{article.data.headline}</h3>
+            <p class="article-card-summary">{article.data.summary}</p>
+            <div class="article-card-footer">
+              <span>{formatDateShort(article.data.date)}</span>
+              <span>&middot;</span>
+              <span>{article.data.source}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <a href="/latest/" class="source-pill" style="font-size: 0.82rem; padding: 0.4rem 1rem;">
+          View all articles &rarr;
+        </a>
+      </div>
+    </section>
+  )}
+
+  <!-- Investigations -->
+  {investigations.length > 0 && (
+    <section style="margin-top: 3rem;">
+      <div class="section-head">
+        <h2>Investigations</h2>
+        <p>Data-driven journalism exposing how your money is spent</p>
+      </div>
+      <div class="grid-3">
+        {investigations.map((inv) => (
+          <a
+            href={articlePath(inv)}
+            class="card article-card"
+          >
+            <div class="article-card-meta">
+              <span class="badge badge-investigation">Investigation</span>
+              <span class="badge badge-borough">
+                {getBoroughName(inv.data.borough)}
+              </span>
+            </div>
+            <h3 class="article-card-headline">{inv.data.headline}</h3>
+            <p class="article-card-summary">{inv.data.summary}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Empty state if no articles -->
+  {allArticles.length === 0 && (
+    <div class="empty-state" style="margin-top: 3rem;">
+      <strong>Coming soon</strong>
+      <p>Quality local journalism for Lancashire. Articles are being prepared.</p>
+    </div>
+  )}
+</BaseLayout>

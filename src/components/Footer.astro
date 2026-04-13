@@ -1,0 +1,49 @@
+---
+import { BOROUGHS } from "../data/boroughs";
+
+const boroughsCol1 = BOROUGHS.slice(0, 7);
+const boroughsCol2 = BOROUGHS.slice(7);
+---
+
+<footer class="shell footer">
+  <div class="footer-grid">
+    <div class="footer-section">
+      <h4>Boroughs</h4>
+      {boroughsCol1.map((b) => (
+        <a href={`/${b.slug}/`}>{b.name}</a>
+      ))}
+    </div>
+    <div class="footer-section">
+      <h4>&nbsp;</h4>
+      {boroughsCol2.map((b) => (
+        <a href={`/${b.slug}/`}>{b.name}</a>
+      ))}
+    </div>
+    <div class="footer-section">
+      <h4>Categories</h4>
+      <a href="/politics/">Politics</a>
+      <a href="/crime/">Crime</a>
+      <a href="/health/">Health</a>
+      <a href="/education/">Education</a>
+      <a href="/business/">Business</a>
+      <a href="/investigations/">Investigations</a>
+    </div>
+    <div class="footer-section">
+      <h4>About</h4>
+      <a href="/about/">About Us</a>
+      <a href="/newsletter/">Newsletter</a>
+      <a href="/feed.xml">RSS Feed</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/cookies/">Cookies</a>
+      <a href="/accessibility/">Accessibility</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      News Lancashire is an independent local news project. No ads. No clickbait. No tracking.
+      All data sourced from official public records, council publications, and verified sources.
+      &copy; {new Date().getFullYear()} Tom Pickup. All rights reserved.
+    </div>
+  </div>
+</footer>

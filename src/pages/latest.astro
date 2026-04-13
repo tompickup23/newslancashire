@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { getBoroughName } from "../data/boroughs";
+import { getCategoryName, getCategoryColour } from "../data/categories";
+import { formatDateShort } from "../lib/site";
+import { articlePath } from "../lib/articles";
+
+const articles = (await getCollection("articles"))
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+---
+
+<BaseLayout title="Latest News" description="All the latest news from across Lancashire's 14 boroughs.">
+  <section class="hero" style="padding-bottom: 1rem;">
+    <h1 class="hero-headline">Latest News</h1>
+    <p class="hero-sub">All articles, newest first.</p>
+  </section>
+
+  {articles.length > 0 ? (
+    <div class="grid-3">
+      {articles.map((article) => (
+        <a href={articlePath(article)} class="card article-card">
+          <div class="article-card-meta">
+            <span class="badge badge-borough">{getBoroughName(article.data.borough)}</span>
+            <span class="badge badge-category" style={`color: ${getCategoryColour(article.data.category)}`}>
+              {getCategoryName(article.data.category)}
+            </span>
+          </div>
+          <h3 class="article-card-headline">{article.data.headline}</h3>
+          <p class="article-card-summary">{article.data.summary}</p>
+          <div class="article-card-footer">
+            <span>{formatDateShort(article.data.date)}</span>
+            <span>&middot;</span>
+            <span>{article.data.source}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  ) : (
+    <div class="empty-state">
+      <strong>No articles yet</strong>
+      <p>Articles are being prepared. Check back soon.</p>
+    </div>
+  )}
+</BaseLayout>

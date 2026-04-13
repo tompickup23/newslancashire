@@ -1,0 +1,146 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { getBoroughName } from "../../data/boroughs";
+import { getCategoryName, getCategoryColour } from "../../data/categories";
+import { formatDate, readingTime, SITE_URL, type StructuredDataNode } from "../../lib/site";
+import { articleSlug } from "../../lib/articles";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const articles = await getCollection("articles");
+  return articles.map((article) => ({
+    params: { borough: article.data.borough, slug: articleSlug(article) },
+    props: { article },
+  }));
+};
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+const boroughName = getBoroughName(article.data.borough);
+const categoryName = getCategoryName(article.data.category);
+
+const structuredData: StructuredDataNode[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: article.data.headline,
+    description: article.data.summary,
+    datePublished: article.data.date,
+    ...(article.data.updated && { dateModified: article.data.updated }),
+    author: {
+      "@type": "Organization",
+      name: "News Lancashire",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@id": `${SITE_URL}/#organization`,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/${article.data.borough}/${articleSlug(article)}/`,
+    },
+    articleSection: categoryName,
+    inLanguage: "en-GB",
+    image: `${SITE_URL}/og/${article.data.borough}/${articleSlug(article)}.png`,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: boroughName,
+        item: `${SITE_URL}/${article.data.borough}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.data.headline,
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={article.data.headline}
+  description={article.data.summary}
+  image={`/og/${article.data.borough}/${articleSlug(article)}.png`}
+  ogType="article"
+  articleDate={article.data.date}
+  articleSection={categoryName}
+  newsKeywords={`${boroughName}, ${categoryName}, Lancashire`}
+  structuredData={structuredData}
+>
+  <article style="padding-top: 1.5rem;">
+    <div class="breadcrumbs">
+      <a href="/">Home</a>
+      <span class="separator">/</span>
+      <a href={`/${article.data.borough}/`}>{boroughName}</a>
+      <span class="separator">/</span>
+      <span>Article</span>
+    </div>
+
+    <header style="margin-bottom: 2rem;">
+      <div class="article-card-meta" style="margin-bottom: 0.75rem;">
+        <a href={`/${article.data.borough}/`} class="badge badge-borough" style="text-decoration: none;">
+          {boroughName}
+        </a>
+        <span class="badge badge-category" style={`color: ${getCategoryColour(article.data.category)}`}>
+          {categoryName}
+        </span>
+        {article.data.content_tier === "investigation" && (
+          <span class="badge badge-investigation">Investigation</span>
+        )}
+        {article.data.content_tier === "cross-publish" && article.data.cross_project && (
+          <span class="badge badge-tier">via {article.data.cross_project}</span>
+        )}
+      </div>
+
+      <h1 style="font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 0.75rem;">
+        {article.data.headline}
+      </h1>
+
+      <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.5; margin: 0 0 1rem; max-width: 680px;">
+        {article.data.summary}
+      </p>
+
+      <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; font-size: 0.82rem; color: var(--muted);">
+        <time datetime={article.data.date}>{formatDate(article.data.date)}</time>
+        <span>&middot;</span>
+        <a href={article.data.source_url} class="source-pill" target="_blank" rel="noopener noreferrer">
+          {article.data.source} &nearr;
+        </a>
+        {article.data.fact_check_score && (
+          <>
+            <span>&middot;</span>
+            <span style={`color: ${article.data.fact_check_score >= 70 ? "var(--success)" : "var(--warning)"}`}>
+              Fact-check: {article.data.fact_check_score}%
+            </span>
+          </>
+        )}
+      </div>
+    </header>
+
+    <div class="article-body">
+      <Content />
+    </div>
+
+    <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+      <div class="section-head">
+        <h2>More from {boroughName}</h2>
+      </div>
+      <p style="color: var(--muted); font-size: 0.88rem;">
+        <a href={`/${article.data.borough}/`}>Browse all {boroughName} news &rarr;</a>
+      </p>
+    </footer>
+  </article>
+</BaseLayout>

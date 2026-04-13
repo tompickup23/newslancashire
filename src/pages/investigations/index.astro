@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { getBoroughName } from "../../data/boroughs";
+import { formatDateShort } from "../../lib/site";
+import { articlePath } from "../../lib/articles";
+
+const investigations = (await getCollection("articles"))
+  .filter((a) => a.data.content_tier === "investigation" || a.data.category === "investigation")
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+---
+
+<BaseLayout title="Investigations" description="Data-driven investigations into council spending, procurement, and governance across Lancashire.">
+  <section class="hero" style="padding-bottom: 1rem;">
+    <h1 class="hero-headline">Investigations</h1>
+    <p class="hero-sub">
+      Data-driven journalism exposing how public money is spent across Lancashire.
+      Every claim sourced. Every figure verified.
+    </p>
+  </section>
+
+  {investigations.length > 0 ? (
+    <div class="grid-2" style="margin-top: 1rem;">
+      {investigations.map((inv) => (
+        <a href={articlePath(inv)} class="card article-card">
+          <div class="article-card-meta">
+            <span class="badge badge-investigation">Investigation</span>
+            <span class="badge badge-borough">{getBoroughName(inv.data.borough)}</span>
+            {inv.data.cross_project && (
+              <span class="badge badge-tier">via {inv.data.cross_project}</span>
+            )}
+          </div>
+          <h2 class="article-card-headline" style="font-size: 1.15rem;">{inv.data.headline}</h2>
+          <p class="article-card-summary">{inv.data.summary}</p>
+          <div class="article-card-footer">
+            <span>{formatDateShort(inv.data.date)}</span>
+            <span>&middot;</span>
+            <span>{inv.data.source}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  ) : (
+    <div class="empty-state" style="margin-top: 2rem;">
+      <strong>Investigations coming soon</strong>
+      <p>Data-driven journalism articles are being prepared.</p>
+    </div>
+  )}
+</BaseLayout>

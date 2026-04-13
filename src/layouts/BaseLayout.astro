@@ -1,0 +1,191 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_SOCIAL_IMAGE_PATH,
+  SITE_NAME,
+  SITE_URL,
+  normalisePageTitle,
+  type StructuredDataNode,
+} from "../lib/site";
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  noIndex?: boolean;
+  structuredData?: StructuredDataNode[];
+  bodyClass?: string;
+  mainClass?: string;
+  hideFooter?: boolean;
+  ogType?: string;
+  articleDate?: string;
+  articleSection?: string;
+  newsKeywords?: string;
+}
+
+const {
+  title,
+  description = DEFAULT_DESCRIPTION,
+  image = DEFAULT_SOCIAL_IMAGE_PATH,
+  noIndex = false,
+  structuredData: pageStructuredData = [],
+  bodyClass,
+  mainClass,
+  hideFooter = false,
+  ogType = "website",
+  articleDate,
+  articleSection,
+  newsKeywords,
+} = Astro.props;
+
+const siteOrigin = Astro.site ?? new URL(SITE_URL);
+const pathname = Astro.url.pathname || "/";
+const pageTitle = normalisePageTitle(title);
+const canonicalUrl = new URL(pathname, siteOrigin).toString();
+const socialImageUrl = /^https?:\/\//.test(image)
+  ? image
+  : new URL(image, siteOrigin).toString();
+const robotsContent = noIndex
+  ? "noindex,follow,max-image-preview:large"
+  : "index,follow,max-image-preview:large";
+const socialImageMime = socialImageUrl.endsWith(".png")
+  ? "image/png"
+  : socialImageUrl.endsWith(".webp")
+    ? "image/webp"
+    : undefined;
+
+const structuredData: StructuredDataNode[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: pageTitle,
+    description,
+    url: canonicalUrl,
+    inLanguage: "en-GB",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    primaryImageOfPage: { "@type": "ImageObject", url: socialImageUrl },
+  },
+  ...(pathname === "/"
+    ? [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": `${SITE_URL}/#website`,
+          url: SITE_URL,
+          name: SITE_NAME,
+          description: DEFAULT_DESCRIPTION,
+          inLanguage: "en-GB",
+          publisher: { "@id": `${SITE_URL}/#organization` },
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsMediaOrganization",
+          "@id": `${SITE_URL}/#organization`,
+          name: SITE_NAME,
+          url: SITE_URL,
+          logo: {
+            "@type": "ImageObject",
+            url: new URL("/favicon.svg", siteOrigin).toString(),
+          },
+          sameAs: [],
+          areaServed: {
+            "@type": "AdministrativeArea",
+            name: "Lancashire",
+          },
+        },
+      ]
+    : []),
+  ...pageStructuredData,
+];
+---
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="description" content={description} />
+    <meta name="robots" content={robotsContent} />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <link rel="canonical" href={canonicalUrl} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${SITE_NAME} RSS Feed`}
+      href={`${SITE_URL}/feed.xml`}
+    />
+
+    {newsKeywords && <meta name="news_keywords" content={newsKeywords} />}
+
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content={ogType} />
+    {articleDate && (
+      <meta property="article:published_time" content={articleDate} />
+    )}
+    {articleSection && (
+      <meta property="article:section" content={articleSection} />
+    )}
+    {ogType === "article" && (
+      <meta property="article:author" content="News Lancashire" />
+    )}
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImageUrl} />
+    {socialImageMime && (
+      <meta property="og:image:type" content={socialImageMime} />
+    )}
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content={`${pageTitle} - newslancashire.co.uk`}
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
+
+    <title>{pageTitle}</title>
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+    />
+
+    {structuredData.map((item) => (
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify(item)}
+      />
+    ))}
+  </head>
+  <body class={bodyClass}>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <SiteHeader />
+    <main id="main-content" class:list={["shell", mainClass]} tabindex="-1">
+      <slot />
+    </main>
+    {!hideFooter && <Footer />}
+  </body>
+</html>

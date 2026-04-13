@@ -1,0 +1,61 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { CATEGORIES, getCategoryName, getCategoryColour } from "../../data/categories";
+import { getBoroughName } from "../../data/boroughs";
+import { formatDateShort } from "../../lib/site";
+import { articlePath } from "../../lib/articles";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return CATEGORIES.map((cat) => ({
+    params: { category: cat.slug },
+    props: { category: cat },
+  }));
+};
+
+const { category } = Astro.props;
+const allArticles = await getCollection("articles");
+const articles = allArticles
+  .filter((a) => a.data.category === category.slug)
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+---
+
+<BaseLayout
+  title={`${category.name} News`}
+  description={`${category.name} news from across Lancashire. Independent local journalism.`}
+>
+  <section class="hero" style="padding-bottom: 1rem;">
+    <div class="breadcrumbs">
+      <a href="/">Home</a>
+      <span class="separator">/</span>
+      <span>{category.name}</span>
+    </div>
+    <h1 class="hero-headline" style={`color: ${category.colour}`}>{category.name}</h1>
+    <p class="hero-sub">{category.name} news from across Lancashire's 14 boroughs.</p>
+  </section>
+
+  {articles.length > 0 ? (
+    <div class="grid-3" style="margin-top: 1rem;">
+      {articles.map((article) => (
+        <a href={articlePath(article)} class="card article-card">
+          <div class="article-card-meta">
+            <span class="badge badge-borough">{getBoroughName(article.data.borough)}</span>
+          </div>
+          <h3 class="article-card-headline">{article.data.headline}</h3>
+          <p class="article-card-summary">{article.data.summary}</p>
+          <div class="article-card-footer">
+            <span>{formatDateShort(article.data.date)}</span>
+            <span>&middot;</span>
+            <span>{article.data.source}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  ) : (
+    <div class="empty-state" style="margin-top: 2rem;">
+      <strong>No {category.name.toLowerCase()} articles yet</strong>
+      <p>Coverage is expanding. Check back soon or browse <a href="/latest/">all articles</a>.</p>
+    </div>
+  )}
+</BaseLayout>

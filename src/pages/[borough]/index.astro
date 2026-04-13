@@ -1,0 +1,102 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { BOROUGHS, LANCASHIRE_WIDE, getBoroughName } from "../../data/boroughs";
+import { getCategoryName, getCategoryColour } from "../../data/categories";
+import { formatDateShort, SITE_URL } from "../../lib/site";
+import { articlePath } from "../../lib/articles";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const allBoroughs = [
+    ...BOROUGHS.map((b) => ({ params: { borough: b.slug }, props: { borough: b } })),
+    {
+      params: { borough: "lancashire-wide" },
+      props: { borough: { ...LANCASHIRE_WIDE, council_url: "", population: 1_530_000, mp: "", constituency: "" } },
+    },
+  ];
+  return allBoroughs;
+};
+
+const { borough } = Astro.props;
+const allArticles = await getCollection("articles");
+const articles = allArticles
+  .filter((a) => a.data.borough === borough.slug)
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+const boroughName = getBoroughName(borough.slug);
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${boroughName} News`,
+    description: `Latest news from ${boroughName}, Lancashire.`,
+    url: `${SITE_URL}/${borough.slug}/`,
+    inLanguage: "en-GB",
+  },
+];
+---
+
+<BaseLayout
+  title={`${boroughName} News`}
+  description={`Latest local news from ${boroughName}, Lancashire. Independent journalism with no ads.`}
+  image={`/og/${borough.slug}.png`}
+  structuredData={structuredData}
+>
+  <section class="hero" style="padding-bottom: 1rem;">
+    <div class="breadcrumbs">
+      <a href="/">Home</a>
+      <span class="separator">/</span>
+      <span>{boroughName}</span>
+    </div>
+    <h1 class="hero-headline">{boroughName} News</h1>
+    {borough.population > 0 && (
+      <p class="hero-sub">
+        Population {borough.population.toLocaleString("en-GB")}
+        {borough.mp && ` · MP: ${borough.mp}`}
+      </p>
+    )}
+  </section>
+
+  <!-- Borough navigation pills -->
+  <nav class="borough-pills" aria-label="Browse boroughs">
+    <a href="/lancashire-wide/" class="borough-pill" aria-current={borough.slug === "lancashire-wide" ? "page" : undefined}>
+      All
+    </a>
+    {BOROUGHS.map((b) => (
+      <a href={`/${b.slug}/`} class="borough-pill" aria-current={b.slug === borough.slug ? "page" : undefined}>
+        {b.name}
+      </a>
+    ))}
+  </nav>
+
+  {articles.length > 0 ? (
+    <div class="grid-3" style="margin-top: 1.5rem;">
+      {articles.map((article) => (
+        <a href={articlePath(article)} class="card article-card">
+          <div class="article-card-meta">
+            <span class="badge badge-category" style={`color: ${getCategoryColour(article.data.category)}`}>
+              {getCategoryName(article.data.category)}
+            </span>
+            {article.data.content_tier === "investigation" && (
+              <span class="badge badge-investigation">Investigation</span>
+            )}
+          </div>
+          <h3 class="article-card-headline">{article.data.headline}</h3>
+          <p class="article-card-summary">{article.data.summary}</p>
+          <div class="article-card-footer">
+            <span>{formatDateShort(article.data.date)}</span>
+            <span>&middot;</span>
+            <span>{article.data.source}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  ) : (
+    <div class="empty-state" style="margin-top: 2rem;">
+      <strong>No articles for {boroughName} yet</strong>
+      <p>Coverage is expanding. Check back soon or browse <a href="/latest/">all articles</a>.</p>
+    </div>
+  )}
+</BaseLayout>

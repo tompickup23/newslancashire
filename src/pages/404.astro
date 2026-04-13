@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { BOROUGHS } from "../data/boroughs";
+---
+
+<BaseLayout title="Page Not Found" noIndex={true}>
+  <div class="empty-state" style="padding: 4rem 1rem;">
+    <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;">404</h1>
+    <strong>Page not found</strong>
+    <p style="margin-bottom: 2rem;">The page you're looking for doesn't exist or has been moved.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="/" class="source-pill" style="padding: 0.5rem 1.25rem; font-size: 0.88rem;">
+        Home
+      </a>
+      <a href="/latest/" class="source-pill" style="padding: 0.5rem 1.25rem; font-size: 0.88rem;">
+        Latest News
+      </a>
+    </div>
+    <nav style="margin-top: 2rem;">
+      <p class="tiny" style="margin-bottom: 0.75rem;">Or browse by borough</p>
+      <div class="borough-pills" style="justify-content: center;">
+        {BOROUGHS.map((b) => (
+          <a href={`/${b.slug}/`} class="borough-pill">{b.name}</a>
+        ))}
+      </div>
+    </nav>
+  </div>
+</BaseLayout>
