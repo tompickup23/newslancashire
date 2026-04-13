@@ -36,7 +36,21 @@ const navLinks = [
   </div>
 
   <div class="site-tools">
-    <div id="google_translate_element" class="translate-widget"></div>
+    <details class="lang-dropdown">
+      <summary class="lang-trigger" aria-label="Translate page">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+      </summary>
+      <div class="lang-panel">
+        <a href="https://translate.google.com/translate?sl=en&tl=ur&u=https://newslancashire.co.uk" target="_blank" rel="noopener">اردو (Urdu)</a>
+        <a href="https://translate.google.com/translate?sl=en&tl=pl&u=https://newslancashire.co.uk" target="_blank" rel="noopener">Polski</a>
+        <a href="https://translate.google.com/translate?sl=en&tl=ro&u=https://newslancashire.co.uk" target="_blank" rel="noopener">Română</a>
+        <a href="https://translate.google.com/translate?sl=en&tl=gu&u=https://newslancashire.co.uk" target="_blank" rel="noopener">ગુજરાતી (Gujarati)</a>
+        <a href="https://translate.google.com/translate?sl=en&tl=bn&u=https://newslancashire.co.uk" target="_blank" rel="noopener">বাংলা (Bengali)</a>
+        <a href="https://translate.google.com/translate?sl=en&tl=pa&u=https://newslancashire.co.uk" target="_blank" rel="noopener">ਪੰਜਾਬੀ (Punjabi)</a>
+        <a href="https://translate.google.com/translate?sl=en&tl=zh-CN&u=https://newslancashire.co.uk" target="_blank" rel="noopener">中文</a>
+        <a href="https://translate.google.com/translate?sl=en&tl=ar&u=https://newslancashire.co.uk" target="_blank" rel="noopener">العربية</a>
+      </div>
+    </details>
 
     <button
       class="search-launch"
@@ -98,15 +112,11 @@ const navLinks = [
   closeBtn?.addEventListener("click", closeDrawer);
   backdrop?.addEventListener("click", closeDrawer);
 
-  // Google Translate
-  (window as any).googleTranslateElementInit = function () {
-    new (window as any).google.translate.TranslateElement(
-      { pageLanguage: "en", layout: (window as any).google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
-      "google_translate_element"
-    );
-  };
-  const gt = document.createElement("script");
-  gt.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-  gt.async = true;
-  document.head.appendChild(gt);
+  // Update translate links with current page URL
+  document.querySelectorAll('.lang-panel a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href) {
+      a.setAttribute('href', href.replace('https://newslancashire.co.uk', window.location.href));
+    }
+  });
 </script>

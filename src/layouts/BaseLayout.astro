@@ -168,18 +168,13 @@ const structuredData: StructuredDataNode[] = [
     <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Multi-language support via Google Translate -->
-    <meta name="google" content="notranslate" />
+    <!-- Multi-language -->
     <link rel="alternate" hreflang="en-GB" href={canonicalUrl} />
     <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
 
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://translate.googleapis.com" crossorigin />
-    <link rel="dns-prefetch" href="https://translate.googleapis.com" />
-
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' static.cloudflareinsights.com translate.google.com translate.googleapis.com; style-src 'self' 'unsafe-inline' translate.googleapis.com; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https:; frame-src translate.google.com; object-src 'none'; base-uri 'self'; form-action 'self' translate.google.com; frame-ancestors 'none'"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
     />
 
     {structuredData.map((item) => (
