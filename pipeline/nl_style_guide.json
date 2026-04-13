@@ -1,0 +1,109 @@
+{
+  "version": "1.0",
+  "name": "news-lancashire-v1",
+  "description": "Local news voice — factual, clear, Lancashire-focused. Not investigative DOGE style.",
+
+  "voice": {
+    "perspective": "third_person_neutral",
+    "tone": "informative_local",
+    "register": "broadsheet_accessible",
+    "model": "BBC Lancashire meets local newspaper. Factual, clear, community-focused."
+  },
+
+  "rules": [
+    "Lead with the news. First sentence states what happened, where, and when.",
+    "Second sentence adds context — why this matters to local residents.",
+    "Active voice throughout. 'Lancashire County Council approved...' not 'Approval was granted by...'",
+    "Short paragraphs. Maximum 3 sentences per paragraph.",
+    "Name names. Council, company, location. Never 'a local authority' or 'a firm'.",
+    "Include the borough/area affected. Every article must have geographic context.",
+    "Use UK English spelling. Organisation, analyse, colour, programme, defence.",
+    "Attribute all factual claims. 'According to [source]' or 'The council confirmed'.",
+    "No editorialising. Report facts and let readers draw conclusions.",
+    "Include practical info: dates, times, locations, contact details where relevant.",
+    "When quoting figures, give context. '£2.5M — a 15% increase on last year'."
+  ],
+
+  "banned_patterns": [
+    "raises questions about",
+    "it remains to be seen",
+    "only time will tell",
+    "in today's climate",
+    "it's important to note",
+    "it is worth noting",
+    "interestingly enough",
+    "interestingly,",
+    "moving forward",
+    "at the end of the day",
+    "this begs the question",
+    "one might argue",
+    "it should be noted",
+    "furthermore",
+    "moreover",
+    "additionally",
+    "in conclusion",
+    "in summary",
+    "robust",
+    "holistic",
+    "synergy",
+    "stakeholder",
+    "leverage",
+    "deep dive",
+    "game-changer",
+    "paradigm",
+    "ecosystem",
+    "unpack",
+    "navigate",
+    "at its core",
+    "when it comes to",
+    "it goes without saying",
+    "needless to say",
+    "the fact of the matter is",
+    "delve",
+    "crucial",
+    "vital importance",
+    "groundbreaking",
+    "unprecedented",
+    "shocked residents",
+    "fury as",
+    "slammed",
+    "blasted"
+  ],
+
+  "banned_punctuation": {
+    "\u2014": "Replace em dash with full stop or comma",
+    "\u2013": "Replace en dash with hyphen",
+    ";": "Replace semicolon with full stop. Two sentences instead of one."
+  },
+
+  "content_tiers": {
+    "summary": {
+      "word_range": [60, 120],
+      "min_interest_score": 40,
+      "description": "Clean factual summary with Lancashire angle"
+    },
+    "analysis": {
+      "word_range": [200, 400],
+      "min_interest_score": 70,
+      "description": "Two-pass rewrite with context, data, and attribution"
+    },
+    "investigation": {
+      "word_range": [400, 800],
+      "min_interest_score": 85,
+      "description": "Deep investigation with multiple sources and FOI references"
+    }
+  },
+
+  "category_map": {
+    "general": "local",
+    "politics": "politics",
+    "crime": "crime",
+    "sport": "sport",
+    "business": "business",
+    "health": "health",
+    "education": "education",
+    "transport": "transport",
+    "community": "local",
+    "weather": "environment"
+  }
+}
