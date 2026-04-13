@@ -5,7 +5,7 @@ import { BOROUGHS, getBoroughName } from "../data/boroughs";
 import { getCategoryName, getCategoryColour, CATEGORIES } from "../data/categories";
 import { relativeTime } from "../lib/site";
 import { articlePath } from "../lib/articles";
-import { categoryImage } from "../lib/images";
+import { selectImage } from "../lib/images";
 
 const allArticles = await getCollection("articles");
 const sorted = allArticles.sort((a, b) => b.data.date.localeCompare(a.data.date));
@@ -53,7 +53,7 @@ function tierBadge(tier: string, category: string) {
     <section class="hp-hero">
       <a href={articlePath(hero)} class="hp-hero__lead">
         <img
-          src={categoryImage(hero.data.category)}
+          src={selectImage(hero.data.category, hero.data.borough, hero.data.headline, hero.data.summary)}
           alt={`${getCategoryName(hero.data.category)} news`}
           class="hp-hero__img"
           loading="eager"
@@ -78,7 +78,7 @@ function tierBadge(tier: string, category: string) {
         {heroSecondary.map((a) => (
           <a href={articlePath(a)} class="hp-hero__side-card">
             <img
-              src={categoryImage(a.data.category)}
+              src={selectImage(a.data.category, a.data.borough, a.data.headline, a.data.summary)}
               alt={`${getCategoryName(a.data.category)} news`}
               class="hp-hero__side-img"
               loading="eager"
@@ -114,7 +114,7 @@ function tierBadge(tier: string, category: string) {
         {latest.map((a) => (
           <a href={articlePath(a)} class="hp-carousel__card">
             <img
-              src={categoryImage(a.data.category)}
+              src={selectImage(a.data.category, a.data.borough, a.data.headline, a.data.summary)}
               alt={`${getCategoryName(a.data.category)} news`}
               class="hp-carousel__img"
               loading="lazy"
@@ -153,7 +153,7 @@ function tierBadge(tier: string, category: string) {
                 <a href={articlePath(a)} class={`hp-topic-card ${i === 0 ? "hp-topic-card--lead" : ""}`}>
                   {i === 0 && (
                     <img
-                      src={categoryImage(a.data.category)}
+                      src={selectImage(a.data.category, a.data.borough, a.data.headline, a.data.summary)}
                       alt={`${getCategoryName(a.data.category)} news`}
                       class="hp-topic-card__img"
                       loading="lazy"

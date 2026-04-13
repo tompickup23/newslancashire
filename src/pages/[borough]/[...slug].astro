@@ -6,7 +6,7 @@ import { getBoroughName } from "../../data/boroughs";
 import { getCategoryName, getCategoryColour } from "../../data/categories";
 import { formatDate, readingTime, SITE_URL, type StructuredDataNode } from "../../lib/site";
 import { articleSlug } from "../../lib/articles";
-import { categoryImage } from "../../lib/images";
+import { selectImage, imageCredit } from "../../lib/images";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const articles = await getCollection("articles");
@@ -20,6 +20,8 @@ const { article } = Astro.props;
 const { Content } = await article.render();
 const boroughName = getBoroughName(article.data.borough);
 const categoryName = getCategoryName(article.data.category);
+const heroImg = selectImage(article.data.category, article.data.borough, article.data.headline, article.data.summary);
+const heroCredit = imageCredit(heroImg);
 
 const structuredData: StructuredDataNode[] = [
   {
@@ -130,14 +132,14 @@ const structuredData: StructuredDataNode[] = [
 
     <div class="article-hero">
       <img
-        src={categoryImage(article.data.category)}
+        src={heroImg}
         alt={article.data.image_alt || `${categoryName} news in ${boroughName}`}
         loading="eager"
         decoding="async"
         width="800"
         height="450"
       />
-      <span class="article-hero-credit">Image: Unsplash</span>
+      <span class="article-hero-credit">{heroCredit}</span>
     </div>
 
     <div class="article-body">
