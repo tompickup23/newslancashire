@@ -1,142 +1,224 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import { BOROUGHS } from "../data/boroughs";
-import { getCategoryName, getCategoryColour } from "../data/categories";
-import { getBoroughName } from "../data/boroughs";
-import { formatDateShort } from "../lib/site";
+import { BOROUGHS, getBoroughName } from "../data/boroughs";
+import { getCategoryName, getCategoryColour, CATEGORIES } from "../data/categories";
+import { relativeTime } from "../lib/site";
 import { articlePath } from "../lib/articles";
+import { categoryImage } from "../lib/images";
 
 const allArticles = await getCollection("articles");
-const articles = allArticles
-  .sort((a, b) => b.data.date.localeCompare(a.data.date))
-  .slice(0, 12);
+const sorted = allArticles.sort((a, b) => b.data.date.localeCompare(a.data.date));
 
-const featured = articles[0];
-const latest = articles.slice(1, 9);
-const investigations = allArticles
+// Hero: lead story + 2 secondary
+const hero = sorted[0];
+const heroSecondary = sorted.slice(1, 3);
+
+// Latest news: next 8 articles for the carousel
+const latest = sorted.slice(3, 11);
+
+// Topic sections: group by category, pick top categories with enough articles
+const byCategory = new Map<string, typeof allArticles>();
+for (const a of sorted) {
+  const cat = a.data.category;
+  if (!byCategory.has(cat)) byCategory.set(cat, []);
+  byCategory.get(cat)!.push(a);
+}
+const topicOrder = ["crime", "politics", "health", "business", "transport", "education", "sport", "environment", "planning"];
+const topicSections = topicOrder
+  .filter((cat) => (byCategory.get(cat)?.length || 0) >= 2)
+  .slice(0, 5);
+
+// Most read: top 5 by interest score
+const mostRead = [...sorted]
+  .sort((a, b) => (b.data.interest_score || 0) - (a.data.interest_score || 0))
+  .slice(0, 5);
+
+// Investigations
+const investigations = sorted
   .filter((a) => a.data.content_tier === "investigation" || a.data.category === "investigation")
-  .sort((a, b) => b.data.date.localeCompare(a.data.date))
   .slice(0, 3);
+
+function tierBadge(tier: string, category: string) {
+  if (tier === "investigation" || category === "investigation") return "Investigation";
+  if (tier === "analysis") return "Analysis";
+  if (category === "data-driven") return "Data";
+  return null;
+}
 ---
 
 <BaseLayout title="News Lancashire — Independent Local News">
-  <section class="hero">
-    <h1 class="hero-headline">Lancashire News</h1>
-    <p class="hero-sub">
-      Independent journalism for all 14 boroughs. No ads. No clickbait. Just
-      quality local reporting backed by data.
-    </p>
-  </section>
+  <!-- Hero section: lead story + 2 secondary -->
+  {hero && (
+    <section class="hp-hero">
+      <a href={articlePath(hero)} class="hp-hero__lead">
+        <img
+          src={categoryImage(hero.data.category)}
+          alt={`${getCategoryName(hero.data.category)} news`}
+          class="hp-hero__img"
+          loading="eager"
+          width="800" height="450"
+        />
+        <div class="hp-hero__overlay">
+          <div class="hp-hero__badges">
+            <span class="badge badge-borough">{getBoroughName(hero.data.borough)}</span>
+            <span class="badge badge-category" style={`color: ${getCategoryColour(hero.data.category)}`}>
+              {getCategoryName(hero.data.category)}
+            </span>
+            {tierBadge(hero.data.content_tier, hero.data.category) && (
+              <span class="badge badge-investigation">{tierBadge(hero.data.content_tier, hero.data.category)}</span>
+            )}
+          </div>
+          <h1 class="hp-hero__title">{hero.data.headline}</h1>
+          <p class="hp-hero__summary">{hero.data.summary}</p>
+          <span class="hp-hero__time">{relativeTime(hero.data.date)} &middot; {hero.data.source}</span>
+        </div>
+      </a>
+      <div class="hp-hero__sidebar">
+        {heroSecondary.map((a) => (
+          <a href={articlePath(a)} class="hp-hero__side-card">
+            <img
+              src={categoryImage(a.data.category)}
+              alt={`${getCategoryName(a.data.category)} news`}
+              class="hp-hero__side-img"
+              loading="eager"
+              width="400" height="225"
+            />
+            <div class="hp-hero__side-body">
+              <span class="badge badge-borough" style="font-size: 0.6rem;">{getBoroughName(a.data.borough)}</span>
+              <h2 class="hp-hero__side-title">{a.data.headline}</h2>
+              <span class="hp-hero__side-time">{relativeTime(a.data.date)}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
   <!-- Borough pills -->
-  <nav class="borough-pills" aria-label="Browse by borough">
-    <a href="/lancashire-wide/" class="borough-pill">All Lancashire</a>
+  <nav class="borough-pills" aria-label="Browse by borough" style="margin-top: 1.5rem;">
+    <a href="/latest/" class="borough-pill" aria-current={undefined}>All Lancashire</a>
     {BOROUGHS.map((b) => (
-      <a href={`/${b.slug}/`} class="borough-pill">
-        {b.name}
-      </a>
+      <a href={`/${b.slug}/`} class="borough-pill">{b.name}</a>
     ))}
   </nav>
 
-  <!-- Featured article -->
-  {featured && (
-    <section style="margin-top: 2rem;">
-      <a
-        href={articlePath(featured)}
-        class="card article-card"
-        style="padding: 2rem;"
-      >
-        <div class="article-card-meta">
-          <span class="badge badge-borough">{getBoroughName(featured.data.borough)}</span>
-          <span class="badge badge-category" style={`color: ${getCategoryColour(featured.data.category)}`}>
-            {getCategoryName(featured.data.category)}
-          </span>
-        </div>
-        <h2 class="article-card-headline" style="font-size: 1.5rem;">
-          {featured.data.headline}
-        </h2>
-        <p class="article-card-summary" style="-webkit-line-clamp: 4;">
-          {featured.data.summary}
-        </p>
-        <div class="article-card-footer">
-          <span>{formatDateShort(featured.data.date)}</span>
-          <span>&middot;</span>
-          <span>{featured.data.source}</span>
-        </div>
-      </a>
-    </section>
-  )}
-
-  <!-- Latest news grid -->
+  <!-- Latest news horizontal carousel -->
   {latest.length > 0 && (
-    <section style="margin-top: 2.5rem;">
+    <section style="margin-top: 2rem;">
       <div class="section-head">
-        <h2>Latest</h2>
+        <h2>Latest News</h2>
+        <a href="/latest/" class="section-head__link">View all &rarr;</a>
       </div>
-      <div class="grid-3">
-        {latest.map((article) => (
-          <a
-            href={articlePath(article)}
-            class="card article-card"
-          >
-            <div class="article-card-meta">
-              <span class="badge badge-borough">
-                {getBoroughName(article.data.borough)}
-              </span>
-              <span
-                class="badge badge-category"
-                style={`color: ${getCategoryColour(article.data.category)}`}
-              >
-                {getCategoryName(article.data.category)}
-              </span>
-            </div>
-            <h3 class="article-card-headline">{article.data.headline}</h3>
-            <p class="article-card-summary">{article.data.summary}</p>
-            <div class="article-card-footer">
-              <span>{formatDateShort(article.data.date)}</span>
-              <span>&middot;</span>
-              <span>{article.data.source}</span>
+      <div class="hp-carousel" role="region" aria-label="Latest news">
+        {latest.map((a) => (
+          <a href={articlePath(a)} class="hp-carousel__card">
+            <img
+              src={categoryImage(a.data.category)}
+              alt={`${getCategoryName(a.data.category)} news`}
+              class="hp-carousel__img"
+              loading="lazy"
+              width="320" height="180"
+            />
+            <div class="hp-carousel__body">
+              <div class="hp-carousel__meta">
+                <span class="badge badge-borough" style="font-size: 0.58rem;">{getBoroughName(a.data.borough)}</span>
+                <span class="badge badge-category" style={`font-size: 0.58rem; color: ${getCategoryColour(a.data.category)}`}>
+                  {getCategoryName(a.data.category)}
+                </span>
+              </div>
+              <h3 class="hp-carousel__title">{a.data.headline}</h3>
+              <span class="hp-carousel__time">{relativeTime(a.data.date)}</span>
             </div>
           </a>
         ))}
       </div>
-      <div style="text-align: center; margin-top: 1.5rem;">
-        <a href="/latest/" class="source-pill" style="font-size: 0.82rem; padding: 0.4rem 1rem;">
-          View all articles &rarr;
+    </section>
+  )}
+
+  <!-- Main content + sidebar layout -->
+  <div class="hp-main-grid" style="margin-top: 2.5rem;">
+    <div class="hp-main-content">
+      <!-- Topic sections -->
+      {topicSections.map((cat) => {
+        const catArticles = byCategory.get(cat)!.slice(0, 4);
+        return (
+          <section class="hp-topic-section">
+            <div class="section-head">
+              <h2 style={`color: ${getCategoryColour(cat)}`}>{getCategoryName(cat)}</h2>
+              <a href={`/${cat}/`} class="section-head__link">More {getCategoryName(cat).toLowerCase()} &rarr;</a>
+            </div>
+            <div class="hp-topic-grid">
+              {catArticles.map((a, i) => (
+                <a href={articlePath(a)} class={`hp-topic-card ${i === 0 ? "hp-topic-card--lead" : ""}`}>
+                  {i === 0 && (
+                    <img
+                      src={categoryImage(a.data.category)}
+                      alt={`${getCategoryName(a.data.category)} news`}
+                      class="hp-topic-card__img"
+                      loading="lazy"
+                      width="400" height="225"
+                    />
+                  )}
+                  <div class="hp-topic-card__body">
+                    <span class="badge badge-borough" style="font-size: 0.58rem;">{getBoroughName(a.data.borough)}</span>
+                    <h3 class="hp-topic-card__title">{a.data.headline}</h3>
+                    {i === 0 && <p class="hp-topic-card__summary">{a.data.summary}</p>}
+                    <span class="hp-topic-card__time">{relativeTime(a.data.date)} &middot; {a.data.source}</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        );
+      })}
+
+      <!-- Newsletter CTA -->
+      <section class="hp-newsletter">
+        <div class="hp-newsletter__inner">
+          <h2 class="hp-newsletter__title">Get Lancashire news in your inbox</h2>
+          <p class="hp-newsletter__text">Weekly digest of the most important stories from your borough. No spam, unsubscribe anytime.</p>
+          <form class="hp-newsletter__form" action="/newsletter/" method="get">
+            <input type="email" placeholder="your@email.com" class="hp-newsletter__input" aria-label="Email address" />
+            <button type="submit" class="hp-newsletter__btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sidebar: Most Read -->
+    <aside class="hp-sidebar">
+      <div class="hp-sidebar__card">
+        <h3 class="hp-sidebar__title">Most Read</h3>
+        <ol class="hp-most-read">
+          {mostRead.map((a, i) => (
+            <li>
+              <a href={articlePath(a)} class="hp-most-read__item">
+                <span class="hp-most-read__rank">{i + 1}</span>
+                <div>
+                  <span class="badge badge-borough" style="font-size: 0.55rem; margin-bottom: 2px;">{getBoroughName(a.data.borough)}</span>
+                  <div class="hp-most-read__title">{a.data.headline}</div>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <!-- Data section teaser -->
+      <div class="hp-sidebar__card" style="margin-top: 1rem;">
+        <h3 class="hp-sidebar__title">Data &amp; Investigations</h3>
+        <p style="font-size: 0.8rem; color: var(--muted); margin: 0.5rem 0;">
+          Explore council spending, election predictions, and public data analysis.
+        </p>
+        <a href="https://aidoge.co.uk" class="source-pill" style="font-size: 0.75rem;" target="_blank" rel="noopener">
+          AI DOGE Spending Tracker &nearr;
         </a>
       </div>
-    </section>
-  )}
+    </aside>
+  </div>
 
-  <!-- Investigations -->
-  {investigations.length > 0 && (
-    <section style="margin-top: 3rem;">
-      <div class="section-head">
-        <h2>Investigations</h2>
-        <p>Data-driven journalism exposing how your money is spent</p>
-      </div>
-      <div class="grid-3">
-        {investigations.map((inv) => (
-          <a
-            href={articlePath(inv)}
-            class="card article-card"
-          >
-            <div class="article-card-meta">
-              <span class="badge badge-investigation">Investigation</span>
-              <span class="badge badge-borough">
-                {getBoroughName(inv.data.borough)}
-              </span>
-            </div>
-            <h3 class="article-card-headline">{inv.data.headline}</h3>
-            <p class="article-card-summary">{inv.data.summary}</p>
-          </a>
-        ))}
-      </div>
-    </section>
-  )}
-
-  <!-- Empty state if no articles -->
+  <!-- Empty state -->
   {allArticles.length === 0 && (
     <div class="empty-state" style="margin-top: 3rem;">
       <strong>Coming soon</strong>

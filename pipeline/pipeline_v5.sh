@@ -60,17 +60,11 @@ if [ $? -ne 0 ]; then
   ERRORS=$((ERRORS + 1))
 fi
 
-# ── Phase 6: Cross-publish (LT, Asylum Stats, DOGE → NL staging) ──
-STAGING_DIR="$NL_PIPELINE/staging/articles"
-mkdir -p "$STAGING_DIR"
-python3 pipeline/cross_publish.py --output "$STAGING_DIR" >> "$LOG" 2>&1
-
-# ── Phase 7: Submit ALL articles to SR editorial for review ──
-# Articles only go live after SR approval
+# ── Phase 6: Submit articles to SR editorial for review ──
 run_script pipeline/sr_submit.py "SR Submit" 30
 
-# ── Phase 8: Export ONLY SR-approved articles to live Astro ──
-python3 pipeline/export_approved.py --output "$ASTRO_CONTENT" >> "$LOG" 2>&1
+# ── Phase 7: Export ONLY SR-approved articles to live Astro ──
+python3 pipeline/export_approved.py --output "$ASTRO_CONTENT" --clean >> "$LOG" 2>&1
 if [ $? -ne 0 ]; then
   log_phase "WARN: Approved export had errors"
 fi

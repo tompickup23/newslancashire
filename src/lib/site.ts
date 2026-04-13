@@ -33,6 +33,20 @@ export function formatDateShort(dateStr: string): string {
   });
 }
 
+export function relativeTime(dateStr: string): string {
+  const now = new Date();
+  const d = new Date(dateStr);
+  const diffMs = now.getTime() - d.getTime();
+  const diffMins = Math.floor(diffMs / 60000);
+  const diffHours = Math.floor(diffMs / 3600000);
+  const diffDays = Math.floor(diffMs / 86400000);
+  if (diffMins < 60) return `${Math.max(1, diffMins)}m ago`;
+  if (diffHours < 24) return `${diffHours}h ago`;
+  if (diffDays === 1) return "Yesterday";
+  if (diffDays < 7) return `${diffDays}d ago`;
+  return formatDateShort(dateStr);
+}
+
 export function readingTime(text: string): string {
   const words = text.split(/\s+/).length;
   const mins = Math.max(1, Math.ceil(words / 230));

@@ -122,11 +122,10 @@ def main():
     log.info('Found %d articles to export', len(articles))
 
     if args.clean:
-        # Only remove auto-generated files, keep cross-published
-        existing = [f for f in output_dir.glob('*.md') if not f.name.startswith(('lt-', 'as-', 'do-'))]
+        existing = list(output_dir.glob('*.md'))
         for f in existing:
             f.unlink()
-        log.info('Cleaned %d existing auto-generated files', len(existing))
+        log.info('Cleaned %d existing files', len(existing))
 
     if args.dry_run:
         for art in articles[:20]:
@@ -144,15 +143,6 @@ def main():
         filepath = output_dir / filename
         filepath.write_text(markdown)
         exported += 1
-
-    # Also copy cross-published articles from staging
-    staging = NL_PIPELINE_DIR / 'staging' / 'articles'
-    if staging.exists():
-        for f in staging.glob('*.md'):
-            dest = output_dir / f.name
-            if not dest.exists():
-                dest.write_text(f.read_text())
-                exported += 1
 
     log.info('Exported %d articles to %s', exported, output_dir)
 
